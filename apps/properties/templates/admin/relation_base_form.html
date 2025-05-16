@@ -1,0 +1,47 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+{% block content %}
+{% include 'admin/relation_navigation.html' %}
+{{block.super}}
+{% endblock %}
+
+
+{% block js_footer %}
+{{block.super}}
+
+<script>
+!function ($,window) {
+	"use strict";
+	window.user_changed_input = false;
+
+	$(document).ready(function(){
+		// DELAY THE BINDING
+		setTimeout(function(){
+			// ALL VALID INUTS BINDER
+			$(".change-form form :input[id^='id_']").not(".selectized").on('change', function(){
+				window.user_changed_input = true;
+			});
+			// SELECTIZE BINDER
+			$(".change-form form :input[id^='id_']").filter(".selectized").each(function(i, el){
+				el.selectize.on('change', function(){
+					window.user_changed_input = true;
+				});
+			});
+		}, 314);
+		
+
+		// SUBMIT BINDER
+		$(".change-form form").submit(function(){
+			window.user_changed_input = false;
+		});
+	});
+
+	window.onbeforeunload = function(){
+		if(window.user_changed_input){
+			return "{% trans 'You have unsaved changes!' %}"
+		}
+	};
+
+}(django.jQuery, window);
+</script>
+{% endblock %}

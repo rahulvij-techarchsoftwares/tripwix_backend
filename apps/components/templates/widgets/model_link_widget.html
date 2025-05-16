@@ -1,0 +1,13 @@
+{% load i18n admin_urls admin_kubi_tags %}
+{% include "django/forms/widgets/input.html" %}
+
+{% if widget.app_obj %}
+    {% url widget.app_obj_meta|admin_urlname:'change' widget.app_obj.pk|admin_urlquote as change_url %}
+    {% if change_url %}
+        <a target="blank" href={{ change_url }}>{{ widget.app_obj }}</a>
+    {% else %}
+        {{ widget.app_obj }}
+    {% endif %}
+{% endif %}
+
+

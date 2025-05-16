@@ -1,0 +1,28 @@
+{% extends 'admin/relation_base_form.html' %}
+
+{% block extrastyle %}
+    {{block.super}}
+    <style type="text/css">
+        .module.settings{
+            min-height:100px !important;
+            border:none !important;
+        }
+        #propertygroupdetails_set-group .add-row{
+            margin-top:24px;
+        }
+    </style>
+{% endblock extrastyle %}
+
+{% block js_footer %}
+{{block.super}}
+<script>
+(function($){
+    
+    $(document).ready(function(){
+        $("#propertygroupdetails_set-group h3").remove();
+        $(".module.settings").after($("#propertygroupdetails_set-group"));
+    });
+
+})(django.jQuery);
+</script>
+{% endblock js_footer %}

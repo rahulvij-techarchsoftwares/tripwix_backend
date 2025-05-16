@@ -1,0 +1,74 @@
+{% load i18n %}
+
+<div class="row cta-widget">
+    <div class="col">
+
+        <div class="card bg-body-tertiary js-cta-{{ widget.name }}" style="min-width:270px; position:relative;" tabindex="1">
+            <div class="card-body">
+                <h5 class="card-title text-truncate"><b class="js-cta-type">Link</b>: <span class="js-cta-url">.</span></h5>
+                <div class="row align-items-end">
+                    <div class="col">
+                        {% translate 'Preview' %}: <a href="#" target="_blank" class="card-link js-ctad-url"><span class="js-ctad-link">.</span> <i class="fas fa-link"></i></a></br>
+                        <small class="card-subtitle mb-2 text-muted ">{% translate 'Target' %}: <span class="js-cta-target">...</span></small>
+                    </div>
+                    <div class="col-12 col-sm-auto mt-2 text-end">
+                        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cta-{{ widget.name }}-modal" type="button" aria-haspopup="true" aria-expanded="false">
+                            {% translate 'Change link' %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="cta-{{ widget.name }}-modal" tabindex="-1" aria-labelledby="cta-{{ widget.name }}-modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="cta-{{ widget.name }}-modalLabel">{% translate 'Change link' %}</h1>
+                        <div class="form-check form-switch float-end">
+                            <input class="form-check-input js-cta-type-input" type="checkbox" role="switch" id="id_{{ widget.name }}-type" data-json-key="internal">
+                            <label class="form-check-label" for="id_{{ widget.name }}-type">{% translate 'Internal Link' %}</label>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group field-{{ widget.name }}-label js-cta-label-group">
+                            <label class="form-label" for="id_{{ widget.name }}-label">{% translate 'Label' %}:</label>
+                            <input type="text" id="id_{{ widget.name }}-label"
+                            class="form-control" data-json-key="label" data-json-text=".js-ctad-link">
+                        </div>
+
+                        <div class="form-group field-{{ widget.name }}-url js-cta-url-group mt-2 d-none">
+                            <label class="form-label" for="id_{{ widget.name }}-url">{% translate 'Extrenal Link' %}:</label>
+                            <input type="text" id="id_{{ widget.name }}-url" data-json-key="url" data-json-text=".js-cta-url" class="form-control">
+                        </div>
+
+                        <div class="form-group field-{{ widget.name }}-app js-cta-app-group mt-2 d-none">
+                            <label class="form-label">{% translate 'Internal Link' %}:</label>
+                            {% include 'admin/widgets/app_select.html' %}
+                        </div>
+
+                        <div class="form-group field-{{ widget.name }}-target js-cta-target-group mt-2">
+                            <label class="form-label" for="id_{{ widget.name }}-target">{% translate 'Target' %}:</label>
+                            <select id="id_{{ widget.name }}-target" class="form-select" data-json-key="target" data-json-text=".js-cta-target" data-json-default="_self">
+                                <option value="_self">{% translate 'Open in same Window' %}</option>
+                                <option value="_blank">{% translate 'Open in a new Window' %}</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% translate 'Close' %}</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-12 col-sm-12 col-md-1 col-lg-4">
+        <div class="d-none">
+            <input type="hidden" class="js-cta-input" data-cta-init="true" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value|stringformat:'s' }}"{% endif %} {% include "django/forms/widgets/attrs.html" %}>
+        </div>
+    </div>
+</div>

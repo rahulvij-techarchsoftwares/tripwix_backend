@@ -1,0 +1,21 @@
+{% extends "admin/change_form.html" %}
+{% load i18n static admin_urls admin_modify admin_kubi_tags %}
+{% block object-tools-items %}
+    {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+    {% if history_url %}
+        <li>
+            <a href="{{ history_url }}"
+               class="btn historylink btn-link link-body-emphasis">
+                <i class="fa fa-book"></i> {% trans "History" %}
+            </a>
+        </li>
+    {% endif %}
+    {% if has_absolute_url %}
+        <li>
+            <a href="{{ frontend_url }}/en/{{ original.slug }}"
+               class="btn btn-link viewsitelink">
+                <i class="fa fa-globe"></i> {% trans "View on site" %}
+            </a>
+        </li>
+    {% endif %}
+{% endblock %}

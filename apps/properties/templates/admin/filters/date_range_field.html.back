@@ -1,0 +1,68 @@
+{% load i18n admin_static static %}
+
+<link rel="stylesheet" href="{% static 'bootstrap-datepicker/css/bootstrap-datepicker3.min.css' %}"/>
+
+
+<li class="dropdown">
+    <a href="#" style="float: left;" onclick="return false;">{% blocktrans with filter_title=title %} By {{ filter_title }}{% endblocktrans %}</a>
+    <form method="get" id="{{ choices.0.system_name }}-form" action="." class="navbar-form" style="display: inline-block; padding-left: 0;">
+
+
+           {% for pair in choices.0.query_parts %}
+            {% ifnotequal pair.0 search_var %}
+
+              {% if pair.1|safe != "[u'']" %}
+
+                {% if pair.1|safe|first == "[" and pair.1|safe|last == "]" %}
+
+                    {% for x in pair.1 %}
+                      <input type="hidden" name="{{ pair.0 }}" value="{{ x }}"/>
+                    {% endfor %}
+
+                  {% else %}
+                    <input type="hidden" name="{{ pair.0 }}" value="{{ pair.1 }}"/>
+                  {% endif %}
+
+              {% endif %}
+            {% endifnotequal %}
+        {% endfor %}
+
+        <div class="input-daterange input-group" id="{{ choices.0.system_name }}-datepicker">
+
+            <input type="text" id="{{ choices.0.system_name }}-starting_date" class="date form-control"
+                    name="{{ choices.0.field }}gte" value="{{ choices.0.starting_date }}"/>
+
+            <span class="input-group-addon">to</span>
+
+            <input type="text" id="{{ choices.0.system_name }}-ending_date" class="date form-control"
+                   name="{{ choices.0.field }}lte" value="{{ choices.0.ending_date }}"/>
+
+            <span class="input-group-btn">
+                <a href="#" class="btn btn-danger" id="{{ choices.0.system_name }}-clear-button">
+                  <i class="fa fa-times"></i>
+                </a>
+            </span>
+
+            <span class="input-group-btn">
+                <button class="btn btn-info" id="{{ choices.0.system_name }}-search-button" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
+
+    </form>
+</li>
+
+
+<script type="text/javascript" src="{% static 'bootstrap-datepicker/js/bootstrap-datepicker.min.js' %}"></script>
+<script>
+    (function($){
+        $('#{{ choices.0.system_name }}-form').find('.input-daterange').datepicker({format: 'yyyy-mm-dd'});
+
+        $('#{{ choices.0.system_name }}-clear-button').click(function(){
+          $('#{{ choices.0.system_name }}-starting_date').val(null);
+          $('#{{ choices.0.system_name }}-ending_date').val(null);
+          return false;
+        });
+    })(django.jQuery);
+</script>

@@ -1,0 +1,77 @@
+{% include 'admin/edit_inline/tabular.html' %}
+<script type="text/javascript">
+{% comment %} (function($) {
+    var bathroomCount = 0;
+    
+    function toggleExtraField(row) {
+        var divisionType = $(row).find("select[id$='-division_type']").val();
+        var extraCell = $(row).find(".field-extra");
+        var wasBathroom = extraCell.is(":visible");
+        
+        if (divisionType === "9") {
+            extraCell.show();
+            if (!wasBathroom) {
+                bathroomCount++;
+            }
+        } else {
+            extraCell.hide();
+            if (wasBathroom) {
+                bathroomCount--;
+            }
+        }
+
+        toggleExtraHeader();
+    }
+    
+    function toggleExtraHeader() {
+        var extraHeader = $("th[data-label='Extra']");
+        if (bathroomCount > 0) {
+            extraHeader.show();
+        } else {
+            extraHeader.hide();
+        }
+    }
+    
+    function initializeRows() {
+        bathroomCount = 0;
+        
+        $(".dynamic-divisions").each(function() {
+            var divisionType = $(this).find("select[id$='-division_type']").val();
+            var extraCell = $(this).find(".field-extra");
+            
+            if (divisionType === "1") {
+                extraCell.show();
+                bathroomCount++;
+            } else {
+                extraCell.hide();
+            }
+        });
+        
+        toggleExtraHeader();
+    }
+    
+    $(document).ready(function() {
+        $("th[data-label='Extra']").hide();
+        
+        initializeRows();
+        
+        $(document).on('change', "select[id$='-division_type']", function() {
+            toggleExtraField($(this).closest('tr'));
+        });
+    });
+    
+    $(document).on('formset:added', (event, $row, formsetName) => {
+        $(event.target).find("select[id$='extra']").selectize();
+        
+        toggleExtraField($row);
+    });
+    
+    $(document).on('formset:removed', (event, $row, formsetName) => {
+        var divisionType = $row.find("select[id$='-division_type']").val();
+        if (divisionType === "9") {
+            bathroomCount--;
+            toggleExtraHeader();
+        }
+    });
+})(django.jQuery); {% endcomment %}
+</script>

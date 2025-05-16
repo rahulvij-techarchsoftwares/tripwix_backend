@@ -1,0 +1,25 @@
+{% extends "admin/property_change_list.html" %}
+{% load i18n static admin_list admin_urls %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static "admin/full_bootstrap_calendar/css/calendar.css" %}">
+  <link rel="stylesheet" href="{% static "admin/css/availability_calendar.css" %}">
+  <link rel="stylesheet" href="{% static "admin/css/availability_reasons_legend.css" %}">
+{% endblock %}
+
+
+{% block extrahead %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+{{block.super}}
+
+{% endblock %}
+
+
+{% block js_footer %}
+{{ block.super }}
+<script type="text/javascript" src="{% static "admin/full_bootstrap_calendar/js/calendar.js" %}"></script>
+{% endblock js_footer %}

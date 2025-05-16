@@ -1,0 +1,78 @@
+{% load i18n %}
+<script>
+    window.locale = {
+        "fileupload": {
+            "errors": {
+                "maxFileSize": "{% trans 'File is too big' %}",
+                "minFileSize": "{% trans 'File is too small' %}",
+                "acceptFileTypes": "{% trans 'Filetype not allowed' %}",
+                "maxNumberOfFiles": "{% trans 'Max number of files exceeded' %}",
+                "uploadedBytes": "{% trans 'Uploaded bytes exceed file size' %}",
+                "emptyResult": "{% trans 'Empty file upload result' %}"
+            },
+            "error": "{% trans 'Error' %}",
+            "start": "{% trans 'Start' %}",
+            "cancel": "{% trans 'Cancel' %}",
+            "destroy": "{% trans 'Delete' %}"
+        }
+    };
+</script>
+
+
+{% verbatim %}
+<!-- The template to display files available for upload -->
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    {%=file.errors%}
+    <li class="template-upload fade">
+        <div class="preview item-image"><span class="fade"></span></div>
+
+        <div class="info">
+            <strong class="error text-danger"></strong>
+            <p class="size">...</p>
+        </div>
+        
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+
+        <div class="btn_container">
+        {% if (!i && !o.options.autoUpload) { %}
+            <button class="start" disabled>
+                <span>{%=locale.fileupload.start%}</span>
+            </button>
+        {% } %}
+        {% if (!i) { %}
+            <button class="cancel">
+                <span></span>
+            </button>
+        {% } %}
+        </div>
+    
+    </li>
+{% } %}
+</script>
+<!-- The template to display files available for download -->
+<script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <li class="template-download fade item {% if (file.error) { %}error{% } %}" data-rel="{%=file.id%}" data-rev="{%=file.name%}" data-item="{%=file.item%}" id="{%=file.id%}">
+
+        <p class="tooltip"></p>
+
+
+        <div class="item-image"><img src="{%=file.thumbnail%}" /></div>
+
+        <div class="info">
+            {% if (file.error) { %}
+            <strong class="error text-danger">{%=file.error%}</strong>
+            {% } %}
+        </div>
+        
+        <div class="btn_container">
+            <span class="dragger"></span>
+            <a class="edit" href="#"></a>
+            <a class="remove" href="#"></a>
+        </div>
+
+    </li>
+{% } %}
+</script>
+{% endverbatim %}

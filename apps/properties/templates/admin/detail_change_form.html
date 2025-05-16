@@ -1,0 +1,139 @@
+{% extends 'admin/change_form.html' %}
+
+
+{% block js_footer %}
+{{block.super}}
+<script>
+
+    (function ($, window) {
+
+        //"input[id$='DiscountType']"
+
+        var fields_defaults = ['text', 'boolean', 'date', 'time', 'number', 'integer', 'description', 'number_with_value_type_selector'];
+
+        var HELP_TEXT_DESCRIPTION = '(limit_words, limit_chars), eg: "(100, 250)"';
+        var HELP_TEXT_VIDEO = 'max_videos, eg: "5"';
+
+        function show_default_field_value(option) {
+            // var class_to_show = null;
+            // if ($.inArray(option, fields_defaults) >= 0){
+            //    // class_to_show = ".field-initial_"option"_value";
+            // }
+
+            $.each(fields_defaults, function (index, value) {
+                var name = value;
+                if (value == 'boolean') {
+                    name = 'bool';
+                }
+                name = ".field-initial_" + name + "_value";
+                if (option == value) {
+                    $(name).removeClass("hide");
+                } else {
+                    $(name).addClass("hide");
+                }
+            });
+        }
+
+        $("#id_detail_type").change(function () {
+
+            if ($(this).val() == "option" || $(this).val() == "options" || $(this).val() == "integer_options") {
+
+                $("#options-group .module").css({ 'height': 'auto', 'overflow': 'hidden' })
+                $("#options-group .add-button-container").removeClass("hide");
+                $(".field-initial_number_with_value_type_selector_value").hide();
+                $(".field-initial_description_value").hide();
+                $(".field-initial_text_value").hide();
+                $(".field-admin_related_opts_permissions").show();
+
+            } else {
+
+                $("#options-group .module").css({ 'height': '1px', 'overflow': 'hidden' })
+                $("#options-group .add-button-container").addClass("hide");
+
+                $(".field-admin_related_opts_permissions").hide();
+            }
+
+            if ($(this).val() == "description") {
+                $(".field-unit").show();
+                $(".field-unit").find(".help-block").html(HELP_TEXT_DESCRIPTION);
+                $(".field-initial_number_with_value_type_selector_value").hide();
+                $(".field-initial_text_value").hide();
+                $(".field-initial_description_value").show();
+            } else if ($(this).val() == "trans_description") {
+                $(".field-unit").show();
+                $(".field-unit").find(".help-block").html(HELP_TEXT_DESCRIPTION);
+                $(".field-initial_number_with_value_type_selector_value").hide();
+                $(".field-initial_text_value").hide();
+                $(".field-initial_description_value").hide();
+            } else if ($(this).val() == "text") {
+                $(".field-unit").show();
+                $(".field-unit").find(".help-block").html(HELP_TEXT_DESCRIPTION);
+                $(".field-initial_number_with_value_type_selector_value").hide();
+                $(".field-initial_description_value").hide();
+                $(".field-initial_text_value").show();
+            } else if ($(this).val() == "trans_text") {
+                $(".field-unit").show();
+                $(".field-unit").find(".help-block").html(HELP_TEXT_DESCRIPTION);
+                $(".field-initial_number_with_value_type_selector_value").hide();
+                $(".field-initial_description_value").hide();
+                $(".field-initial_text_value").hide();
+            } else if ($(this).val() == "video") {
+
+                $(".field-unit").show();
+                $(".field-unit").find(".help-block").html(HELP_TEXT_VIDEO);
+
+
+                $(".field-in_search").hide();
+                $(".field-initial_number_with_value_type_selector_value").hide();
+            } else if ($(this).val() == "number_with_value_type_selector") {
+                $(".field-unit").hide();
+                $(".field-initial_number_with_value_type_selector_value").show();
+            } else {
+                $(".field-unit").hide();
+                $(".field-initial_number_with_value_type_selector_value").hide();
+                $(".field-initial_description_value").hide();
+                $(".field-initial_text_value").hide();
+            }
+
+            if ($(this).val() == "video") {
+                $(".field-in_search").hide();
+            } else {
+                $(".field-in_search").show();
+            }
+
+            // if($(this).val()=="" || $(this).val()=="date" || $(this).val()=="time" || $(this).val()=="description" || $(this).val()=="trans_description" || $(this).val()=="boolean" || $(this).val()=="color"){
+            //     $(".field-unit").hide();
+            // } else {
+            //     $(".field-unit").show();
+            // }
+
+
+            show_default_field_value($(this).val());
+
+        }).change();
+
+    })(django.jQuery, window);
+</script>
+
+
+<script>
+    // (function($,window){
+    //     $("#id_detail_type").change(function(){
+    //         if($(this).val()=="option" || $(this).val()=="options"){
+    //             $("#options-group .module").css({'height': 'auto', 'overflow': 'hidden'})
+    //             $("#options-group .add-button-container").removeClass("hide");
+    //         } else {
+    //             $("#options-group .module").css({'height': '1px', 'overflow': 'hidden'})
+    //             $("#options-group .add-button-container").addClass("hide");
+    //         }
+    //         if($(this).val()=="" || $(this).val()=="date" || $(this).val()=="time" || $(this).val()=="description" || $(this).val()=="trans_description" || $(this).val()=="boolean" || $(this).val()=="color"){
+    //             $(".field-unit").hide();
+    //         } else {
+    //             $(".field-unit").show();
+    //         }
+    //     }).change();
+
+    // })(django.jQuery,window);
+</script>
+
+{% endblock js_footer %}

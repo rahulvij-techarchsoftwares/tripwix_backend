@@ -1,0 +1,322 @@
+{% load i18n admin_urls admin_static admin_modify static admin_list bootstrap_admin %}
+{% load bootstrap_template_tags %}
+
+{% block wrapper_inline_formset %}
+<fieldset class="module aligned row inline-m2m-widget" id="wrapper-{{ inline_admin_formset.formset.prefix }}-widget">
+
+    <div class="inline-group" id="{{ inline_admin_formset.formset.prefix }}-group">
+        
+        {% block inline_add_button %}
+        <div class="col-xs-12 col-sm-4 col-lg-3 add-button-container">
+            <h3>
+                {% block inline_add_button_title %}
+                    {{ inline_admin_formset.opts.verbose_name_plural|capfirst }}
+                    ({{ inline_admin_formset.formset|length }})
+                {% endblock inline_add_button_title %}
+            </h3>   
+            <div class="fieldset-tools">
+                <div class="btn-group" id="add_{{ inline_admin_formset.formset.prefix }}_btn">
+                    <button type="button" class="btn btn-success">
+                        <i class="fa fa-plus-circle"></i> 
+                        {% block inline_add_button_text %}
+                            {% trans "Add" %} {{inline_admin_formset.opts.verbose_name }} 
+                        {% endblock inline_add_button_text %}
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-search-menu">
+                        <li class="search">
+                            <input type="search" class="form-control" placeholder="{% block inline_search_placeholder_text %}{% trans "Search" %} {{ inline_admin_formset.opts.verbose_name_plural }} {% endblock inline_search_placeholder_text %}">
+                        </li>
+                        <li class="loader hide">
+                            <i class="fa fa-circle-o-notch fa-spin"></i>
+                            {% trans 'Loading' %}
+                        </li>
+                        <li class="empty hide">
+                            {% trans 'No results found.' %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endblock inline_add_button %}
+
+
+        <div class="tabular inline-related {% if forloop.last %}last-related{% endif %} col-xs-12 col-sm-8 col-lg-9">
+            {{ inline_admin_formset.formset.management_form }}
+
+            {% block inline_formset %}
+            <div class="table-responsive">
+                {{ inline_admin_formset.formset.non_form_errors }}
+
+                <table class="table table-condensed m2m-widget-container" id="{{ inline_admin_formset.formset.prefix }}_container">
+                    <thead>
+                        <tr> 
+                            <th colspan="3">
+                                {{ inline_admin_formset.formset.form.fields.fk_object_field.label }}
+                            </th> 
+                               
+                            {% for field in inline_admin_formset.fields %}
+                                {% if not field.widget.is_hidden %} 
+                                    {% if forloop.first %}
+                                        <th class="original hide"></th>
+                                    {% endif %}
+                                    <th class="first{% if field.required %} required{% endif %}" data-label="{{ field.label|capfirst }}">
+                                        {{ field.label|capfirst }}
+                                        {% if field.help_text %}
+                                            &nbsp;<img src="{% static "admin/img/icon-unknown.gif" %}" class="help help-tooltip" width="10" height="10" alt="({{ field.help_text|striptags }})" title="{{ field.help_text|striptags }}" data-toggle="tooltip" />
+                                        {% endif %}
+                                 </th>
+                                {% endif %}
+                            {% endfor %}
+                        
+                            {% if inline_admin_formset.opts.show_change_link and change %}
+                                <th class="delete">{% trans "Change?" %}</th>
+                            {% endif %}
+
+                            {% if inline_admin_formset.formset.can_delete %}
+                                <th class="delete">{% trans "Delete?" %}</th>
+                            {% endif %}
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        {% for inline_admin_form in inline_admin_formset %}
+
+                            {% if inline_admin_form.form.non_field_errors %}
+                            <tr>
+                                <td colspan="{{ inline_admin_form|cell_count }}">
+                                    {{ inline_admin_form.form.non_field_errors }}
+                                </td>
+                            </tr>
+                            {% endif %}
+
+                            <tr class="form-row {% cycle "row1" "row2" %} {% if inline_admin_form.original or inline_admin_form.show_url %}has_original{% endif %}{% if forloop.last %} empty-form{% endif %}" id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
+
+                                <td class="original hide">
+
+                                    {% if inline_admin_form.original %}
+
+                                        {% if inline_admin_form.original|length > 0 %}
+                                            <span class="input-group-addon">
+                                                {{ inline_admin_form.original }}
+                                            </span>
+                                        {% endif %}
+
+                                    {% endif %}
+
+                                    {% if inline_admin_form.needs_explicit_pk_field %}
+                                        {{ inline_admin_form.pk_field.field }}
+                                    {% endif %}
+
+                                    {{ inline_admin_form.fk_field.field }}
+
+                                    {% spaceless %}
+                                    {% for fieldset in inline_admin_form %}
+                                        {% for line in fieldset %}
+                                            {% for field in line %}
+                                                {% if field.field.is_hidden %} 
+                                                    {{ field.field|add_class:"form-control" }} 
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endfor %}
+                                    {% endfor %}
+                                    {% endspaceless %}
+                                </td>
+                            
+                                <td scope="row" colspan="2" >
+                                   {{ inline_admin_form.form.fk_object }}
+                                </td>
+
+                    
+                                {% for fieldset in inline_admin_form %}
+                                    {% for line in fieldset %}
+                                        {% for field in line %}
+
+                                            {% if not field.field.is_hidden %} 
+                                            <td{% if field.field.name %} class="field-{{ field.field.name }}"{% endif %}>
+                                                {% include 'admin/includes/fields.html' %}
+                                            </td>
+                                            {% endif %}
+
+                                        {% endfor %}
+                                    {% endfor %}
+                                {% endfor %}
+                           
+
+                            {% if inline_admin_formset.formset.can_delete %}
+                                <td class="delete">
+                                    {% if inline_admin_form.original %}
+                                    <span class="inline-deletelink inline-remove-trigger">
+                                        <span class="cb">
+                                            {{ inline_admin_form.deletion_field.field }}
+                                        </span>
+                                        <i class="fa fa-trash-o"></i>
+                                        <span class="sr-only">{% trans 'Remove' %}</span>
+                                    </span>
+                                    {% endif %}
+                                    
+                                    {% if inline_admin_formset.formset.change_form_url %}
+                                        {% url inline_admin_formset.formset.change_form_url inline_admin_form.fk_field.field.value %}
+                                    {% endif %}
+
+                                </td>
+                            {% endif %}
+
+                            </tr>
+
+                            {% if inline_admin_form.form.errors %}
+                            <tr class="form-row" colspan="{{ inline_admin_form|cell_count }}">
+                               <td>
+                                   <ul>
+                                   {% for error in inline_admin_form.form.errors %}
+                                        <li class="text-danger">{{ error }}</li>
+                                   {% endfor %}
+                                   </ul>
+                               </td>
+                            </tr>
+                            {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div> <!-- end table -->
+            {% endblock inline_formset %}
+        
+            
+            {% block inline_empty_formset %}
+            <div class="well m2m-widget-well" id="{{ inline_admin_formset.formset.prefix }}_info">
+                <h4>
+                    <i class="fa fa-arrow-circle-left"></i>
+                    {% trans "add" %} {{ inline_admin_formset.opts.verbose_name_plural }}
+                </h4>
+            </div>
+            {% endblock inline_empty_formset %}
+
+        </div> <!-- inline-related -->
+
+    </div>
+</fieldset>
+{% endblock wrapper_inline_formset %}
+
+<script type="text/html" id="empty_{{ inline_admin_formset.formset.prefix }}_search_item">
+    {% block template_search_item %}
+    <a href="#" class="add-or-remove-search-item">
+        <i class="fa checkbox"></i>
+        <%= name %>
+    </a>
+    {% endblock template_search_item %}
+</script>
+
+
+{% with inline_admin_formset.formset.empty_form as empty_form %}
+<script type="text/html" id="empty_{{ inline_admin_formset.formset.prefix }}_item">
+    {% block template_empty_form %}
+
+    <td class="hide">
+        {% for hidden in empty_form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+    </td> 
+    
+    <td colspan="3">
+        <%= name %>
+    </td>
+
+    {% for inline_admin_form in inline_admin_formset %}
+        {% if forloop.last %}
+            {% for fieldset in inline_admin_form %}
+                {% for line in fieldset %}
+                    {% for field in line %}
+
+                        {% if not field.field.is_hidden %} 
+                        <td {% if field.field.name %} class="field-{{ field.field.name }}"{% endif %}>
+                            {% include 'admin/includes/fields.html' %}
+                        </td>
+                        {% endif %}
+
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+    <td class="delete">
+        <span class="inline-deletelink inline-remove-trigger">
+            <i class="fa fa-trash-o"></i><span class="sr-only">{% trans 'Remove' %}</span>
+        </span>
+    </td>
+    {% endblock template_empty_form %}
+</script>
+{% endwith %}
+
+
+<script type="text/html" id="edit_{{ inline_admin_formset.formset.prefix }}_modal">
+    {% block template_modal_changeform %}
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Notes</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe id="iframe" src="" width="100%" height="100%"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close-btn" data-dismiss="modal">
+                        {% trans "Cancel" %}
+                    </button>
+                    <button type="submit" class="btn btn-info save-btn">
+                        {% trans "Save" %}
+                    </button>
+                </div>
+            </div>
+        </div>
+    {% endblock template_modal_changeform %}
+</script>
+
+{% block template_script %}
+<script>
+;(function($,jQuery,Backbone){
+
+    function init_plugins(row) {
+
+
+        $(row).find(".custom-textarea-widget > textarea").each(function (index, element) {
+            $(element).customTextarea({});
+        });
+
+        $(row).find('select[multiple="multiple"]').each(function (index, element) {
+            $(element).selectize({
+                plugins: ['remove_button', ], //  'drag_drop' 'restore_on_backspace'
+                sortField: 'text',
+                // %(create)s
+            });
+        });
+    }
+
+    $(document).ready(function(){
+
+        $("#wrapper-{{ inline_admin_formset.formset.prefix }}-widget").customBackboneInline({
+            ajaxUrl: '{{ inline_admin_formset.formset.ajax_url }}',
+            formPrefix: '{{ inline_admin_formset.formset.prefix }}',
+            formFkField: '{{ inline_admin_formset.formset.form.fk_object_field_name }}',
+            added:  function(row) {
+                init_plugins(row);
+            },
+            removed: function(row) {
+                // alert('Removed');
+                console.log(row);
+            },
+            updated: function(row, data) {
+                // alert('Removed');
+                console.log(data);
+                 console.log('row');
+                console.log(row);
+            }
+        });
+
+    });
+
+})(django.jQuery,jQuery,Backbone);
+</script>
+{% endblock template_script %}

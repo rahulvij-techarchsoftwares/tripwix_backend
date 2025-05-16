@@ -1,0 +1,105 @@
+# Django Template
+settings_local.py
+uploads/
+tripwix_backend/static/
+.settings
+*.log
+
+# No Mypage templates
+mypages_templates/*
+
+# Python
+*.pyc
+
+# Editor Specific
+.pydevproject
+.project
+*.sublime-workspace
+.sublime-project
+.sass-cache/
+# intellij IDE (PyCharm)
+.idea/
+
+# Source maps
+*.map
+
+# VirtualEnv
+.venv
+
+# Coverage Files
+htmlcov
+.coverage
+
+# Documentation
+docs/_build/
+
+# Ficheiros macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Vagrant
+.vagrant/
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Windows Hidden Files
+$RECYCLE.BIN/
+*.lnk
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ----- Nodejs-related tools (Grunt, Gulp, Browserify, Batman...)
+# Also including css regression data
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules/
+backstop_data/
+npm-debug.log
+
+
+# Word temporary
+~$*.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Video Files
+*.flv
+*.mp4
+
+# Sound Files
+*.mp3
+
+# Celery files
+celerybeat.pid
+celerybeat-schedule
+
+# pytest
+pytest.ini
+
+upload
+images
+!apps/users/static/
+
+# google auth
+google_secret.json
+.env

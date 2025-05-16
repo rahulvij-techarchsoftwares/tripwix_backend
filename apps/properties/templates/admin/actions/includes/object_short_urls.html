@@ -1,0 +1,26 @@
+<span class="property-short-link" data-lang="{{ lang_code }}">
+  {% if object.get_short_url %}
+    {{ object.get_short_url }}
+  {% else %}
+    {{request.scheme}}://{{request.get_host}}{{ object.get_absolute_url }}
+  {% endif %}
+<br>
+</span>
+
+<span class="brochure-short-link" data-lang="{{ lang_code }}">
+{% with object.brochures.all as brochures %}
+
+  {% for brochure in brochures %}
+
+    <span class="brochure-type-{{ brochure.brochure_type.pk }}">
+      {% if brochure.get_short_url %}
+        {{ brochure.get_short_url }}
+      {% else %}
+        {{request.scheme}}://{{request.get_host}}{{ brochure.get_absolute_url }}
+      {% endif %}
+      <br>
+    </span>
+
+  {% endfor %}
+{% endwith %}
+</span>

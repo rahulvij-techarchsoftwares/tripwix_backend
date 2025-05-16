@@ -1,0 +1,161 @@
+{% load i18n admin_urls admin_static %} 
+
+<div class="modal fade" id="modalBrochures" tabindex="-1" role="dialog" aria-labelledby="modalBrochuresLabel">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalBrochuresLabel">{% trans "Brochures" %}</h4>
+      </div>
+      <div class="modal-body">
+        {% get_available_languages as languages %}
+
+            {% if not brochures %}
+                <div class="alert alert-info" role="alert">
+                  <strong>{% trans "No Brochures Generated!" %}</strong> 
+                  {% trans "To generate the brochures click the button below, and then refresh this page." %}
+                </div>
+            {% else %}
+             
+            {% if not languages %}
+
+                 <div class="row">
+                    {% for brochure in brochures %}
+                        <div class="col-sm-4 col-md-4">
+                          
+                            <div class="thumbnail ">
+                                <a href="{% url "brochures:view" filename=brochure.filename %}"
+                                title="{{ brochure.brochure_type }}">
+                                    <img src="http://bsaefiling.fincen.treas.gov/images/pdf_icon_fbarfiler.png">
+                                </a>
+                              <div class="caption text-center">
+                                <p>{{ brochure.brochure_type }}</p>
+                                
+                                <p>
+                                    <a href="{% url "brochures:view" filename=brochure.filename %}" class="btn btn btn-inverse view_brochure" role="button" title="View in Browser" data-title="{{ brochure.brochure_type }}" target="_blank">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="{% url "brochures:download" filename=brochure.filename %}" class="btn btn btn-inverse" role="button" title="Download File">
+                                        <i class="fa fa-download"></i>
+                                    </a>
+                                </p>
+                              </div>
+                            </div>
+                         
+                        </div>
+                    {% endfor %}
+                </div>
+
+            {% else %}
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    {% for lang_code, lang_name in languages %}
+                        <li role="presentation" class="{% if forloop.counter0 == 0 %} active {% endif %}">
+                            <a href="#{{ lang_code }}" aria-controls="{{ lang_code }}" role="tab" data-toggle="tab" title="{{ lang_name }}">
+                                {{ lang_code }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    {% for lang_code, lang_name in languages %}
+                        {% language lang_code %}
+
+                        <div role="tabpanel" class="tab-pane {% if forloop.counter0 == 0 %} active {% endif %}" id="{{ lang_code }}">
+                            <div class="row">
+                                {% for brochure in brochures %}
+                                    <div class="col-sm-4 col-md-3">
+                                      
+                                        <div class="thumbnail ">
+                                            <a href="{% url "brochures:view" filename=brochure.filename %}"
+                                            title="{{ brochure.brochure_type }} - {{ lang_name }}">
+                                                <img src="http://bsaefiling.fincen.treas.gov/images/pdf_icon_fbarfiler.png">
+                                            </a>
+                                          <div class="caption text-center">
+                                            <p>{{ brochure.brochure_type }}</p>                      
+                                            <p>
+                                                <a href="{% url "brochures:view" filename=brochure.filename %}" class="btn btn-inverse view_brochure" role="button" title="View in Browser" data-title="{{ brochure.brochure_type }} - {{ lang_name }}" target="_blank">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                                <a href="{% url "brochures:download" filename=brochure.filename %}" class="btn btn-inverse" role="button" title="Download File">
+                                                    <i class="fa fa-download"></i>
+                                                </a>
+
+                                              {% if brochure.get_short_url %}
+                                                <button type="button" class="btn btn-inverse" data-container="body" data-toggle="popover" data-placement="bottom" data-content="{{ brochure.get_short_url }}">
+                                                  <i class="fa fa-link"></i>
+                                                </button>
+                                              {% endif %}
+
+                                            </p>
+                                          </div>
+                                        </div>
+                                     
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        {% endlanguage %}
+                    {% endfor %}
+                </div>
+            {% endif%}
+
+            {% endif %}
+
+      </div>
+      <div class="modal-footer">
+        <div style="display: inline;">
+            <span class="loading" style="display: none;">
+                &nbsp;{% trans "Generating Brochures ..." %}&nbsp;
+                <img src="{% static "admin/images/gears.gif" %}">&nbsp;&nbsp;&nbsp;
+            </span>
+            <button type="button" class="btn btn-primary" id="generate_brochures">
+                {% trans "Generate Brochures" %}      
+            </button>
+        </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+            {% trans "Close" %}
+        </button> 
+      </div>
+    </div>
+  </div>
+</div>
+
+{% url opts_nav|admin_urlname:"generate_brochures" original.pk|admin_urlquote as generate_brochures_url %}
+<script type="text/javascript">
+$(function () {
+  $("a.view_brochure").on("click",function(){
+      var w = window.open($(this).attr('href'), "_blank", "width=500,height=500");
+      w.document.title = $(this).data('title');
+  });
+
+  $('[data-toggle="popover"]').click(function(e){
+      var text = $(this).data('content');
+      window.prompt("Copy brochure url:", text);
+      e.stopPropagation();
+   });
+
+  $("#generate_brochures").on("click",function(){
+      var self = $(this);
+      self.hide();
+      self.parent().find('.loading').show();
+
+      $.ajax({
+          type:'POST',
+          url:'{{ generate_brochures_url }}',
+          data: {},
+          dataType: 'json',
+          contentType: 'application/json',
+          processData:false,
+          headers:{'X-CSRFToken':getCookie('csrftoken')},
+          success: function(response){
+              self.show();
+              self.parent().find('.loading').hide();
+          }
+      });
+  });
+});
+</script>

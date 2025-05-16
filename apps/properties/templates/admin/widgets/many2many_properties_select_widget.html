@@ -1,0 +1,301 @@
+{% load i18n static %}
+{{output}}
+
+<div class="btn-group" id="add_{{name}}_btn">
+    <button type="button" class="btn btn-success">
+        <i class="fa fa-plus-circle"></i> {{add_to|safe}} <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-search-menu">
+        <li class="search"><input type="search" class="form-control" placeholder="{{search_for|safe}}"></li>
+        <li class="loader hide">
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            {% trans 'Loading' %}
+        </li>
+        <li class="empty hide">
+            {% trans 'No results found.' %}
+        </li>
+    </ul>
+</div>
+
+{% comment %}
+list-group-item
+{% endcomment %}
+
+<script type="text/html" id="empty_{{name}}_search_item">
+    <a href="#" class="">
+        <i class="fa"></i> 
+        <div class="">    
+            <span class="title"> <%= name %> </span> 
+            <span class="title"> <%= title %> </span> 
+        </div>
+        <div class="">    
+            <span class="title"> <%= reference %> </span> 
+            <span class="title"> <%= location %> </span> 
+        </div>
+    </a>
+</script>
+
+
+<script type="text/html" id="empty_{{name}}_item">
+    {% if layout == 'table' %}
+        <td width="1"><%= thumbnail %></td>
+        <td><%= name %></td>
+        <td class="actions_cell">
+            <button type="button" class="close" aria-hidden="true">&times;</button>
+        </td>
+    {% else %}
+        <span class="image"><%= thumbnail %></span>
+        <span class="text"><%= name %></span>
+        <span class="actions_cell"><button type="button" class="close" aria-hidden="true">&times;</button></span>
+    {% endif %}
+</script>
+
+
+{% if layout == 'table' %}
+    <table class="table table-condensed hide m2m-widget-container" id="{{name}}_container">
+        <tbody></tbody>
+    </table>
+{% else %}
+    <ul class="hide m2m-widget-container" id="{{name}}_container">
+        
+    </ul>
+{% endif %}
+
+<div class="well m2m-widget-well" id="{{name}}_info">
+    <h4>
+        <i class="fa fa-arrow-circle-left"></i>
+        {{use_the|safe}}
+    </h4>
+</div>
+
+<script>
+(function($,jQuery,Backbone){
+
+    Backbone.$ = jQuery;
+    var _sync = Backbone.sync;
+        Backbone.sync = function(method, model, options){
+        options.beforeSend = function(xhr){
+            var token = $(':input[name="csrfmiddlewaretoken"]').val();
+            xhr.setRequestHeader('X-CSRFToken', token);
+        };
+        return _sync(method, model, options);
+    };
+
+    var objects_field = $("#id_{{name}}");
+    objects_field.attr('name', 'related')
+    var ObjectModel = Backbone.Model.extend();
+    var SearchObjectModel = Backbone.Model.extend();
+    var ObjectCollection = Backbone.Collection.extend({
+        model: ObjectModel,
+        add_or_remove: function(model){
+            var obj = this.get(model.id);
+            if(obj!==undefined){
+                this.remove(obj);
+            } else {
+                this.add(model.attributes);
+            }
+        }
+    });
+
+    var object_collection = new ObjectCollection();
+
+    var SearchObjectCollection = Backbone.Collection.extend({
+        url: "{% url request_url %}",
+        model: SearchObjectModel,
+        initialize: function(){
+            this.listenTo(object_collection, 'add', this.update);
+            this.listenTo(object_collection, 'remove', this.update);
+        },
+        update: function(){
+            if(this.length==0 || this.length===undefined){return;}
+            this.each(function(obj){
+                var prod = object_collection.get(obj);
+                if(prod!==undefined){
+                    obj.set("is_selected", true);
+                } else {
+                    obj.set("is_selected", false);
+                }
+            });
+        }
+    });
+
+    var search_collection = new SearchObjectCollection();
+
+
+    var ObjectItemView = Backbone.View.extend({
+        tagName: '{% if layout == 'table' %}tr{% else %}li{% endif %}',
+        template: _.template($("#empty_{{name}}_item").html()),
+        events: {
+            'click .close': 'destroy'
+        },
+        initialize: function(){
+            this.listenTo(this.model, "change", this.render);
+            this.listenTo(this.model, "remove", this.eliminate);
+            this.render();
+            this.$el.data("id", this.model.id);
+        },
+        render: function(){
+            var data = this.model.attributes;
+            this.$el.html(this.template(data));
+            return this;
+        },
+        destroy: function(){
+            object_collection.remove(this.model);
+        },
+        eliminate: function(){
+            this.remove();
+        }
+    });
+
+    var SearchItemView = Backbone.View.extend({
+        tagName: 'li',
+        template: _.template($("#empty_{{name}}_search_item").html()),
+        className: 'search-item',
+        events: {
+            "click a": "click"
+        },
+        initialize: function(){
+            this.listenTo(this.model, "change", this.render);
+            this.render();
+            this.$el.prop("id", "object_"+this.model.id);
+        },
+        render: function(){
+            var data = this.model.attributes;
+            // var output = '<a href="#"><i class="fa"></i>' + this.model.attributes.name + '</a>';
+            this.$el.html(this.template(data));
+            //this.$el.html(output);
+            this.handle_icon();
+        },
+        handle_icon: function(){
+            var icon = this.$el.find(".fa");
+            icon.removeClass("fa-check-square");
+            if(this.model.get("is_selected")){
+                icon.addClass("fa-check-square");
+            }
+        },
+        click: function(){
+            var icon = this.$el.find(".fa");
+            icon.removeClass("fa-check-square");
+            object_collection.add_or_remove(this.model);
+            return false;
+        }
+    });
+
+    var AddBtnView = Backbone.View.extend({
+        fetched: false,
+        el: '#add_{{name}}_btn',
+        events: {
+            "click button.btn": "open",
+            "keyup .search :input": "fetch",
+        },
+        initialize: function(){
+            var _self = this;
+            this.fetched = false;
+            $("body").on("click", function(event){
+                if($(event.target).parents(_self.__proto__.el).length==0){
+                    _self.$el.find(".dropdown-menu").removeClass("show");
+                }
+            });
+            this.listenTo(search_collection, 'sync', this.add_search_items);
+        },
+        open: function(){
+            var _self = this;
+            this.$el.find(".dropdown-menu").addClass("show");
+            if(this.fetched){return;}
+            this.fetch();
+        },
+        fetch: function(){
+            var _self = this;
+            _self.$el.find(".loader").removeClass("hide");
+            _self.$el.find(".empty").addClass("hide");
+            search_collection.fetch({
+                data: {term:_self.$el.find(".search input").val()},
+                success: function(collection){
+                    _self.fetched = true;
+                    _self.$el.find(".loader").addClass("hide");
+                    if(collection.length<1){
+                        _self.$el.find(".empty").removeClass("hide");
+                    }
+                }
+            });
+        },
+        add_search_items: function(collection){
+            var _self = this;
+            this.$el.find(".search-item").remove();
+            collection.each(function(obj){
+                var item = new SearchItemView({model: obj});
+                _self.$el.find(".dropdown-menu").append(item.$el);
+            });
+            search_collection.update();
+        }
+    });
+
+    var ObjectContainerView = Backbone.View.extend({
+        el: '#{{name}}_container',
+        initialize: function(){
+            this.listenTo(object_collection, 'add', this.add_model);
+            this.listenTo(object_collection, 'remove', this.handle_object_event);
+        },
+        add_model: function(obj){
+            var item = new ObjectItemView({model:obj});
+            {% if layout == 'table' %}
+            this.$el.find("tbody").append(item.$el);
+            {% else %}
+            this.$el.append(item.$el);
+            {% endif %}
+            this.handle_object_event();
+        },
+        handle_object_event: function(){
+            if(object_collection.length>0){
+                $("#{{name}}_container").removeClass("hide");
+                $("#{{name}}_info").addClass("hide");
+            } else {
+                $("#{{name}}_container").addClass("hide");
+                $("#{{name}}_info").removeClass("hide");
+            }
+
+            var new_val = new Array();
+            object_collection.each(function(obj){
+                new_val.push(obj.id);
+            });
+            objects_field.val(new_val.join(","));
+        }
+    });
+
+    var object_container = new ObjectContainerView();
+    var add_object = new AddBtnView();
+
+    $(document).ready(function(){
+        // CLEAN
+        $(".field-{{name}} label, .field-{{name}} .add-another").remove();
+
+        var tools = $('<div class="fieldset-tools"></div>');
+        tools.append(add_object.$el);
+
+        if ($("fieldset.{{name}} > div").length > 0){
+            setTimeout(function(){
+                $("fieldset.{{name}} > div").eq(0).append(tools);
+            }, 50);
+        }else{
+
+            setTimeout(function(){
+                $("fieldset > div").eq(0).append(tools);
+             }, 50);
+        }
+
+        if(objects_field.val().length>0){
+            $.ajax({
+                url: "{% url request_url %}",
+                data: {fetch: objects_field.val()}
+            })
+            .done(function( data ) {
+                for (var i = 0; i < data.length; i++) {
+                    object_collection.add(data[i]);
+                };
+            });
+        }
+
+    });
+
+})(django.jQuery,$,Backbone);
+</script>

@@ -1,0 +1,61 @@
+.reasons_legend{
+      padding: 0;
+      margin: 0;
+    }
+.reasons_legend li{
+  display: inline-block;
+  width: 100%;
+  min-height: 30px;
+  
+  /* For IE 7 */
+  zoom: 1;
+  *display: inline;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.reasons_legend li span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;      
+}
+.reasons_legend li strong {
+  font-size: 14px;     
+}
+
+.events_list_info{
+  padding-left: 20px;
+}
+
+.events_list_info .values{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.events_list_info .values span:nth-child(1){
+  width: 80px;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+.events_list_info .values span:nth-child(2){
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.events_list_info .actions{
+  float: left;
+  display: block;
+  position: relative;
+  padding-top: 10px;
+}
+
+#ui-datepicker-div{
+  z-index: 10 !important;
+  background-color: white;
+  border: 2px solid grey;
+  padding: 20px;		
+}

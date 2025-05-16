@@ -1,0 +1,13 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="{% static "admin/css/default_admin.css" %}" />
+  {{ block.super }}
+{% endblock %}
+
+{% block footer %}
+  {{ block.super }}
+  <script type="text/javascript" src='{% static 'admin/js/tabbed_translation_fields.js' %}'></script>
+  <script type="text/javascript" src='{% static 'admin/js/default_admin.js' %}'></script>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'admin/change_form.html' %}
+
+
+{% block js_footer %}
+    {{ block.super }}
+    <script>
+        (function ($, window) {
+            $("#id_field_type").change(function () {
+                const inline = document.querySelector('#options-group .module');
+                const enable_unit_for = ["text", "option", "options", "number", "integer"];
+                if ($(this).val() == "option" || $(this).val() == "options") {
+                    inline.style.display = 'block'
+                    $("#options-group .add-button-container").removeClass("hide");
+                } else {
+                    inline.style.display = 'none'
+                }
+                if ($(this).val() == "app") {
+                    $(".field-app_model").show();
+                    $(".field-app_selectable").show();
+                } else {
+                    $(".field-app_model").hide();
+                    $(".field-app_selectable").hide();
+                }
+                if (enable_unit_for.includes($(this).val())) {
+                    $(".field-unit").show();
+                } else {
+                    $(".field-unit").hide();
+                }
+            }).change();
+
+        })(django.jQuery, window);
+    </script>
+{% endblock js_footer %}

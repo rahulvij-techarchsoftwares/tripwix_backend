@@ -1,0 +1,36 @@
+{% extends "admin/advanced_search_change_list.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <style type="text/css">
+	.title_property{
+		color: #666;
+		font-size: 11px;
+		font-style: italic; 
+	}
+	.name_property{
+
+	}
+  </style>
+{% endblock %}
+
+
+{% block extrahead %}
+{{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+{{ block.super }}
+{% endblock %}
+
+
+{% block js_footer %}
+{{ block.super }}
+<script type="text/javascript">
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip();
+	});
+</script>
+{% endblock js_footer %}

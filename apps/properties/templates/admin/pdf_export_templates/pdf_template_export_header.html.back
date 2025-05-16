@@ -1,0 +1,5 @@
+{% extends 'admin/pdf_export_templates/pdf_template_export.html' %}
+{% load i18n static %}
+
+{% block content %}
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+    <style>
+    html{
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    p,a,h1,h2,h3,h4,h5,h6,div,br,li,td,article{
+        -o-user-select: text;
+        -moz-user-select: text;
+        -webkit-user-select: text;
+        user-select: text;
+    }
+
+    </style>
+{% endblock %}
+
+{% block title %}{{ title }} | {% trans 'Admin' %}{% endblock %}
+
+{% block branding %}
+    <a href="{% url 'admin:index' %}" class="navbar-brand" id="site-name"><i class="fa fa-leaf"></i> <span>{% trans 'Administration' %}</span></a>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

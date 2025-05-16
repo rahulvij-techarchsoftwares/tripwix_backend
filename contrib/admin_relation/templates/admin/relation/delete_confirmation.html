@@ -1,0 +1,12 @@
+{% extends "admin/delete_confirmation.html" %}
+{% load i18n admin_urls admin_relation_modify %}
+
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+{% relation_admin_breadcrumbs %}
+&rsaquo; <a href="{% relation_admin_url 'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+&rsaquo; <a href="{% relation_admin_url 'change' object.pk|admin_urlquote  %}">{{ object|truncatewords:"18" }}</a>
+&rsaquo; {% trans 'Delete' %}
+</div>
+{% endblock %}

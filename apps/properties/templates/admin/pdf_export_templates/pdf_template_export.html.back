@@ -1,0 +1,40 @@
+{% extends 'admin/pdf_export_templates/pdf_template_export_base.html' %}
+{% load i18n static humanize %}
+
+{% block content %}
+
+<div class="container">
+  <h2>{% trans 'Exported data' %}</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        {% for field in fields %}
+          <th>{{ field}}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for obj in values %}
+      <tr>
+        {% for each in obj %}
+          {% if MEDIA_URL in each %}
+
+            <td>{{ each }}<img src="{{ each }}"/></td>
+          {% else %}
+          <td>{{ each }}</td>
+          {% endif %}
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% for obj in objects %}
+  {{ obj }}
+  {% for field in fields %}
+    {{ field }}
+  {% endfor %}
+{% endfor %}
+
+{% endblock %}

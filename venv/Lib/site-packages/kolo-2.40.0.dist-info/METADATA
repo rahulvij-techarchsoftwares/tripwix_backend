@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: kolo
+Version: 2.40.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Requires-Dist: asgiref>=3.6.0
+Requires-Dist: cerberus>=1.3.4
+Requires-Dist: click>=7.1.2
+Requires-Dist: httpx
+Requires-Dist: importlib-metadata>=3.6 ; python_full_version < '3.10'
+Requires-Dist: mocket>=3.13.1
+Requires-Dist: more-itertools
+Requires-Dist: msgpack>=1.0.0
+Requires-Dist: platformdirs>=4.2.2
+Requires-Dist: sqlglot>=23.6.4
+Requires-Dist: tabulate
+Requires-Dist: tomli>=2.0.0 ; python_full_version < '3.11'
+Requires-Dist: toolz>=0.11.1
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: ulid-py>=1.1.0
+Requires-Dist: pygments[windows-terminal] ; extra == 'cli'
+Provides-Extra: cli
+Summary: See everything happening in your running Django app
+Author-email: Wilhelm Klopp <team@kolo.app>
+License: © Kolo
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://kolo.app
+Project-URL: Changelog, https://docs.kolo.app/en/latest/python-changelog.html
+Project-URL: Repository, https://github.com/kolofordjango/kolo
+
+# Kolo
+
+See everything happening in your running Django app
+
+More information: https://kolo.app
+
+![Annotated Kolo screenshot](https://user-images.githubusercontent.com/7718702/120298398-f3d17800-c2c1-11eb-9052-9adbbff0b5f5.png)
+

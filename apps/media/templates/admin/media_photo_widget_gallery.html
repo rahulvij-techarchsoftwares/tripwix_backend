@@ -1,0 +1,26 @@
+{% load i18n %}
+
+
+<div class="modal fade media-photo-widget-modal"
+     id="media-{{ widget.name }}-photo-modal"
+     tabindex="-1"
+     role="dialog"
+     data-url="{{ photos_url }}"
+     aria-labelledby="mediaGalleryLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mediaGalleryLabel">{% trans 'Choose Images' %}</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="media-items-gallery js-photo-wrapper"></ul>
+      </div>
+      <div class="modal-footer">
+        <ul class="pagination js-photo-pagination"></ul>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">{% trans 'Close' %}</button>
+      </div>
+    </div>
+  </div>
+</div>

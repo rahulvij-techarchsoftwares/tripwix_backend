@@ -1,0 +1,63 @@
+
+.sorted-m2m-container .title{
+    border: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+    background-color:#eee;
+}
+
+
+ul.sorted_list {
+    display: block;
+    min-height: 120px;
+    max-height: 400px;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    list-style-type: none;
+    text-align: left;
+    border:1px #CCC solid;
+    border-right:0px;
+    padding:0px !important;
+    margin:0px 0px 10px 0px !important;
+}
+    
+ul.sorted_list li {
+    list-style-type: none;
+    text-align: left;
+    overflow: hidden;
+    line-height:32px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    background: #FFF;
+    border-bottom:1px #CCC solid;
+    color:#333;
+}
+
+ul.sorted_list li:hover{
+    opacity: 0.8;
+}
+ul.sorted_list li.active{
+    background: #FFFAD8;
+}
+
+ul.sorted_list li i{
+    padding:0px 10px;
+    line-height:32px;
+    color:#888;
+}
+ul.sorted_list li, ul.sorted_list label {
+    cursor: move;
+    display:block;
+    font-weight: normal;
+    margin:0px;
+}
+
+.selector .selector-available ul.sorted_list input{
+    width:auto;
+    height:auto;
+    display:inline-block;
+    margin-right:8px;
+    position:relative;
+    top:2px;
+}

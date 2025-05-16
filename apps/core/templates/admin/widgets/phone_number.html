@@ -1,0 +1,9 @@
+<div class="input-group">
+  {% include "django/forms/widgets/input.html" %}
+  <script>
+    var input = document.querySelector("#{{ widget.attrs.id }}");
+    window.intlTelInput(input, {
+      // any initialisation options go here
+    });
+  </script>
+</div>

@@ -1,0 +1,16 @@
+{% extends "admin/change_list_filters.html" %}
+{% load i18n admin_list bootstrap_admin %}
+
+{% comment %}
+{% if cl.date_hierarchy or cl.has_filters %}
+<ul class="nav navbar-nav">
+	{% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
+
+	{% block filters %}
+		{% if cl.has_filters %}
+			{% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
+		{% endif %}
+	{% endblock %}
+</ul>
+{% endif %}
+{% endcomment %}

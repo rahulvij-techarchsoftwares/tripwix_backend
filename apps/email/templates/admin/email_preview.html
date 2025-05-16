@@ -1,0 +1,54 @@
+{% extends 'admin/change_form.html' %}
+{% load i18n admin_urls %}
+
+{% block content %}
+
+  {% block object-toolbar %}
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        {% block object-toolbar-cancel %}
+        <a href="{% url opts|admin_urlname:'changelist' %}" class="btn btn-secondary">{% trans 'Go Back' %}</a>
+        {% endblock object-toolbar-cancel %}
+      </div>
+    </div>
+  {% endblock object-toolbar %}
+
+  <div class="email-header container-fluid mt-2">
+    <h3>{{ subject }}</h3>
+    <div>
+      <ul class="list-unstyled">
+        <li class="text-muted">
+          <strong>{% trans 'From' %}: </strong>
+          <span> &lt;{{ from_email }}&gt;</span>
+        </li>
+        <li class="text-muted">
+          <strong>{% trans 'To' %}: </strong>
+          <span> &lt;{{ to_email }}&gt;</span>
+        </li>
+    </ul>
+  </div>
+
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-html-tab" data-bs-toggle="tab" href="#nav-html" role="tab" aria-controls="nav-html" aria-selected="true">Html</a>
+      <a class="nav-item nav-link" id="nav-html-source-tab" data-bs-toggle="tab" href="#nav-html-source" role="tab" aria-controls="nav-html-source" aria-selected="true">Html (source)</a>
+      <a class="nav-item nav-link" id="nav-text-tab" data-bs-toggle="tab" href="#nav-text" role="tab" aria-controls="nav-text" aria-selected="false">Text</a>
+    </div>
+  </nav>
+  <div class="tab-content">
+    <div class="tab-pane show active" id="nav-html" role="tabpanel" aria-labelledby="nav-html-tab">
+      <div class="ratio ratio-16x9">
+        <iframe title="email html preview" src="?html_only=true"></iframe>
+      </div>
+    </div>
+    <div class="tab-pane p-3 bg-light" id="nav-html-source" role="tabpanel" aria-labelledby="nav-html-source-tab">
+      <pre>{{ html_content|force_escape }}</pre>
+    </div>
+    <div class="tab-pane p-3" id="nav-text" role="tabpanel" aria-labelledby="nav-text-tab">
+      <pre>{{ text_content|force_escape }}</pre>
+    </div>
+  </div>
+
+
+
+{% endblock %}

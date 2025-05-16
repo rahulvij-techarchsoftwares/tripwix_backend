@@ -1,0 +1,12 @@
+{% load i18n %}
+   <label for="id_{{ name }}">
+	      {{ field.label }}:
+		</label>
+  <input class="form-control" id="datetimepicker" name='{{ name }}' type="text">
+
+  <script>
+    $("#datetimepicker").datetimepicker({
+        format:'d/m/Y H:i',
+    }).val('{{ value|date:'d/m/Y H:i' }}');
+
+  </script>

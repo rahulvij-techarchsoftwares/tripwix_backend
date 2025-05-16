@@ -1,0 +1,36 @@
+{% load i18n static l10n %}
+{% load admin_urls %}
+{% load admin_relation_modify %}
+
+
+{% if not is_root and show_back_url and back_url %}
+  <a href="{{ back_url }}" class="btn btn-outline-secondary m-3">
+    <i class="fa fa-angle-left"></i>
+    {% blocktrans with parent_model_verbose_name=opts.verbose_name_plural|capfirst %}
+      Back to {{ parent_model_verbose_name }}
+    {% endblocktrans %}
+  </a>
+{% endif %}
+
+{% if show_nav_bar %}
+<ul class="nav nav-tabs main-content-nav mt-3 mx-3">
+  {% if changeform_url %}
+    <li class="nav-item">
+      <a class="nav-link{% if path == changeform_url %} active{% endif %}"
+         href="{{ changeform_url }}">
+        <i class="fa fa-cog"></i>
+        {% trans 'Configuration' %}
+     </a>
+    </li>
+  {% endif %}
+  {% for nav in nav_bar %}
+    <li class="nav-item">
+      <a class="nav-link{% if nav.url %}{% if path == nav.url %} active{% endif %}{% else %} disabled{% endif %}"
+         {% if nav.url %}href="{{ nav.url }}"{% endif %}>
+        {% if nav.icon %}<i class="fa {{ nav.icon }}"></i>{% endif %}
+        {{ nav.label }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}

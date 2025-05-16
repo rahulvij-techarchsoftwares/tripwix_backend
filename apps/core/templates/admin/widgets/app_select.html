@@ -1,0 +1,18 @@
+{% load i18n %}
+<div class="input-group">
+    <div class="form-floating" style="max-width:200px;">
+        <select class="form-select js-app-model-select" id="appModelSelect" aria-label="{% translate 'App' %}" data-json-key="content_type_id">
+            {% for app in available_apps %}
+            <option value="{{ app.0 }}" data-app-label="{{ app.1.app_label }}" data-model-name="{{ app.1.model }}" {% if single_app %}selected{% endif %}>{{ app.1 }}</option>
+            {% endfor %}
+        </select>
+        <label for="appModelSelect">{% translate 'App' %}</label>
+    </div>
+    <span class="input-group-text">#</span>
+    <select aria-label="id" aria-describedby="app model id" {{ app_init }} {% if is_multiple %}multiple="multiple"{% endif %} data-json-key="object_pk" {% for name, value in select2_attrs.items %}{% if value is not False %} {{ name }}{% if value is not True %}="{{ value|stringformat:'s' }}"{% endif %}{% endif %}{% endfor %}
+    >
+        {% for selected_object in selected_objects %}
+        <option value="{{ selected_object.0 }}" selected>{{ selected_object.1 }}</option>
+        {% endfor %}
+    </select>
+</div>

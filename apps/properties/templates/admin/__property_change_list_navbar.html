@@ -1,0 +1,80 @@
+{% load i18n admin_list bootstrap_admin admin_asf_tags %}
+
+{% if has_advanced_search_form %}
+<div class="row">
+	<div class="col-xs-12">
+		<a class="btn btn-primary btn-xs btn-more-filters pull-right" role="button" data-toggle="collapse" href="#more-filters" aria-expanded="false" aria-controls="more-filters">
+			<i class="fa fa-filter"></i> <span class="text">{% trans "Show Advanced Filters" %}</span>
+		</a>
+	</div>
+</div>
+{% endif %}
+
+<div class="navbar navbar-default subnav" role="filters">
+	<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#filters">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			{% if has_advanced_search_form %}
+				<a class="navbar-brand" data-toggle="collapse" href="#more-filters" aria-expanded="false" aria-controls="more-filters" title="{{ cl.opts.verbose_name_plural|capfirst }}">
+	    			<i class="fa fa-filter"> </i> {% trans 'Filter' %}
+	    		</a>
+			{% else %}
+				<a class="navbar-brand" href="#" title="{{ cl.opts.verbose_name_plural|capfirst }}">
+					<i class="fa fa-filter"></i> {% trans 'Filter' %}
+				</a>
+			{% endif %}
+
+		  </div>
+
+		  <div class="collapse navbar-collapse navbar-left" id="filters">
+		         {% include 'admin/property_change_list_filters.html' %}
+		  </div><!-- /.nav-collapse -->
+
+	  	{% block search %}{% search_form cl %}{% endblock %}
+		
+		{% if has_advanced_search_form %}
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="collapse" id="more-filters">
+					  	<hr>
+					  	<h3>{% trans "Advanced Filters" %}</h3>
+						{% block advanced_filters %}
+							{% admin_advanced_search_form cl %}
+						{% endblock advanced_filters %}
+					</div>
+				</div>
+			</div>
+
+			<a class="btn btn-primary btn-xs btn-more-filters btn-bottom pull-right" role="button" data-toggle="collapse" href="#more-filters" aria-expanded="false" aria-controls="more-filters" style="display:none;">
+				<i class="fa fa-filter"></i> <span class="text">{% trans "Show Advanced Filters" %}</span>
+			</a>
+		{% endif %}
+
+	</div><!-- /.container-fluid -->
+</div>
+
+
+{% if has_advanced_search_form %}
+<script type="text/javascript">   
+    $(document).ready(function(){
+        $('#more-filters').on('show.bs.collapse', function () {
+  			$(".btn-more-filters").find('.text').html('{% trans "Hide Advanced Filters" %}');
+  			$(".btn-more-filters.btn-bottom").show();
+  			$(".navbar.navbar-default").addClass('more-filters-open');
+
+		});
+
+		$('#more-filters').on('hide.bs.collapse', function () {
+  			$(".btn-more-filters").find('.text').html('{% trans "Show Advanced Filters" %}');
+  			$(".btn-more-filters.btn-bottom").hide();
+  			$(".navbar.navbar-default").removeClass('more-filters-open');
+		});
+    });
+</script>
+{% endif %}

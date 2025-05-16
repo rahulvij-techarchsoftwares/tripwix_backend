@@ -1,0 +1,5 @@
+{% load i18n %}
+<div class="app-widget">
+    {% include 'admin/widgets/app_select.html' with app_init='data-apptize="true"' %}
+    <input type="hidden" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value|stringformat:'s' }}"{% endif %} {% include "django/forms/widgets/attrs.html" %}>
+</div>

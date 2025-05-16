@@ -1,0 +1,149 @@
+{% load i18n %}
+<div class="row">
+  <div class="col">
+
+    <div class="card bg-body-tertiary js-cta-{{ widget.name }}" style="min-width:270px; position:relative;">
+        <div class="card-body">
+            <h5 class="card-title text-truncate"><b class="js-cta-type">Link</b>: <span class="js-cta-url">.</span></h5>
+            <div class="row align-items-end">
+                <div class="col">
+                    {% trans 'Preview' %}: <a href="#" target="_blank" class="card-link js-ctad-url"><span class="js-ctad-link">.</span> <i class="fas fa-link"></i></a></br>
+                    <small class="card-subtitle mb-2 text-muted ">{% trans 'Target' %}: <span class="js-cta-target">...</span></small>
+                </div>
+                <div class="col-12 col-sm-auto mt-2 text-end">
+                    <button class="btn btn-secondary js-cta-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+                        {% trans 'Change link' %}
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="js-cta-panel form-field-cta-group card">
+
+        {% for widget in widget.subwidgets %}
+            {% if widget.attrs.field_type == 'label' %}
+            <div class="form-group field-{{ widget.name }} js-cta-label-group">
+                <label class="form-label" for="{{ widget.attrs.id }}">{{ widget.attrs.label }}:</label>
+                <input type="{{ widget.type }}"
+                    id="{{ widget.attrs.id }}"
+                    name="{{ widget.name }}"
+                    {% if widget.value != None %}
+                    value="{{ widget.value|stringformat:'s' }}"
+                    {% endif %}
+                    class="{{ widget.attrs.css_class }} {% if widget.type == 'text' %}{{ widget.attrs.class }}{% endif %}">
+            </div>
+            {% endif %}
+
+            {% if widget.attrs.field_type == 'url' %}
+            <div class="form-group field-{{ widget.name }} js-cta-url-group">
+                <label class="form-label" for="{{ widget.attrs.id }}">{{ widget.attrs.label }}:</label>
+                <input type="{{ widget.type }}"
+                    id="{{ widget.attrs.id }}"
+                    name="{{ widget.name }}"
+                    {% if widget.value != None %}
+                    value="{{ widget.value|stringformat:'s' }}"
+                    {% endif %}
+                    class="{{ widget.attrs.css_class }} {% if widget.type == 'text' %}{{ widget.attrs.class }}{% endif %}">
+            </div>
+            {% endif %}
+
+            {% if widget.attrs.field_type == 'page_id' %}
+            <div class="form-group field-{{ widget.name }} js-cta-page_id-group">
+                <label class="form-label" for="{{ widget.attrs.id }}">{{ widget.attrs.label }}:</label>
+                {% include widget.template_name %}
+            </div>
+            {% endif %}
+
+            {% if widget.attrs.field_type == 'target' %}
+            <div class="form-group field-{{ widget.name }} js-cta-target-group">
+                <label class="form-label" for="{{ widget.attrs.id }}">{{ widget.attrs.label }}:</label>
+                {% include widget.template_name %}
+            </div>
+            {% endif %}
+        {% endfor %}
+
+        </div>
+
+    </div>
+
+  </div>
+  <div class="col-12 col-sm-12 col-md-1 col-lg-4"></div>
+</div>
+<script type="text/javascript">
+  (function($) {
+
+    $(document).ready(function() {
+        var $scope = $('.js-cta-{{ widget.name }}');
+
+        function closeAllCTAGroups() {
+            $(document).off('.ctaeventdd');
+            $('.js-cta-panel.cta-group-open').removeClass('cta-group-open').addClass('d-none');
+        }
+        $scope.find('.js-cta-trigger').on('click', function(){
+            if($scope.find('.js-cta-panel').hasClass('cta-group-open')){
+                closeAllCTAGroups();
+                return;
+            }
+            closeAllCTAGroups();
+            $scope.find('.js-cta-panel').removeClass('d-none').addClass('cta-group-open');
+            $(document).on('mousedown.ctaeventdd', function(e){
+                if ($(e.target).closest('#language_trigger').length) { return; }
+                if (!$(e.target).closest($scope).length) {
+                    closeAllCTAGroups();
+                }
+            });
+        });
+        setTimeout(function(){
+            $scope.find('.js-cta-panel').addClass('d-none cta-group-init');
+        }, 120);
+
+        function setLabel() {
+            $scope.find('.js-ctad-link').text($scope.find('.js-cta-label-group input.mt-default').val());
+        }
+        $scope.find('.js-cta-label-group input.mt-default').on('change', setLabel);
+        $scope.find('.js-cta-label-group input.mt-default').on('keyup', setLabel);
+
+        function setCtaUrl(url) {
+            if(url.startsWith('http')) {
+                $scope.find('.js-ctad-url').attr('href', url);
+            } else {
+                $scope.find('.js-ctad-url').attr('href', null);
+            }
+        }
+
+        function setUrl() {
+            var page_id = $scope.find('.js-cta-page_id-group select').val();
+            if(page_id == '') {
+                $scope.find('.js-cta-type').text('Link');
+                var external_url = $scope.find('.js-cta-url-group input.mt-default').val();
+                $scope.find('.js-cta-url').text(external_url)
+                setCtaUrl(external_url);
+            } else {
+                $scope.find('.js-cta-type').text('Page');
+                var page_url = '';
+                var $page_selectize = $scope.find('.js-cta-page_id-group select')[0].selectize;
+                if ($page_selectize) {
+                    var page_obj = $page_selectize.options[$scope.find('.js-cta-page_id-group select option:selected').val()]
+                    if (page_obj) { page_url = page_obj['page_url'];}
+                }
+                $scope.find('.js-cta-url').text($scope.find('.js-cta-page_id-group select option:selected').text());
+                setCtaUrl(page_url);
+            }
+        }
+        $scope.find('.js-cta-url-group input.mt-default').on('change', setUrl);
+        $scope.find('.js-cta-url-group input.mt-default').on('keyup', setUrl);
+
+        function setTarget() {
+            $scope.find('.js-cta-target').text($scope.find('.js-cta-target-group select option:selected').text());
+        }
+        $scope.find('.js-cta-target-group select').on('change', setTarget);
+        $scope.find('.js-cta-page_id-group select').on('change', setUrl);
+
+        setLabel();
+        setTarget();
+        setUrl();
+    });
+
+
+  })(django.jQuery);
+</script>

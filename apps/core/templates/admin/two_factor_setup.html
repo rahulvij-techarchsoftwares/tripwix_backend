@@ -1,0 +1,99 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static "admin/css/login.css" %}">
+{{ form.media }}
+
+<style type="text/css">
+.warningnote {
+  background-color: var(--message-warning-bg);
+  border-color: var(--message-warning-bg);
+  color: var(--body-quiet-color);
+}
+</style>
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} login{% endblock %}
+
+{% block usertools %}{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content %}
+{% if form.errors and not form.non_field_errors %}
+<p class="errornote alert alert-danger">
+{% if form.errors.items|length == 1 %}{% translate "Please correct the error below." %}{% else %}{% translate "Please correct the errors below." %}{% endif %}
+</p>
+{% endif %}
+
+{% if form.non_field_errors %}
+{% for error in form.non_field_errors %}
+<p class="errornote alert alert-danger">
+    {{ error }}
+</p>
+{% endfor %}
+{% endif %}
+
+<div id="content-main">
+
+{% if user.is_authenticated %}
+<p class="errornote alert alert-warning">
+{% blocktranslate trimmed %}
+    You are authenticated as {{ username }}, but are not authorized to
+    access this page. Would you like to login to a different account?
+{% endblocktranslate %}
+</p>
+{% endif %}
+
+{% if form.user_device %}
+<p style="text-align: center">
+{{ form.qrcode|safe }}
+<input type="text" value="{{ form.user_device.config_url }}" readonly/>
+</p>
+<form action="{% url 'admin:login' %}" method="get" id="login-form">{% csrf_token %}
+<div class="submit-row">
+  <input type="submit" value="{% translate 'Login' %}">
+</div>
+</form>
+
+{% else %}
+<p class="errornote warningnote alert alert-warning">
+  {% blocktranslate trimmed %}
+      This account requires a two factor device.
+  {% endblocktranslate %}
+</p>
+<form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+  <div class="form-row">
+    {% if request.GET.u %}
+    {{ form.username.label_tag }}
+    <p><strong>{{ request.GET.u }}</strong></p>
+    <input type="hidden" value="{{ request.GET.u }}" name="{{ form.username.html_name }}"/>
+    {% else %}
+    {{ form.username.errors }}
+    {{ form.username.label_tag }} {{ form.username }}
+    {% endif %}
+  </div>
+  <div class="form-row">
+    {{ form.password.errors }}
+    {{ form.password.label_tag }} {{ form.password }}
+    <input type="hidden" name="next" value="{{ next }}">
+  </div>
+  {% url 'admin_password_reset' as password_reset_url %}
+  {% if password_reset_url %}
+  <div class="password-reset-link">
+    <a href="{{ password_reset_url }}">{% translate 'Forgotten your password or username?' %}</a>
+  </div>
+  {% endif %}
+  <div class="submit-row">
+    <input type="submit" value="{% translate 'Setup Two Factor' %}">
+  </div>
+</form>
+{% endif %}
+</div>
+{% endblock %}

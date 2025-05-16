@@ -1,0 +1,26 @@
+{% load i18n static %}
+
+{% include "django/forms/widgets/checkbox.html" %}
+
+<div id="visibility-widget" class="hide" style="display:none;">
+  <div>
+  <label style="float:none; width:auto;" class="visibility-widget-visible">
+    <input type="radio" name="wgt-visibility" value="1">
+    {% trans 'Visible' %}
+    <span class="info">({% trans 'as of' %} <span></span>)</span>
+  </label>
+  </div>
+  <div>
+  <label style="float:none; width:auto;" class="visibility-widget-hidden">
+    <input type="radio" name="wgt-visibility" value="0">
+    {% trans 'Hidden' %}
+    <span class="info">({% trans 'will become visible on' %} <span></span>)</span>
+  </label>
+  </div>
+
+  <a class="visibility-widget-pub_date" href="#" style="padding:5px 0px; display:block;">{% trans 'Set a specific publish date' %}…</a>
+  <a class="visibility-widget-clear_pub_date" href="#">&nbsp;{% trans 'clear date' %}</a>
+
+  <a class="visibility-widget-pub_end_date" href="#" style="padding:5px 0px; display:block;">{% trans 'Set a expiration date' %}…</a>
+  <a class="visibility-widget-clear_pub_end_date" href="#">&nbsp;{% trans 'clear date' %}</a>
+</div>

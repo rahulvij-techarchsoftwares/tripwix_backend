@@ -1,0 +1,45 @@
+{% load i18n static l10n admin_urls admin_asf_tags %}
+
+{% get_context nav.handle as handle %}
+
+{% if nav.url %}
+    <li class="nav-item ">
+        <a class="nav-link {% if request.path == nav.url or handle %}active{% elif nav.disabled %}disabled{% endif %}" href="{{nav.url}}">{% if nav.icon %}<i class="fa {{nav.icon}}"></i> {% endif %}{{nav.label}}</a>
+    </li>
+{% elif nav.reverse %}
+
+    {% url opts_nav|admin_urlname:nav.reverse original.id|admin_urlquote as config_url %}
+    <li class="nav-item ">
+        <a class="nav-link {% if request.path == config_url or handle %}active{% elif not config_url %}disabled{% endif %}" href="{{config_url}}">{% if nav.icon %}<i class="fa {{nav.icon}}"></i> {% endif %}{{nav.label}}</a>
+    </li>
+{% elif nav.relation %}
+    {% url nav.relation.get_opts|admin_urlname:nav.relation.get_default_url original.id|admin_urlquote as config_url %}
+    <li class="nav-item">
+        <a class="nav-link {% if request.path == config_url or handle %}active{% elif not config_url %}disabled{% endif %}" href="{{config_url}}">{% if nav.icon %}<i class="fa {{nav.icon}}"></i> {% else %}{% breadcrumbs_icon nav.relation.get_opts %} {% endif %}{% if nav.label %}{{nav.label|capfirst}}{% else %}{{nav.relation.get_opts.verbose_name_plural|capfirst}}{% endif %}</a>
+    </li>
+{% elif nav.dropdown %}
+    <li class="dropdown
+        {% for sub_nav in nav.dropdown %}
+        {% if sub_nav.url %}
+            {% if request.path == sub_nav.url %}active{% endif %}
+        {% elif sub_nav.reverse %}
+            {% url opts_nav|admin_urlname:sub_nav.reverse original.id|admin_urlquote as config_url %}
+            {% if request.path == config_url %}active{% elif not config_url %}disabled{% endif %}
+        {% elif sub_nav.relation %}
+            {% url sub_nav.relation.get_opts|admin_urlname:sub_nav.relation.get_default_url original.id|admin_urlquote as config_url %}
+            {% if request.path == config_url %}active{% elif not config_url %}disabled{% endif %}
+        {% endif %}
+        {% endfor %}
+    ">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        {% if nav.icon %}<i class="fa {{nav.icon}}"></i> {% endif %}{{nav.label}} <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+        {% with relation_nav_item_template="admin/relation_navigation_item.html" %}
+            {% for sub_nav in nav.dropdown %}
+            {% include relation_nav_item_template with is_dropdown='yes' nav=sub_nav %}
+            {% endfor %}
+        {% endwith %}
+        </ul>
+    </li>
+{% endif %}

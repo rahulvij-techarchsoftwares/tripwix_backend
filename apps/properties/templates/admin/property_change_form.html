@@ -1,0 +1,178 @@
+{% extends "admin/relation_base_form.html" %}
+{% load i18n admin_urls static admin_kubi_tags %}
+{% block extrastyle %}
+    {{ block.super }}
+    <style type="text/css">
+    .field-property_group .related-links{
+        display: none;
+    }
+    </style>
+{% endblock %}
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript">
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = $.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+    </script>
+    <script type="text/javascript">
+  document.addEventListener('formset:added', (event) =>{
+});
+    </script>
+{% endblock %}
+{% block object-tools-items %}
+    {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+    {% if history_url %}
+        <li>
+            <a href="{{ history_url }}"
+               class="btn historylink btn-link link-body-emphasis">
+                <i class="fa fa-book"></i> {% trans "History" %}
+            </a>
+        </li>
+    {% endif %}
+    {% if has_absolute_url %}
+        <li>
+            <a href="{{ frontend_url }}/en/luxury-home-rentals/{{ original.slug }}"
+               class="btn btn-link viewsitelink">
+                <i class="fa fa-globe"></i> {% trans "View on site" %}
+            </a>
+        </li>
+    {% endif %}
+{% endblock %}
+{% block content %}
+    {{ block.super }}
+    <div class="modal fade"
+         id="syncPropertyModal"
+         tabindex="-1"
+         role="dialog"
+         aria-labelledby="syncPropertyModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="syncPropertyModalLabel">Sync Property</h5>
+                    <button type="button"
+                            class="modal-close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to sync this property?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-secondary modal-close"
+                            data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="syncPropertyButton">Sync</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block submit_buttons_bottom %}
+{% if has_add_permission or has_change_permission %}
+    <div class="row align-items-stretch">
+        <div class="col py-4 pe-4 bg-body-tertiary d-none d-sm-block">&nbsp;</div>
+        <div class="col-xs-12 col-sm-8 col-lg-8 col-xl-9 py-4 px-4">
+            <div class="form-actions row">
+                <div class="col">
+                    {% if has_sync_permission %}
+                        <div class="delete-link-box">
+                            <a href="#" class="btn btn-info hostify-sync">{% trans "Sync with Hostify" %}</a>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="col">
+                    {% if has_delete_permission %}
+                        {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
+                        <div class="delete-link-box">
+                            <a href="{% add_preserved_filters delete_url %}" class="btn btn-danger">{% trans "Delete" %}</a>
+                        </div>
+                    {% endif %}
+                    <span class="d-sm-none">
+                        <hr />
+                    </span>
+                </div>
+                <div class="col-xs-12 col-md-6 text-lg-end text-xl-end save-options-box">
+                    <input type="submit"
+                           value="{% trans 'Save & close' %}"
+                           name="_save"
+                           {{ onclick_attrib }}
+                           class="btn btn-default" />
+                    <span class="d-none d-sm-inline">&nbsp;&nbsp;{% trans 'or' %}&nbsp;&nbsp;</span>
+                    <input type="submit"
+                           value="{% trans 'Save' %}"
+                           name="_continue"
+                           {{ onclick_attrib }}
+                           class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% endblock %}
+{% block js_footer %}
+    {{ block.super }}
+    <script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+    </script>
+    <script type="text/javascript"
+            src="{% static "admin/js/property-changeform-navbar-fixed.js" %}"
+            data-app-label="{{ opts.app_label }}"
+            data-model-name="{{ opts.model_name }}"></script>
+    <script>
+  $('.hostify-sync').click(function() {
+    $('#syncPropertyModal').modal('show');
+  });  
+  $(document).ready(function() {
+    $('.modal-close').on('click', function() {
+      $('#syncPropertyModal').modal('hide');
+    });
+    $(document).on('keydown', function(event) {
+      if (event.key === "Escape") {
+        $('#syncPropertyModal').modal('hide');
+      }
+    });
+  });
+    </script>
+    <script>
+  $('#syncPropertyModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget);
+      var id = '{{object_id}}';
+      var modal = $(this);
+      modal.find('#syncPropertyButton').click(function() {
+          $.ajax({
+              url: '../sync/',
+              type: 'POST',
+              data: {
+                  csrfmiddlewaretoken: '{{ csrf_token }}'
+              },
+              success: function(data) {
+                modal.modal('hide');
+                location.reload();
+              },
+              error: function(data) {
+                  console.log(data.responseJSON);
+                  modal.modal('hide');
+              },
+          });
+      });
+  });
+    </script>
+{% endblock js_footer %}

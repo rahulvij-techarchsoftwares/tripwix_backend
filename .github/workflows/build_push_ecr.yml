@@ -1,0 +1,59 @@
+name: TripWix Build and push ECR
+on:
+  push:
+    branches: [staging, main]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::759334989284:role/github_role
+          aws-region: eu-west-1
+      - uses: aws-actions/amazon-ecr-login@v1
+        id: ecr
+      - uses: docker/metadata-action@v5
+        id: metadata
+        with:
+          images: ${{ steps.ecr.outputs.registry }}/${{ github.repository }}
+          tags: |
+            type=sha,enable=true,priority=100,prefix=sha-,suffix=,format=short
+      - uses: int128/kaniko-action@v1
+        id: kaniko
+        with:
+          push: true
+          tags: ${{ steps.metadata.outputs.tags }}
+          labels: ${{ steps.metadata.outputs.labels }}
+          cache: true
+          cache-repository: 759334989284.dkr.ecr.eu-west-1.amazonaws.com/tripwix/tripwix_platform/cache
+          file: docker/${{ github.ref_name }}/Dockerfile
+      - name: Checkout private devops
+        uses: actions/checkout@v4
+        with: 
+          repository: Tripwix/devops
+          ssh-key: ${{ secrets.DEVOPS_KEY }}
+          path: ./devops
+          ref: ${{ github.ref_name }}
+      - name: Add Google credentials
+        run: |
+          echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > "${{ github.workspace }}/service-account-file.json"
+      - name: Update devop repo
+        run: |
+          git -C devops config user.name  "${{ github.actor }}"
+          git -C devops config user.email "${{ github.actor }}@users.noreply.github.com"
+          find . -name '*.yaml' -type f -print0 | xargs -0 sed -i 's@'"image: ${{ steps.ecr.outputs.registry }}/tripwix/tripwix_platform:"'.*@'"image: ${{ steps.metadata.outputs.tags}}"'@' 
+          CHANGES=$(git -C devops status --porcelain | wc -l)
+          echo "$CHANGES"
+          if [ "$CHANGES" -gt "0" ]; then
+            git -C devops status
+            git -C devops commit -am "${{ github.actor }} - ${{ github.event.head_commit.message }}"
+            git -C devops push origin ${{ github.ref_name }}
+          fi

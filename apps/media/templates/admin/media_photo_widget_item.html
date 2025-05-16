@@ -1,0 +1,58 @@
+{% load i18n %}
+
+<li {% if photo %}data-id="{{ photo.id }}"{% endif %} class="media-item">
+  <div class="preview">
+    {% if photo %}
+      {{ photo.admin_thumbnail }}
+    {% else %}
+      <img data-dz-thumbnail />
+    {% endif %}
+  </div>
+ 
+  {% if photo %}
+    {% if photo.caption %}
+      <div class="info">
+        <p class="name">{{ photo.caption }}</p>
+      </div>
+    {% endif %}
+  {% else %}
+    <div class="info">
+      <p class="name" data-dz-name></p>
+      <strong class="error text-danger" data-dz-errormessage></strong>
+    </div>
+  {% endif %}
+
+  {% if not photo %}
+    <div class="upload-info">
+      <p class="size" data-dz-size></p>
+      <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+      </div>
+    </div>
+  {% endif %}
+  <div class="tools">
+    {% if not readonly %}
+      <svg class="sicon drag-icon"><use xlink:href="#svg-drag"></svg>
+    {% endif %}
+    <a href="{% if photo %}{{ photo.image.url }}{% else %}#{% endif %}" class="btn btn-reset original" target="_blank">
+      <svg class="sicon"><use xlink:href="#svg-image-file"></svg>
+      <span>{% trans 'Original' %}</span>
+    </a>
+    {% if not readonly %}
+      <button type="button" class="btn btn-reset edit">
+          <svg class="sicon"><use xlink:href="#svg-edit"></use></svg>
+        <span>{% trans 'Edit' %}</span>
+      </button>
+      {% if not photo %}
+        <button type="button" class="btn btn-reset start">
+          <svg class="sicon"><use xlink:href="#svg-upload"></use></svg>
+          <span>{% trans 'Start' %}</span>
+        </button>
+      {% endif %}
+      <button type="button" data-dz-remove class="btn btn-reset remove">
+          <svg class="sicon"><use xlink:href="#svg-remove"></use></svg>
+        <span>{% trans 'Remove' %}</span>
+      </button>
+    {% endif %}
+  </div>
+</li>

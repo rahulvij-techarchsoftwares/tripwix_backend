@@ -1,0 +1,6171 @@
+[
+{
+    "model": "properties.detail",
+    "pk": 1,
+    "fields": {
+        "name": "Featured",
+        "slug": "featured",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 2,
+    "fields": {
+        "name": "Video",
+        "slug": "video",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 3,
+    "fields": {
+        "name": "Date Of Inspection",
+        "slug": "dateOfInspection",
+        "detail_type": "date",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 4,
+    "fields": {
+        "name": "Instant Booking",
+        "slug": "instantBooking",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 5,
+    "fields": {
+        "name": "Inspector",
+        "slug": "inspector",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 6,
+    "fields": {
+        "name": "Inspector Comments",
+        "slug": "inspComment",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 7,
+    "fields": {
+        "name": "VIP Program",
+        "slug": "vipProgram",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 8,
+    "fields": {
+        "name": "Max guests",
+        "slug": "maxGuests",
+        "detail_type": "integer",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 9,
+    "fields": {
+        "name": "Number of Beds",
+        "slug": "noOfBeds",
+        "detail_type": "integer",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 10,
+    "fields": {
+        "name": "Number of bathrooms",
+        "slug": "noOfBathrooms",
+        "detail_type": "integer",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 11,
+    "fields": {
+        "name": "Number of Bedrooms",
+        "slug": "noOfBedrooms",
+        "detail_type": "integer",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 12,
+    "fields": {
+        "name": "Number Half Baths",
+        "slug": "noHalfBaths",
+        "detail_type": "integer",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 13,
+    "fields": {
+        "name": "Size",
+        "slug": "propertySizeSqm",
+        "detail_type": "number",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "square meters",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 14,
+    "fields": {
+        "name": "Size Comments",
+        "slug": "propertySizeComments",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 15,
+    "fields": {
+        "name": "Hotel Complex",
+        "slug": "hotelComplex",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 16,
+    "fields": {
+        "name": "Gated Community",
+        "slug": "gatedCommunity",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 17,
+    "fields": {
+        "name": "Eco Friendly",
+        "slug": "ecoFriendly",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 18,
+    "fields": {
+        "name": "View Types",
+        "slug": "viewTypes",
+        "detail_type": "options",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 19,
+    "fields": {
+        "name": "Placement Types",
+        "slug": "placementTypes",
+        "detail_type": "options",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 20,
+    "fields": {
+        "name": "Curator",
+        "slug": "curator",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "150,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 21,
+    "fields": {
+        "name": "Designer Comment",
+        "slug": "designersComment",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 22,
+    "fields": {
+        "name": "Smoking",
+        "slug": "smokingOnlyOutside",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 23,
+    "fields": {
+        "name": "Pets On Request",
+        "slug": "petsOnRequest",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 24,
+    "fields": {
+        "name": "Pet Fee",
+        "slug": "petFee",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 25,
+    "fields": {
+        "name": "Pet Restrictions",
+        "slug": "petRestrictions",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 26,
+    "fields": {
+        "name": "Adults Only House",
+        "slug": "adultsOnlyHouse",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 27,
+    "fields": {
+        "name": "Age Restrictions",
+        "slug": "ageRestrictions",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 28,
+    "fields": {
+        "name": "Special Features",
+        "slug": "specialFeatures",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 29,
+    "fields": {
+        "name": "Living Areas",
+        "slug": "livingAreas",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 30,
+    "fields": {
+        "name": "Kids Services",
+        "slug": "kidsServices",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 31,
+    "fields": {
+        "name": "Pet Policy",
+        "slug": "petPolicy",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 32,
+    "fields": {
+        "name": "Activities",
+        "slug": "activities",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 33,
+    "fields": {
+        "name": "Additional Services",
+        "slug": "additionalServices",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 34,
+    "fields": {
+        "name": "Rental Price Includes",
+        "slug": "rentalPriceIncludes",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 35,
+    "fields": {
+        "name": "Know Before You Go",
+        "slug": "knowBeforeYouGo",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 36,
+    "fields": {
+        "name": "Staff Services",
+        "slug": "staffServices",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 37,
+    "fields": {
+        "name": "Youtube",
+        "slug": "youtubeLink",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 38,
+    "fields": {
+        "name": "Owner Video Link",
+        "slug": "ownerVideoLink",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 39,
+    "fields": {
+        "name": "TripWix Video Link",
+        "slug": "twVideoLink",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 40,
+    "fields": {
+        "name": "Checkin Time",
+        "slug": "checkinTime",
+        "detail_type": "time",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 41,
+    "fields": {
+        "name": "Checkout Time",
+        "slug": "checkoutTime",
+        "detail_type": "time",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 42,
+    "fields": {
+        "name": "Checkin Out Details",
+        "slug": "checkinoutDetails",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 43,
+    "fields": {
+        "name": "Owner Payout Strucutre",
+        "slug": "ownerPayoutStructure",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 44,
+    "fields": {
+        "name": "SecurityDeposit",
+        "slug": "securityDeposit",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 45,
+    "fields": {
+        "name": "Home Service Charge",
+        "slug": "homeServiceCharge",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 46,
+    "fields": {
+        "name": "Service Charge",
+        "slug": "serviceCharge",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 47,
+    "fields": {
+        "name": "Vat Rate",
+        "slug": "vatRate",
+        "detail_type": "country_vat_choices",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 48,
+    "fields": {
+        "name": "Cleaning Fee",
+        "slug": "cleaningFee",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "c",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 49,
+    "fields": {
+        "name": "Cancellation Policy",
+        "slug": "cancellationPolicy",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 50,
+    "fields": {
+        "name": "Cancellation Policy Comments",
+        "slug": "cancellationPolicyComments",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 51,
+    "fields": {
+        "name": "Pool Heating Fee",
+        "slug": "poolHeatingFee",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 52,
+    "fields": {
+        "name": "Extra Guest Fee",
+        "slug": "extraGuestFee",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 53,
+    "fields": {
+        "name": "Extra Guest Fee ppn Hostify",
+        "slug": "extraGuestFeePpnHostify",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 54,
+    "fields": {
+        "name": "Other Fees",
+        "slug": "otherFees",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 55,
+    "fields": {
+        "name": "Specials Promotions",
+        "slug": "specials-promotions",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 56,
+    "fields": {
+        "name": "Promotion Details",
+        "slug": "promotionDetails",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 57,
+    "fields": {
+        "name": "Offer Discounts",
+        "slug": "offersDiscounts",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 58,
+    "fields": {
+        "name": "Offer Start Date",
+        "slug": "offerStartDate",
+        "detail_type": "date",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 59,
+    "fields": {
+        "name": "Offer End Date",
+        "slug": "offerEndDate",
+        "detail_type": "date",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 60,
+    "fields": {
+        "name": "Contract Clause For Sales",
+        "slug": "contractClauseForSales",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 61,
+    "fields": {
+        "name": "Notes for Sales",
+        "slug": "notesForSales",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 62,
+    "fields": {
+        "name": "Ambassador Name",
+        "slug": "ambassadorName",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 63,
+    "fields": {
+        "name": "B2B sharing",
+        "slug": "b2bSharing",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 64,
+    "fields": {
+        "name": "Inspection Status",
+        "slug": "inspectionStatus",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 65,
+    "fields": {
+        "name": "Tripwix collection",
+        "slug": "twCollection",
+        "detail_type": "boolean",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 66,
+    "fields": {
+        "name": "Food & Bev Deposit",
+        "slug": "foodBevDeposit",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "c",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 67,
+    "fields": {
+        "name": "Occupancy Fee (pp)",
+        "slug": "occupancyFeePp",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "c",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 68,
+    "fields": {
+        "name": "Design Type",
+        "slug": "designType",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 69,
+    "fields": {
+        "name": "Parties Events",
+        "slug": "partiesEvents",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 70,
+    "fields": {
+        "name": "Community gpis",
+        "slug": "communitygpis",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 71,
+    "fields": {
+        "name": "Location Description",
+        "slug": "locationDescription",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 72,
+    "fields": {
+        "name": "Location",
+        "slug": "location",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 73,
+    "fields": {
+        "name": "Prop Approx Airport",
+        "slug": "propApproxAirport",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "10,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 74,
+    "fields": {
+        "name": "Time in min",
+        "slug": "timeInMinAirport",
+        "detail_type": "number",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 75,
+    "fields": {
+        "name": "Transport Method",
+        "slug": "transportMethodAirport",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "10,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 76,
+    "fields": {
+        "name": "Prop Approx Attraction",
+        "slug": "propApproxAttraction",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 77,
+    "fields": {
+        "name": "Prop Approx Nearest City",
+        "slug": "propApproxNearestCity",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 78,
+    "fields": {
+        "name": "Tag Line",
+        "slug": "tagLine",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100, 250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 79,
+    "fields": {
+        "name": "Bed&Bath",
+        "slug": "bedbath",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 80,
+    "fields": {
+        "name": "Floor Plan Link",
+        "slug": "floorPlanLink",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 81,
+    "fields": {
+        "name": "Other Media",
+        "slug": "otherMediaLongText",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 82,
+    "fields": {
+        "name": "Availability Method",
+        "slug": "calAvailabilityMethod",
+        "detail_type": "options",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "calAvailabilityMethod",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 83,
+    "fields": {
+        "name": "Public Google Calendar",
+        "slug": "publicGoogleCalendar",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 84,
+    "fields": {
+        "name": "TW iCal Link",
+        "slug": "twIcalLink",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "twIcalLink",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 85,
+    "fields": {
+        "name": "Owner ICal Link",
+        "slug": "ownerIcalLink",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 86,
+    "fields": {
+        "name": "Availability Fallback Link",
+        "slug": "availabilityFallback",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 87,
+    "fields": {
+        "name": "Other Calendar Links",
+        "slug": "otherCalendarLinksLongText",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,200",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 88,
+    "fields": {
+        "name": "Calendar Comments",
+        "slug": "calendarCommentsLongText",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "250,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 89,
+    "fields": {
+        "name": "Owner email for Calendar",
+        "slug": "ownerEmailForCalendar",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100, 250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 90,
+    "fields": {
+        "name": "Currency",
+        "slug": "currency",
+        "detail_type": "option",
+        "sort_order": 0,
+        "unit": "50",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 91,
+    "fields": {
+        "name": "Payout Structure Comments",
+        "slug": "payoutStructureComments",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 92,
+    "fields": {
+        "name": "Extra Tax (ISH)",
+        "slug": "extraTaxIsh",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 93,
+    "fields": {
+        "name": "Rate Notes",
+        "slug": "rateNotes",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 94,
+    "fields": {
+        "name": "Event REstrictions",
+        "slug": "eventRestrictions",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,200",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 95,
+    "fields": {
+        "name": "Perfect For",
+        "slug": "perfectFor",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 96,
+    "fields": {
+        "name": "Curiosity Comment",
+        "slug": "curiosityComment",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "100,250",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 97,
+    "fields": {
+        "name": "Hostify Tagline",
+        "slug": "hostifyTagline",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "50",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 98,
+    "fields": {
+        "name": "Time in Min Attraction",
+        "slug": "timeInMinAttraction",
+        "detail_type": "number",
+        "sort_order": 0,
+        "unit": "100",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 99,
+    "fields": {
+        "name": "Transport Method Attraction",
+        "slug": "transportMethodAttraction",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 100,
+    "fields": {
+        "name": "Time in Minutes City",
+        "slug": "timeInMinCity",
+        "detail_type": "number",
+        "sort_order": 0,
+        "unit": "100",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 101,
+    "fields": {
+        "name": "Transport Method City",
+        "slug": "transportMethodCity",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "100",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 102,
+    "fields": {
+        "name": "One Night Deposit",
+        "slug": "one-night-deposit",
+        "detail_type": "number_with_value_type_selector",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 103,
+    "fields": {
+        "name": "Hostify Link",
+        "slug": "hostifyLink",
+        "detail_type": "text",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.detail",
+    "pk": 104,
+    "fields": {
+        "name": "Hostify Summary",
+        "slug": "hostifySummary",
+        "detail_type": "description",
+        "sort_order": 0,
+        "unit": "",
+        "help_text": "",
+        "initial_text_value": "",
+        "initial_bool_value": false,
+        "initial_description_value": "",
+        "initial_number_value": null,
+        "initial_integer_value": 0,
+        "initial_date_value": null,
+        "initial_time_value": null,
+        "initial_number_with_value_type_selector_value": "p",
+        "admin_related_opts_permissions": "",
+        "in_search": false
+    }
+},
+{
+    "model": "properties.propertygroup",
+    "pk": 1,
+    "fields": {
+        "name": "Rental",
+        "sale_type": "r",
+        "description": "",
+        "seo_title": "",
+        "seo_description": "",
+        "seo_keywords": "",
+        "slug": "rental",
+        "price_ranges": "",
+        "in_search": false,
+        "sort_order_fe": "ne",
+        "sort_order_be": "ne"
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 1,
+    "fields": {
+        "name": "Media",
+        "slug": "media",
+        "icon": "fa-camera",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Location",
+        "slug": "location",
+        "icon": "fa-map-marker",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 3,
+    "fields": {
+        "name": "Construction",
+        "slug": "construction",
+        "icon": "fa-home",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 4,
+    "fields": {
+        "name": "Details",
+        "slug": "details",
+        "icon": "fa-file-text",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 5,
+    "fields": {
+        "name": "Specifications",
+        "slug": "specifications",
+        "icon": "fa-flag",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 7,
+    "fields": {
+        "name": "Distribution Settings",
+        "slug": "distribution-settings",
+        "icon": "fa-feed",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 8,
+    "fields": {
+        "name": "Inspection",
+        "slug": "inspection",
+        "icon": "fa-users",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 9,
+    "fields": {
+        "name": "Collection",
+        "slug": "collection",
+        "icon": "",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 10,
+    "fields": {
+        "name": "Fees",
+        "slug": "fees",
+        "icon": "fa-usd",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 11,
+    "fields": {
+        "name": "Policies",
+        "slug": "policies",
+        "icon": "fa-university",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 12,
+    "fields": {
+        "name": "Extra",
+        "slug": "extra",
+        "icon": "fa-plus-square",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 13,
+    "fields": {
+        "name": "Web",
+        "slug": "web",
+        "icon": "fa-at",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 14,
+    "fields": {
+        "name": "Calendar",
+        "slug": "calendar",
+        "icon": "fa-calendar",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategory",
+    "pk": 15,
+    "fields": {
+        "name": "Sales",
+        "slug": "sales",
+        "icon": "fa-shopping-cart",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 1,
+    "fields": {
+        "category": 2,
+        "name": "Distances",
+        "description": "How far relevant places are from this property.",
+        "slug": "distances",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 2,
+    "fields": {
+        "category": 3,
+        "name": "Specs",
+        "description": "",
+        "slug": "specs",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 3,
+    "fields": {
+        "category": 3,
+        "name": "Areas",
+        "description": "",
+        "slug": "areas",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 4,
+    "fields": {
+        "category": 3,
+        "name": "Composition",
+        "description": "",
+        "slug": "composition",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 5,
+    "fields": {
+        "category": 4,
+        "name": "Details",
+        "description": "",
+        "slug": "details",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 6,
+    "fields": {
+        "category": 4,
+        "name": "Descriptions",
+        "description": "",
+        "slug": "descriptions",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 7,
+    "fields": {
+        "category": 5,
+        "name": "Features",
+        "description": "",
+        "slug": "features",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 8,
+    "fields": {
+        "category": 5,
+        "name": "Extras",
+        "description": "",
+        "slug": "extras",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 9,
+    "fields": {
+        "category": 1,
+        "name": "Videos",
+        "description": "",
+        "slug": "videos",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 12,
+    "fields": {
+        "category": 7,
+        "name": "Detail",
+        "description": "",
+        "slug": "detail",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 13,
+    "fields": {
+        "category": 8,
+        "name": "Detail",
+        "description": "",
+        "slug": "detail",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 14,
+    "fields": {
+        "category": 9,
+        "name": "Detail",
+        "description": "",
+        "slug": "detail",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 15,
+    "fields": {
+        "category": 10,
+        "name": "Cancellation Policy",
+        "description": "",
+        "slug": "cancellationPolicy",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 16,
+    "fields": {
+        "category": 10,
+        "name": "Detail",
+        "description": "",
+        "slug": "detail",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 17,
+    "fields": {
+        "category": 11,
+        "name": "Details",
+        "description": "",
+        "slug": "details",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 18,
+    "fields": {
+        "category": 12,
+        "name": "Detail",
+        "description": "",
+        "slug": "detail",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 19,
+    "fields": {
+        "category": 12,
+        "name": "Airport",
+        "description": "",
+        "slug": "airport",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 20,
+    "fields": {
+        "category": 13,
+        "name": "Details",
+        "description": "",
+        "slug": "details",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 21,
+    "fields": {
+        "category": 14,
+        "name": "Details",
+        "description": "",
+        "slug": "details",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 22,
+    "fields": {
+        "category": 8,
+        "name": "Collection",
+        "description": "",
+        "slug": "collection",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 23,
+    "fields": {
+        "category": 8,
+        "name": "Distribution",
+        "description": "",
+        "slug": "distribution",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 24,
+    "fields": {
+        "category": 15,
+        "name": "Details",
+        "description": "",
+        "slug": "details",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailcategorysection",
+    "pk": 25,
+    "fields": {
+        "category": 12,
+        "name": "City",
+        "description": "",
+        "slug": "city",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 7,
+    "fields": {
+        "property_group": 1,
+        "detail": 4,
+        "section": 23,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 8,
+    "fields": {
+        "property_group": 1,
+        "detail": 63,
+        "section": 23,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 9,
+    "fields": {
+        "property_group": 1,
+        "detail": 64,
+        "section": 13,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 10,
+    "fields": {
+        "property_group": 1,
+        "detail": 3,
+        "section": 13,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 11,
+    "fields": {
+        "property_group": 1,
+        "detail": 5,
+        "section": 13,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 12,
+    "fields": {
+        "property_group": 1,
+        "detail": 6,
+        "section": 13,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 13,
+    "fields": {
+        "property_group": 1,
+        "detail": 65,
+        "section": 22,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 14,
+    "fields": {
+        "property_group": 1,
+        "detail": 7,
+        "section": 22,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 15,
+    "fields": {
+        "property_group": 1,
+        "detail": 47,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 11
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 16,
+    "fields": {
+        "property_group": 1,
+        "detail": 34,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 7
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 17,
+    "fields": {
+        "property_group": 1,
+        "detail": 54,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 17
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 18,
+    "fields": {
+        "property_group": 1,
+        "detail": 53,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 16
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 19,
+    "fields": {
+        "property_group": 1,
+        "detail": 52,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 18
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 20,
+    "fields": {
+        "property_group": 1,
+        "detail": 51,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 15
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 21,
+    "fields": {
+        "property_group": 1,
+        "detail": 48,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 22,
+    "fields": {
+        "property_group": 1,
+        "detail": 46,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 23,
+    "fields": {
+        "property_group": 1,
+        "detail": 45,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 24,
+    "fields": {
+        "property_group": 1,
+        "detail": 44,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 25,
+    "fields": {
+        "property_group": 1,
+        "detail": 50,
+        "section": 15,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 13
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 26,
+    "fields": {
+        "property_group": 1,
+        "detail": 49,
+        "section": 15,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 12
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 27,
+    "fields": {
+        "property_group": 1,
+        "detail": 66,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 28,
+    "fields": {
+        "property_group": 1,
+        "detail": 67,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 29,
+    "fields": {
+        "property_group": 1,
+        "detail": 68,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 30,
+    "fields": {
+        "property_group": 1,
+        "detail": 8,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 31,
+    "fields": {
+        "property_group": 1,
+        "detail": 11,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 32,
+    "fields": {
+        "property_group": 1,
+        "detail": 10,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 33,
+    "fields": {
+        "property_group": 1,
+        "detail": 9,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 34,
+    "fields": {
+        "property_group": 1,
+        "detail": 12,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 35,
+    "fields": {
+        "property_group": 1,
+        "detail": 13,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 10
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 36,
+    "fields": {
+        "property_group": 1,
+        "detail": 14,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 11
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 37,
+    "fields": {
+        "property_group": 1,
+        "detail": 15,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 38,
+    "fields": {
+        "property_group": 1,
+        "detail": 16,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 39,
+    "fields": {
+        "property_group": 1,
+        "detail": 17,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 40,
+    "fields": {
+        "property_group": 1,
+        "detail": 18,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 7
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 41,
+    "fields": {
+        "property_group": 1,
+        "detail": 19,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 7
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 42,
+    "fields": {
+        "property_group": 1,
+        "detail": 20,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 11
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 43,
+    "fields": {
+        "property_group": 1,
+        "detail": 21,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 12
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 44,
+    "fields": {
+        "property_group": 1,
+        "detail": 69,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 45,
+    "fields": {
+        "property_group": 1,
+        "detail": 22,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 46,
+    "fields": {
+        "property_group": 1,
+        "detail": 23,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 47,
+    "fields": {
+        "property_group": 1,
+        "detail": 24,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 48,
+    "fields": {
+        "property_group": 1,
+        "detail": 25,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 7
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 49,
+    "fields": {
+        "property_group": 1,
+        "detail": 26,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 8
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 50,
+    "fields": {
+        "property_group": 1,
+        "detail": 27,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 9
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 51,
+    "fields": {
+        "property_group": 1,
+        "detail": 70,
+        "section": 18,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 22
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 52,
+    "fields": {
+        "property_group": 1,
+        "detail": 71,
+        "section": 18,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 21
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 53,
+    "fields": {
+        "property_group": 1,
+        "detail": 72,
+        "section": 18,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 20
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 54,
+    "fields": {
+        "property_group": 1,
+        "detail": 73,
+        "section": 19,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -9
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 55,
+    "fields": {
+        "property_group": 1,
+        "detail": 74,
+        "section": 19,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -8
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 56,
+    "fields": {
+        "property_group": 1,
+        "detail": 75,
+        "section": 19,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -7
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 57,
+    "fields": {
+        "property_group": 1,
+        "detail": 76,
+        "section": 18,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 58,
+    "fields": {
+        "property_group": 1,
+        "detail": 77,
+        "section": 25,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 59,
+    "fields": {
+        "property_group": 1,
+        "detail": 78,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 60,
+    "fields": {
+        "property_group": 1,
+        "detail": 28,
+        "section": 20,
+        "is_required": true,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 61,
+    "fields": {
+        "property_group": 1,
+        "detail": 29,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 62,
+    "fields": {
+        "property_group": 1,
+        "detail": 79,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 63,
+    "fields": {
+        "property_group": 1,
+        "detail": 30,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 64,
+    "fields": {
+        "property_group": 1,
+        "detail": 31,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 13
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 65,
+    "fields": {
+        "property_group": 1,
+        "detail": 32,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 66,
+    "fields": {
+        "property_group": 1,
+        "detail": 33,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 67,
+    "fields": {
+        "property_group": 1,
+        "detail": 35,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 8
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 68,
+    "fields": {
+        "property_group": 1,
+        "detail": 36,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 9
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 69,
+    "fields": {
+        "property_group": 1,
+        "detail": 37,
+        "section": 9,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 70,
+    "fields": {
+        "property_group": 1,
+        "detail": 38,
+        "section": 9,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 71,
+    "fields": {
+        "property_group": 1,
+        "detail": 39,
+        "section": 9,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 72,
+    "fields": {
+        "property_group": 1,
+        "detail": 80,
+        "section": 9,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 73,
+    "fields": {
+        "property_group": 1,
+        "detail": 81,
+        "section": 9,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 74,
+    "fields": {
+        "property_group": 1,
+        "detail": 82,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 75,
+    "fields": {
+        "property_group": 1,
+        "detail": 83,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 76,
+    "fields": {
+        "property_group": 1,
+        "detail": 84,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 77,
+    "fields": {
+        "property_group": 1,
+        "detail": 40,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 8
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 78,
+    "fields": {
+        "property_group": 1,
+        "detail": 41,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 8
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 79,
+    "fields": {
+        "property_group": 1,
+        "detail": 42,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 9
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 80,
+    "fields": {
+        "property_group": 1,
+        "detail": 85,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 81,
+    "fields": {
+        "property_group": 1,
+        "detail": 86,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 82,
+    "fields": {
+        "property_group": 1,
+        "detail": 87,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 83,
+    "fields": {
+        "property_group": 1,
+        "detail": 88,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 7
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 84,
+    "fields": {
+        "property_group": 1,
+        "detail": 89,
+        "section": 21,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 85,
+    "fields": {
+        "property_group": 1,
+        "detail": 90,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 10
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 86,
+    "fields": {
+        "property_group": 1,
+        "detail": 43,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 8
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 87,
+    "fields": {
+        "property_group": 1,
+        "detail": 91,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 9
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 88,
+    "fields": {
+        "property_group": 1,
+        "detail": 92,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 89,
+    "fields": {
+        "property_group": 1,
+        "detail": 55,
+        "section": 24,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 3
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 90,
+    "fields": {
+        "property_group": 1,
+        "detail": 56,
+        "section": 24,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 91,
+    "fields": {
+        "property_group": 1,
+        "detail": 57,
+        "section": 24,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 92,
+    "fields": {
+        "property_group": 1,
+        "detail": 58,
+        "section": 24,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 93,
+    "fields": {
+        "property_group": 1,
+        "detail": 59,
+        "section": 24,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 6
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 94,
+    "fields": {
+        "property_group": 1,
+        "detail": 60,
+        "section": 24,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 95,
+    "fields": {
+        "property_group": 1,
+        "detail": 61,
+        "section": 24,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 96,
+    "fields": {
+        "property_group": 1,
+        "detail": 62,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 97,
+    "fields": {
+        "property_group": 1,
+        "detail": 93,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 10
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 98,
+    "fields": {
+        "property_group": 1,
+        "detail": 94,
+        "section": 17,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 99,
+    "fields": {
+        "property_group": 1,
+        "detail": 95,
+        "section": 20,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 100,
+    "fields": {
+        "property_group": 1,
+        "detail": 96,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 7
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 101,
+    "fields": {
+        "property_group": 1,
+        "detail": 97,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 102,
+    "fields": {
+        "property_group": 1,
+        "detail": 98,
+        "section": 18,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -5
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 103,
+    "fields": {
+        "property_group": 1,
+        "detail": 99,
+        "section": 18,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -4
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 104,
+    "fields": {
+        "property_group": 1,
+        "detail": 100,
+        "section": 25,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -2
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 105,
+    "fields": {
+        "property_group": 1,
+        "detail": 101,
+        "section": 25,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": -1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 106,
+    "fields": {
+        "property_group": 1,
+        "detail": 102,
+        "section": 16,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 19
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 107,
+    "fields": {
+        "property_group": 1,
+        "detail": 103,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertygroupdetails",
+    "pk": 108,
+    "fields": {
+        "property_group": 1,
+        "detail": 104,
+        "section": 5,
+        "is_required": false,
+        "is_filter": false,
+        "sort_order": 1
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 1,
+    "fields": {
+        "name": "Villa",
+        "slug": "villa",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 2,
+    "fields": {
+        "name": "Apartment",
+        "slug": "apartment",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 3,
+    "fields": {
+        "name": "Bungalow",
+        "slug": "bungalow",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 4,
+    "fields": {
+        "name": "Castle",
+        "slug": "castle",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 5,
+    "fields": {
+        "name": "Cottage",
+        "slug": "cottage",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 6,
+    "fields": {
+        "name": "Estate",
+        "slug": "estate",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 7,
+    "fields": {
+        "name": "Farmhouse",
+        "slug": "farmhouse",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 8,
+    "fields": {
+        "name": "Home",
+        "slug": "home",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 9,
+    "fields": {
+        "name": "Penthouse",
+        "slug": "penthouse",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertytype",
+    "pk": 10,
+    "fields": {
+        "name": "Townhouse",
+        "slug": "townhouse",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 1,
+    "fields": {
+        "detail": 18,
+        "name": "Ocean",
+        "slug": "Ocean",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 2,
+    "fields": {
+        "detail": 19,
+        "name": "Gated Community",
+        "slug": "gated-community",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 3,
+    "fields": {
+        "detail": 22,
+        "name": "Smoking only outside",
+        "slug": "smoking-only-outside",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 4,
+    "fields": {
+        "detail": 23,
+        "name": "No pets allowed",
+        "slug": "no-pets-allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 5,
+    "fields": {
+        "detail": 26,
+        "name": "Families allowed",
+        "slug": "families-allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 13,
+    "fields": {
+        "detail": 32,
+        "name": "Beach",
+        "slug": "beach",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 14,
+    "fields": {
+        "detail": 32,
+        "name": "Golf",
+        "slug": "golf",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 15,
+    "fields": {
+        "detail": 32,
+        "name": "Surfing",
+        "slug": "surfing",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 16,
+    "fields": {
+        "detail": 32,
+        "name": "Snorkelling",
+        "slug": "snorkelling",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 17,
+    "fields": {
+        "detail": 32,
+        "name": "Paddle Boarding",
+        "slug": "paddle-boarding",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 18,
+    "fields": {
+        "detail": 32,
+        "name": "Kayaking",
+        "slug": "kayaking",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 19,
+    "fields": {
+        "detail": 32,
+        "name": "Restaurants",
+        "slug": "restaurants",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 20,
+    "fields": {
+        "detail": 32,
+        "name": "Art Galleries",
+        "slug": "art-galleries",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 21,
+    "fields": {
+        "detail": 32,
+        "name": "Tequila Tasting",
+        "slug": "tequila-tasting",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 22,
+    "fields": {
+        "detail": 32,
+        "name": "Cooking Classes",
+        "slug": "cooking-classes",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 23,
+    "fields": {
+        "detail": 32,
+        "name": "Yoga",
+        "slug": "yoga",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 24,
+    "fields": {
+        "detail": 32,
+        "name": "Massage",
+        "slug": "massage",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 25,
+    "fields": {
+        "detail": 33,
+        "name": "In-villa chef service",
+        "slug": "in-villa-chef-service",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 26,
+    "fields": {
+        "detail": 33,
+        "name": "Round-trip airport transportation",
+        "slug": "round-trip-airport-transportation",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 27,
+    "fields": {
+        "detail": 33,
+        "name": "In-villa spa service",
+        "slug": "in-villa-spa-service",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 28,
+    "fields": {
+        "detail": 33,
+        "name": "Grocery shopping service",
+        "slug": "grocery-shopping-service",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 29,
+    "fields": {
+        "detail": 33,
+        "name": "Tours and excursions",
+        "slug": "tours-and-excursions",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 30,
+    "fields": {
+        "detail": 33,
+        "name": "Fitness personnel",
+        "slug": "fitness-personnel",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 31,
+    "fields": {
+        "detail": 33,
+        "name": "Babysitting services",
+        "slug": "babysitting-services",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 32,
+    "fields": {
+        "detail": 33,
+        "name": "Infant equipment rentals",
+        "slug": "infant-equipment-rentals",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 33,
+    "fields": {
+        "detail": 33,
+        "name": "Security personnel",
+        "slug": "security-personnel",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 34,
+    "fields": {
+        "detail": 33,
+        "name": "Translators",
+        "slug": "translators",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 35,
+    "fields": {
+        "detail": 33,
+        "name": "Private guides",
+        "slug": "private-guides",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 36,
+    "fields": {
+        "detail": 33,
+        "name": "Other services may be available – just ask!",
+        "slug": "other-services-may-be-available-just-ask",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 37,
+    "fields": {
+        "detail": 36,
+        "name": "Housekeeper",
+        "slug": "housekeeper",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 38,
+    "fields": {
+        "detail": 36,
+        "name": "Chef",
+        "slug": "chef",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 39,
+    "fields": {
+        "detail": 36,
+        "name": "Butler",
+        "slug": "butler",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 40,
+    "fields": {
+        "detail": 68,
+        "name": "Modern",
+        "slug": "nd",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 41,
+    "fields": {
+        "detail": 22,
+        "name": "No smoking",
+        "slug": "no-smoking",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 42,
+    "fields": {
+        "detail": 22,
+        "name": "Smoking allowed",
+        "slug": "smoking-allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 43,
+    "fields": {
+        "detail": 62,
+        "name": "Concierge Team",
+        "slug": "concierge-team",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 44,
+    "fields": {
+        "detail": 62,
+        "name": "Deborah Buley",
+        "slug": "deborah-buley",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 45,
+    "fields": {
+        "detail": 62,
+        "name": "Francisco Bessa",
+        "slug": "francisco-bessa",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 46,
+    "fields": {
+        "detail": 62,
+        "name": "Mario Morais",
+        "slug": "mario-morais",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 47,
+    "fields": {
+        "detail": 62,
+        "name": "Ali Cireli",
+        "slug": "ali-cireli",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 48,
+    "fields": {
+        "detail": 62,
+        "name": "Mariana Guedes de Sousa",
+        "slug": "mariana-guedes-de-sousa",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 49,
+    "fields": {
+        "detail": 62,
+        "name": "Viviana Dean",
+        "slug": "viviana-dean",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 50,
+    "fields": {
+        "detail": 62,
+        "name": "Oscar Gubernati",
+        "slug": "oscar-gubernati",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 51,
+    "fields": {
+        "detail": 62,
+        "name": "Teresa and Manuel Lobo",
+        "slug": "teresa-and-manuel-lobo",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 52,
+    "fields": {
+        "detail": 62,
+        "name": "Rogelio Melchor",
+        "slug": "rogelio-melchor",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 53,
+    "fields": {
+        "detail": 62,
+        "name": "Anna Schreimer",
+        "slug": "anna-schreimer",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 54,
+    "fields": {
+        "detail": 62,
+        "name": "Clara Vieira",
+        "slug": "clara-vieira",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 55,
+    "fields": {
+        "detail": 62,
+        "name": "Luis Sousa",
+        "slug": "luis-sousa",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 56,
+    "fields": {
+        "detail": 62,
+        "name": "Elena Domecq",
+        "slug": "elena-domecq",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 57,
+    "fields": {
+        "detail": 62,
+        "name": "Belinda Collins",
+        "slug": "belinda-collins",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 58,
+    "fields": {
+        "detail": 62,
+        "name": "Laura Coutinho",
+        "slug": "laura-coutinho",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 59,
+    "fields": {
+        "detail": 62,
+        "name": "Julia Festugato",
+        "slug": "julia-festugato",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 60,
+    "fields": {
+        "detail": 69,
+        "name": "Allowed",
+        "slug": "allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 61,
+    "fields": {
+        "detail": 69,
+        "name": "On Request",
+        "slug": "on-request",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 62,
+    "fields": {
+        "detail": 69,
+        "name": "Not Allowed",
+        "slug": "not-allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 63,
+    "fields": {
+        "detail": 69,
+        "name": "Restricted",
+        "slug": "restricted",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 64,
+    "fields": {
+        "detail": 68,
+        "name": "Traditional",
+        "slug": "traditional",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 65,
+    "fields": {
+        "detail": 68,
+        "name": "Rustic Luxe",
+        "slug": "rustic-luxe",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 66,
+    "fields": {
+        "detail": 68,
+        "name": "Historic",
+        "slug": "historic",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 67,
+    "fields": {
+        "detail": 68,
+        "name": "Boho",
+        "slug": "boho",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 68,
+    "fields": {
+        "detail": 64,
+        "name": "Pending Inspection",
+        "slug": "pending-inspection",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 69,
+    "fields": {
+        "detail": 64,
+        "name": "Fast-tracked",
+        "slug": "fast-tracked",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 70,
+    "fields": {
+        "detail": 64,
+        "name": "Needs Inspection",
+        "slug": "needs-inspection",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 71,
+    "fields": {
+        "detail": 64,
+        "name": "Inspected Approved",
+        "slug": "inspected-approved",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 72,
+    "fields": {
+        "detail": 64,
+        "name": "Inspected Not Approved",
+        "slug": "inspected-not-approved",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 73,
+    "fields": {
+        "detail": 64,
+        "name": "Inspected Waiting Improvements",
+        "slug": "inspected-waiting-improvements",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 74,
+    "fields": {
+        "detail": 26,
+        "name": "Restricted - see Age Restrictions",
+        "slug": "restricted-see-age-restrictions",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 75,
+    "fields": {
+        "detail": 26,
+        "name": "Adults only",
+        "slug": "adults-only",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 76,
+    "fields": {
+        "detail": 23,
+        "name": "Pets on request",
+        "slug": "pets-on-request",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 77,
+    "fields": {
+        "detail": 23,
+        "name": "Pets allowed",
+        "slug": "pets-allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 78,
+    "fields": {
+        "detail": 23,
+        "name": "Restricted - see Pet Restrictions",
+        "slug": "restricted-see-pet-restrictions",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 79,
+    "fields": {
+        "detail": 18,
+        "name": "Mountain",
+        "slug": "mountain",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 80,
+    "fields": {
+        "detail": 18,
+        "name": "Golf course",
+        "slug": "golf-course",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 81,
+    "fields": {
+        "detail": 18,
+        "name": "Lake",
+        "slug": "lake",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 82,
+    "fields": {
+        "detail": 18,
+        "name": "River",
+        "slug": "river",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 83,
+    "fields": {
+        "detail": 18,
+        "name": "Urban",
+        "slug": "urban",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 84,
+    "fields": {
+        "detail": 18,
+        "name": "Cityscape",
+        "slug": "cityscape",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 85,
+    "fields": {
+        "detail": 18,
+        "name": "Countryside",
+        "slug": "countryside",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 86,
+    "fields": {
+        "detail": 18,
+        "name": "Park",
+        "slug": "park",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 87,
+    "fields": {
+        "detail": 18,
+        "name": "Jungle",
+        "slug": "jungle",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 88,
+    "fields": {
+        "detail": 18,
+        "name": "Garden",
+        "slug": "garden",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 89,
+    "fields": {
+        "detail": 18,
+        "name": "Treetop",
+        "slug": "treetop",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 90,
+    "fields": {
+        "detail": 18,
+        "name": "Vineyard",
+        "slug": "vineyard",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 91,
+    "fields": {
+        "detail": 18,
+        "name": "Desert",
+        "slug": "desert",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 92,
+    "fields": {
+        "detail": 19,
+        "name": "Beachfront",
+        "slug": "beachfront",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 93,
+    "fields": {
+        "detail": 19,
+        "name": "Golfcourse front",
+        "slug": "golfcourse-front",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 94,
+    "fields": {
+        "detail": 19,
+        "name": "Ski-in-out",
+        "slug": "ski-in-out",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 95,
+    "fields": {
+        "detail": 19,
+        "name": "Village",
+        "slug": "village",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 96,
+    "fields": {
+        "detail": 19,
+        "name": "Urban",
+        "slug": "urban",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 97,
+    "fields": {
+        "detail": 19,
+        "name": "Rural",
+        "slug": "rural",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 98,
+    "fields": {
+        "detail": 19,
+        "name": "Cliffside",
+        "slug": "cliffside",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 99,
+    "fields": {
+        "detail": 19,
+        "name": "Hillside",
+        "slug": "hillside",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 100,
+    "fields": {
+        "detail": 19,
+        "name": "Hilltop",
+        "slug": "hilltop",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 101,
+    "fields": {
+        "detail": 19,
+        "name": "Riverside",
+        "slug": "riverside",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 102,
+    "fields": {
+        "detail": 19,
+        "name": "Oceanfront",
+        "slug": "oceanfront",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 103,
+    "fields": {
+        "detail": 19,
+        "name": "Lakeside",
+        "slug": "lakeside",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 104,
+    "fields": {
+        "detail": 19,
+        "name": "Jungle",
+        "slug": "jungle",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 105,
+    "fields": {
+        "detail": 19,
+        "name": "Vineyard",
+        "slug": "vineyard",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 106,
+    "fields": {
+        "detail": 19,
+        "name": "Tropical",
+        "slug": "tropical",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 107,
+    "fields": {
+        "detail": 19,
+        "name": "Protected preserve",
+        "slug": "protected-preserve",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 108,
+    "fields": {
+        "detail": 19,
+        "name": "Island",
+        "slug": "island",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 109,
+    "fields": {
+        "detail": 82,
+        "name": "Automatic",
+        "slug": "automatic",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 110,
+    "fields": {
+        "detail": 82,
+        "name": "Manual Online",
+        "slug": "manual-online",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 111,
+    "fields": {
+        "detail": 82,
+        "name": "Offline",
+        "slug": "offline",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 112,
+    "fields": {
+        "detail": 82,
+        "name": "Exclusive",
+        "slug": "exclusive",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 149,
+    "fields": {
+        "detail": 49,
+        "name": "Standard",
+        "slug": "standard",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 150,
+    "fields": {
+        "detail": 68,
+        "name": "Choose...",
+        "slug": "choose",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 151,
+    "fields": {
+        "detail": 69,
+        "name": "parties & events on request",
+        "slug": "parties-events-on-request",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 152,
+    "fields": {
+        "detail": 69,
+        "name": "no parties & events",
+        "slug": "no-parties-events",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 153,
+    "fields": {
+        "detail": 69,
+        "name": "parties & events allows",
+        "slug": "parties-events-allows",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 154,
+    "fields": {
+        "detail": 68,
+        "name": "Modern",
+        "slug": "modern",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 155,
+    "fields": {
+        "detail": 49,
+        "name": "NoRefund50",
+        "slug": "norefund50",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 156,
+    "fields": {
+        "detail": 49,
+        "name": "None - (Days 0 - Refund 0)",
+        "slug": "none-days-0-refund-0",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 157,
+    "fields": {
+        "detail": 49,
+        "name": "NoRefund0",
+        "slug": "norefund0",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 158,
+    "fields": {
+        "detail": 49,
+        "name": "Standard50",
+        "slug": "standard50",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 159,
+    "fields": {
+        "detail": 62,
+        "name": "Anna Schriemer",
+        "slug": "anna-schriemer",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 160,
+    "fields": {
+        "detail": 49,
+        "name": "Choose...",
+        "slug": "choose",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 161,
+    "fields": {
+        "detail": 49,
+        "name": "Strict80",
+        "slug": "strict80",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 162,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict",
+        "slug": "superstrict",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 163,
+    "fields": {
+        "detail": 49,
+        "name": "Standard90",
+        "slug": "standard90",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 164,
+    "fields": {
+        "detail": 63,
+        "name": "Publishing Allowed",
+        "slug": "publishing-allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 165,
+    "fields": {
+        "detail": 64,
+        "name": "Choose...",
+        "slug": "choose",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 166,
+    "fields": {
+        "detail": 62,
+        "name": "Miguel Carvalho",
+        "slug": "miguel-carvalho",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 167,
+    "fields": {
+        "detail": 62,
+        "name": "Danielle Roel",
+        "slug": "danielle-roel",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 168,
+    "fields": {
+        "detail": 49,
+        "name": "Standard60",
+        "slug": "standard60",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 169,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict90",
+        "slug": "superstrict90",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 170,
+    "fields": {
+        "detail": 49,
+        "name": "Standard70",
+        "slug": "standard70",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 171,
+    "fields": {
+        "detail": 69,
+        "name": "parties & events allows (upto 10pm)",
+        "slug": "parties-events-allows-upto-10pm",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 172,
+    "fields": {
+        "detail": 62,
+        "name": "Ali",
+        "slug": "ali",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 173,
+    "fields": {
+        "detail": 62,
+        "name": "Anna Shriemer",
+        "slug": "anna-shriemer",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 174,
+    "fields": {
+        "detail": 62,
+        "name": "Anne Schreimer",
+        "slug": "anne-schreimer",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 175,
+    "fields": {
+        "detail": 62,
+        "name": "Rogelio",
+        "slug": "rogelio",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 176,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict50",
+        "slug": "superstrict50",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 177,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict80",
+        "slug": "superstrict80",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 178,
+    "fields": {
+        "detail": 49,
+        "name": "Standard: Default TW policy. Use this if not indicated. (Full refund if cancelled up to 60 days before check-in)",
+        "slug": "standard-default-tw-policy-use-this-if-not-indicated-full-refund-if-cancelled-up-to-60-days-before-check-in",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 179,
+    "fields": {
+        "detail": 49,
+        "name": "Strict90: 90% refunded up to 90 days before check-in. (10% non refundable).",
+        "slug": "strict90-90-refunded-up-to-90-days-before-check-in-10-non-refundable",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 180,
+    "fields": {
+        "detail": 63,
+        "name": "Publishing Not Allowed",
+        "slug": "publishing-not-allowed",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 181,
+    "fields": {
+        "detail": 62,
+        "name": "Franciso Lobo-de-Vasconcellos",
+        "slug": "franciso-lobo-de-vasconcellos",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 182,
+    "fields": {
+        "detail": 49,
+        "name": "Strict",
+        "slug": "strict",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 183,
+    "fields": {
+        "detail": 49,
+        "name": "Standard80",
+        "slug": "standard80",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 184,
+    "fields": {
+        "detail": 62,
+        "name": "Maria Amaral",
+        "slug": "maria-amaral",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 185,
+    "fields": {
+        "detail": 49,
+        "name": "NoRefund90",
+        "slug": "norefund90",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 186,
+    "fields": {
+        "detail": 49,
+        "name": "Strict70",
+        "slug": "strict70",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 187,
+    "fields": {
+        "detail": 62,
+        "name": "Mariana de Sousa",
+        "slug": "mariana-de-sousa",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 188,
+    "fields": {
+        "detail": 62,
+        "name": "Mariana Sousa",
+        "slug": "mariana-sousa",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 189,
+    "fields": {
+        "detail": 62,
+        "name": "Clara",
+        "slug": "clara",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 190,
+    "fields": {
+        "detail": 62,
+        "name": "Laura Figueiredo",
+        "slug": "laura-figueiredo",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 191,
+    "fields": {
+        "detail": 49,
+        "name": "NoRefund0: No refund whatsoever.",
+        "slug": "norefund0-no-refund-whatsoever",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 192,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict60",
+        "slug": "superstrict60",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 193,
+    "fields": {
+        "detail": 62,
+        "name": "Laura Perez De Diago",
+        "slug": "laura-perez-de-diago",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 194,
+    "fields": {
+        "detail": 62,
+        "name": "Mary Bloomfield",
+        "slug": "mary-bloomfield",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 195,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict70",
+        "slug": "superstrict70",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 196,
+    "fields": {
+        "detail": 62,
+        "name": "Juanita",
+        "slug": "juanita",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 197,
+    "fields": {
+        "detail": 49,
+        "name": "Strict50",
+        "slug": "strict50",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 198,
+    "fields": {
+        "detail": 62,
+        "name": "Belinda",
+        "slug": "belinda",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 199,
+    "fields": {
+        "detail": 62,
+        "name": "Bruno Acampora",
+        "slug": "bruno-acampora",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 200,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict90: 90% refunded up to 120 days before check-in. (10% non refundable).",
+        "slug": "superstrict90-90-refunded-up-to-120-days-before-check-in-10-non-refundable",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 201,
+    "fields": {
+        "detail": 49,
+        "name": "Strict90",
+        "slug": "strict90",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 202,
+    "fields": {
+        "detail": 90,
+        "name": "Euro",
+        "slug": "euro",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 203,
+    "fields": {
+        "detail": 90,
+        "name": "Dollar",
+        "slug": "dollar",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 204,
+    "fields": {
+        "detail": 49,
+        "name": "Standard60: 60% refunded up to 60 days before check-in. (40% non refundable).",
+        "slug": "standard60-60-refunded-up-to-60-days-before-check-in-40-non-refundable",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 205,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict50: 50% refunded up to 120 days before check-in. (50% non refundable).",
+        "slug": "superstrict50-50-refunded-up-to-120-days-before-check-in-50-non-refundable",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 206,
+    "fields": {
+        "detail": 49,
+        "name": "Superstrict80: 80% refunded up to 120 days before check-in. (20% non refundable).",
+        "slug": "superstrict80-80-refunded-up-to-120-days-before-check-in-20-non-refundable",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 207,
+    "fields": {
+        "detail": 62,
+        "name": "Testing",
+        "slug": "testing",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.detailoption",
+    "pk": 208,
+    "fields": {
+        "detail": 62,
+        "name": "Testing",
+        "slug": "testing3",
+        "sort_order": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 1,
+    "fields": {
+        "name": "Bedroom",
+        "slug": "bedroom",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 2,
+    "fields": {
+        "name": "Snug Room",
+        "slug": "snug-room",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 3,
+    "fields": {
+        "name": "Exterior",
+        "slug": "exterior",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 4,
+    "fields": {
+        "name": "Mezzanine",
+        "slug": "mezzanine",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 5,
+    "fields": {
+        "name": "Annex",
+        "slug": "annex",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 6,
+    "fields": {
+        "name": "Dining-Room",
+        "slug": "dining-room",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 7,
+    "fields": {
+        "name": "Roof Terrance",
+        "slug": "roof-terrance",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 8,
+    "fields": {
+        "name": "Utility Room",
+        "slug": "utility-room",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 9,
+    "fields": {
+        "name": "Bathroom",
+        "slug": "bathroom",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 10,
+    "fields": {
+        "name": "Suite",
+        "slug": "suite",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 11,
+    "fields": {
+        "name": "Kitchen",
+        "slug": "kitchen",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 12,
+    "fields": {
+        "name": "Hall",
+        "slug": "hall",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 13,
+    "fields": {
+        "name": "Corridor",
+        "slug": "corridor",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 14,
+    "fields": {
+        "name": "Attic",
+        "slug": "attic",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 15,
+    "fields": {
+        "name": "Storage",
+        "slug": "storage",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 16,
+    "fields": {
+        "name": "Office",
+        "slug": "office",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 17,
+    "fields": {
+        "name": "Library",
+        "slug": "library",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 18,
+    "fields": {
+        "name": "Basement",
+        "slug": "basement",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisiontype",
+    "pk": 19,
+    "fields": {
+        "name": "Living Room",
+        "slug": "living-room",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertydivisionextra",
+    "pk": 1,
+    "fields": {
+        "name": "Private Bathroom"
+    }
+},
+{
+    "model": "properties.propertydivisionextra",
+    "pk": 2,
+    "fields": {
+        "name": "En-Suite Bathroom"
+    }
+},
+{
+    "model": "properties.propertydivisionextra",
+    "pk": 3,
+    "fields": {
+        "name": "Shared Bathroom"
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 1,
+    "fields": {
+        "name": "Garden",
+        "slug": "garden",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 2,
+    "fields": {
+        "name": "Common",
+        "slug": "common",
+        "item_o": 1
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 3,
+    "fields": {
+        "name": "Kitchen",
+        "slug": "kitchen",
+        "item_o": 2
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 4,
+    "fields": {
+        "name": "Facility",
+        "slug": "facility",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 5,
+    "fields": {
+        "name": "Outdoor",
+        "slug": "outdoor",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 6,
+    "fields": {
+        "name": "Special",
+        "slug": "special",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 7,
+    "fields": {
+        "name": "Logistics",
+        "slug": "logistics",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 8,
+    "fields": {
+        "name": "Home Safety",
+        "slug": "home-safety",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 9,
+    "fields": {
+        "name": "Location",
+        "slug": "location",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 10,
+    "fields": {
+        "name": "Family",
+        "slug": "family",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 11,
+    "fields": {
+        "name": "Accessibility Inside Home",
+        "slug": "accessibility-inside-home",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 12,
+    "fields": {
+        "name": "Accessibility Getting Home",
+        "slug": "accessibility-getting-home",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 13,
+    "fields": {
+        "name": "Accessibility Bedroom",
+        "slug": "accessibility-bedroom",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 14,
+    "fields": {
+        "name": "Accessibility Bathroom",
+        "slug": "accessibility-bathroom",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 15,
+    "fields": {
+        "name": "Accessibility Common Areas",
+        "slug": "accessibility-common-areas",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 16,
+    "fields": {
+        "name": "Entertainment",
+        "slug": "entertainment",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 17,
+    "fields": {
+        "name": "Enhanced Cleaning Practices",
+        "slug": "enhanced-cleaning-practices",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 18,
+    "fields": {
+        "name": "Guest Gap",
+        "slug": "guest-gap",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 19,
+    "fields": {
+        "name": "Regional Sanitization Rules",
+        "slug": "regional-sanitization-rules",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 20,
+    "fields": {
+        "name": "IA Recommended Cleaning",
+        "slug": "ia-recommended-cleaning",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 21,
+    "fields": {
+        "name": "Theme",
+        "slug": "theme",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.amenitycategory",
+    "pk": 22,
+    "fields": {
+        "name": "Other",
+        "slug": "other",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 1,
+    "fields": {
+        "name": "King",
+        "slug": "king",
+        "item_o": 0
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 2,
+    "fields": {
+        "name": "Queen",
+        "slug": "queen",
+        "item_o": 1
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 3,
+    "fields": {
+        "name": "Double",
+        "slug": "double",
+        "item_o": 2
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 4,
+    "fields": {
+        "name": "Twin",
+        "slug": "twin",
+        "item_o": 3
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 5,
+    "fields": {
+        "name": "Murphy",
+        "slug": "murphy",
+        "item_o": 4
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 6,
+    "fields": {
+        "name": "Cali King",
+        "slug": "cali-king",
+        "item_o": 5
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 7,
+    "fields": {
+        "name": "Trundle",
+        "slug": "trundle",
+        "item_o": 6
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 8,
+    "fields": {
+        "name": "Skinny Twin",
+        "slug": "skinny-twin",
+        "item_o": 7
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 9,
+    "fields": {
+        "name": "XL King",
+        "slug": "xl-king",
+        "item_o": 8
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 10,
+    "fields": {
+        "name": "Sofabed",
+        "slug": "sofabed",
+        "item_o": 9
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 11,
+    "fields": {
+        "name": "Twin daybed",
+        "slug": "twin-daybed",
+        "item_o": 10
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 12,
+    "fields": {
+        "name": "XL bunk",
+        "slug": "xl-bunk",
+        "item_o": 11
+    }
+},
+{
+    "model": "properties.propertybedroomsconfigbedtype",
+    "pk": 13,
+    "fields": {
+        "name": "Twin bunk",
+        "slug": "twin-bunk",
+        "item_o": 12
+    }
+}
+]

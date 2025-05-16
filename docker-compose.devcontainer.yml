@@ -1,0 +1,60 @@
+services:
+  db:
+    image: postgis/postgis:latest
+    env_file:
+      - docker/local/python.env
+    ports:
+      - "5433:5432"
+  vscode:
+    build:
+      context: .
+      dockerfile: docker/local/Dockerfile
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - .:/code:cached
+    ports:
+      - "5678:5678"
+      - "5679:5679"
+    env_file:
+      - docker/local/python.env
+    depends_on:
+      - db
+      - redis
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  pga:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "denis@dengun.com"
+      PGADMIN_DEFAULT_PASSWORD: "1q2w3e"
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+  flower:
+    image: mher/flower
+    ports:
+      - "5555:5555"
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/1
+    depends_on:
+      - redis
+  web:
+    build:
+      context: .
+      dockerfile: docker/local/Dockerfile
+    image: tripwix/python
+    command: python manage.py runserver 0.0.0.0:8000
+    environment:
+      DJANGO_SETTINGS_MODULE: tripwix_backend.settings.local
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+    env_file:
+      - docker/local/python.env

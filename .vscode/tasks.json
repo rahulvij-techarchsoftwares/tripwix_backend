@@ -1,0 +1,77 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Application",
+            "options": {
+                "statusbar": {
+                  "color" : "#07e612"
+                },
+            },
+            "command": "docker-compose up web",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Stop Application",
+            "options": {
+                "statusbar": {
+                  "color" : "#e60707"
+                },
+            },
+            "command": "docker-compose down",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Run migrations",
+            "options": {
+                "statusbar": {
+                  "color" : "#e8f804"
+                },
+            },
+            "command": "docker-compose run web python manage.py migrate",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Make migrations",
+            "options": {
+                "statusbar": {
+                  "color" : "#f8bf04"
+                },
+            },
+            "command": "docker-compose run web python manage.py makemigrations",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        }
+    ]
+}

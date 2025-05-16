@@ -1,0 +1,31 @@
+{% extends 'admin/change_form.html' %}
+
+
+{% block extrastyle %}
+  {{ block.super }}
+  <style type="text/css">
+    .field-detail .related-links{
+        display:none;
+    }
+  </style>
+{% endblock %}
+
+
+
+{% block js_footer %}
+    {{ block.super }}
+<script type="text/javascript">
+     (function($,window){
+
+        // var select = $("#id_detail").selectize();
+        // var selectize = select[0].selectize;
+        // selectize.disable();
+
+        // id_detail
+
+    })(django.jQuery,window);
+
+
+</script>
+
+{% endblock js_footer %}

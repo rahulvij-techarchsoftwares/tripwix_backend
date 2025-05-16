@@ -1,0 +1,55 @@
+{% load i18n static %}
+<div id="{{ id }}_div_map" data-search="{% trans 'Searching' %}" data-noresults="{% trans 'No results' %}" data-confirm="{% trans 'Do you wish to set the marker to this position?' %}">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="input-group">
+				<input type="text" class="form-control address-search-input" placeholder="{% trans 'Search by address' %}" aria-describedby="address-addon" autocomplete="off">
+			    <span class="input-group-btn">
+			        <button class="btn btn-default address-search-submit dropdown-toggleq" data-toggle="dropdown"  type="button"><i class="fa fa-search"></i></button>
+			        <ul class="dropdown-menu dropdown-menu-right"></ul>
+			    </span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="btn-group btn-group-justified" role="group">
+        <div class="btn-group btn-group-sm" role="group">
+					<button type="button" class="btn btn-warning open_map" disabled>
+						<i class="fa fa-eye"></i>
+						{% trans 'See full map' %}
+					</button>
+				</div>
+				<div class="btn-group btn-group-sm" role="group">
+					<button type="button" class="btn btn-info set_position" disabled>
+						<i class="fa fa-map-marker"></i>
+						{% trans 'Set current position' %}
+					</button>
+				</div>
+				<div class="btn-group btn-group-sm" role="group">
+					<button type="button" class="btn btn-danger clear_position" disabled>
+						<i class="fa fa-times"></i>
+						{% trans 'Clear' %}
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="{{ id }}_map" style="height: {{map_height}}px;"></div>
+	{% if display_raw %}<p>{% trans "Debugging window (serialized value)" %}</p>{% endif %}
+    <textarea style="display: none;" id="{{ id }}" class="form-control vSerializedField required {% if not display_raw %}hide{% endif %}" cols="150" rows="10" name="{{ name }}">{{ serialized }}</textarea>
+    <script type="text/javascript">
+    (function($){
+
+		{% block options %}
+		var options = {
+			geom_name: '{{ geom_type }}',
+			id: '{{ id }}',
+			map_id: '{{ id }}_map',
+			map_srid: {{ map_srid }},
+			name: '{{ name }}'
+		};
+		{% endblock %}
+		var {{ module }} = new GoolgeMapWidget(options);
+
+	})(django.jQuery)
+    </script>
+</div>

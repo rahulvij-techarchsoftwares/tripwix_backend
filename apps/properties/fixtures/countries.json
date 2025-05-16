@@ -1,0 +1,3081 @@
+[
+{
+    "model": "locations.country",
+    "pk": "BB",
+    "fields": {
+        "name": "Barbados",
+        "numcode": 52,
+        "alpha3": "BRB",
+        "phone": "246"
+    }
+},
+{
+    "model": "locations.country",
+    "pk": "ES",
+    "fields": {
+        "name": "Spain",
+        "numcode": 724,
+        "alpha3": "ESP",
+        "phone": "34"
+    }
+},
+{
+    "model": "locations.country",
+    "pk": "GR",
+    "fields": {
+        "name": "Greece",
+        "numcode": 300,
+        "alpha3": "GRC",
+        "phone": "30"
+    }
+},
+{
+    "model": "locations.country",
+    "pk": "IT",
+    "fields": {
+        "name": "Italy",
+        "numcode": 380,
+        "alpha3": "ITA",
+        "phone": "39"
+    }
+},
+{
+    "model": "locations.country",
+    "pk": "MX",
+    "fields": {
+        "name": "Mexico",
+        "numcode": 484,
+        "alpha3": "MEX",
+        "phone": "52"
+    }
+},
+{
+    "model": "locations.country",
+    "pk": "PT",
+    "fields": {
+        "name": "Portugal",
+        "numcode": 620,
+        "alpha3": "PRT",
+        "phone": "351"
+    }
+},
+{
+    "model": "locations.country",
+    "pk": "TR",
+    "fields": {
+        "name": "Turkey",
+        "numcode": 792,
+        "alpha3": "TUR",
+        "phone": "90"
+    }
+},
+{
+    "model": "locations.country",
+    "pk": "US",
+    "fields": {
+        "name": "United States of America",
+        "numcode": 840,
+        "alpha3": "USA",
+        "phone": "1"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 1,
+    "fields": {
+        "country": "BB",
+        "name": "VAT 0%",
+        "description": "",
+        "rate": "0.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 2,
+    "fields": {
+        "country": "BB",
+        "name": "VAT 10%",
+        "description": "",
+        "rate": "10.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 3,
+    "fields": {
+        "country": "BB",
+        "name": "VAT 22%",
+        "description": "",
+        "rate": "22.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 4,
+    "fields": {
+        "country": "GR",
+        "name": "VAT 6%",
+        "description": "",
+        "rate": "6.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 5,
+    "fields": {
+        "country": "GR",
+        "name": "VAT 13%",
+        "description": "",
+        "rate": "13.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 6,
+    "fields": {
+        "country": "GR",
+        "name": "VAT 24%",
+        "description": "",
+        "rate": "24.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 7,
+    "fields": {
+        "country": "IT",
+        "name": "VAT 4%",
+        "description": "",
+        "rate": "4.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 8,
+    "fields": {
+        "country": "IT",
+        "name": "VAT 5%",
+        "description": "",
+        "rate": "5.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 9,
+    "fields": {
+        "country": "IT",
+        "name": "VAT 10%",
+        "description": "",
+        "rate": "10.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 10,
+    "fields": {
+        "country": "IT",
+        "name": "VAT 22%",
+        "description": "",
+        "rate": "22.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 11,
+    "fields": {
+        "country": "MX",
+        "name": "VAT 8%",
+        "description": "",
+        "rate": "8.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 12,
+    "fields": {
+        "country": "MX",
+        "name": "VAT 16%",
+        "description": "",
+        "rate": "16.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 13,
+    "fields": {
+        "country": "PT",
+        "name": "VAT 6%",
+        "description": "",
+        "rate": "6.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 14,
+    "fields": {
+        "country": "PT",
+        "name": "VAT 13%",
+        "description": "",
+        "rate": "13.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 15,
+    "fields": {
+        "country": "PT",
+        "name": "VAT 23%",
+        "description": "",
+        "rate": "23.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 16,
+    "fields": {
+        "country": "ES",
+        "name": "VAT 4%",
+        "description": "",
+        "rate": "4.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 17,
+    "fields": {
+        "country": "ES",
+        "name": "VAT 10%",
+        "description": "",
+        "rate": "10.00"
+    }
+},
+{
+    "model": "locations.countryvatrate",
+    "pk": 18,
+    "fields": {
+        "country": "ES",
+        "name": "VAT 21%",
+        "description": "",
+        "rate": "21.00"
+    }
+},
+{
+    "model": "locations.region",
+    "pk": 1,
+    "fields": {
+        "name": "centro",
+        "slug": "centro"
+    }
+},
+{
+    "model": "locations.district",
+    "pk": 1,
+    "fields": {
+        "name": "coimbra",
+        "slug": "coimbra"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 643,
+    "fields": {
+        "name": "Punta de Mita",
+        "slug": "punta-de-mita"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 644,
+    "fields": {
+        "name": "Sayulita",
+        "slug": "sayulita"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 645,
+    "fields": {
+        "name": "Careyes",
+        "slug": "careyes"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 646,
+    "fields": {
+        "name": "Boca de Tomatlan",
+        "slug": "boca-de-tomatlan"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 647,
+    "fields": {
+        "name": "San Francisco",
+        "slug": "san-francisco"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 648,
+    "fields": {
+        "name": "Tulum",
+        "slug": "tulum"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 649,
+    "fields": {
+        "name": "La Cruz de Huanacaxtle",
+        "slug": "la-cruz-de-huanacaxtle"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 650,
+    "fields": {
+        "name": "Puerto Vallarta",
+        "slug": "puerto-vallarta"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 651,
+    "fields": {
+        "name": "Mismaloya",
+        "slug": "mismaloya"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 652,
+    "fields": {
+        "name": "Conchas Chinas",
+        "slug": "conchas-chinas"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 653,
+    "fields": {
+        "name": "Playa del Carmen",
+        "slug": "playa-del-carmen"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 654,
+    "fields": {
+        "name": "Cuixmala",
+        "slug": "cuixmala"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 655,
+    "fields": {
+        "name": "San Jose del Cabo",
+        "slug": "san-jose-del-cabo"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 656,
+    "fields": {
+        "name": "Rincon de Careyes",
+        "slug": "rincon-de-careyes"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 657,
+    "fields": {
+        "name": "Nuevo Vallarta",
+        "slug": "nuevo-vallarta"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 658,
+    "fields": {
+        "name": "San Juan de Alima",
+        "slug": "san-juan-de-alima"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 659,
+    "fields": {
+        "name": "Puerto Los Cabos",
+        "slug": "puerto-los-cabos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 660,
+    "fields": {
+        "name": "El Cardon",
+        "slug": "el-cardon"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 661,
+    "fields": {
+        "name": "Cabo San Lucas",
+        "slug": "cabo-san-lucas"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 662,
+    "fields": {
+        "name": "Amapas",
+        "slug": "amapas"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 663,
+    "fields": {
+        "name": "Higuera Blanca",
+        "slug": "higuera-blanca"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 664,
+    "fields": {
+        "name": "Cabo del Sol",
+        "slug": "cabo-del-sol"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 665,
+    "fields": {
+        "name": "Los Cabos Corridor",
+        "slug": "los-cabos-corridor"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 666,
+    "fields": {
+        "name": "Pedregal",
+        "slug": "pedregal"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 667,
+    "fields": {
+        "name": "Punta Ballena ",
+        "slug": "punta-ballena"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 671,
+    "fields": {
+        "name": "Los Cabos ",
+        "slug": "los-cabos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 672,
+    "fields": {
+        "name": "Flora Farms",
+        "slug": "flora-farms"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 677,
+    "fields": {
+        "name": "Rancho Cerro Colorado",
+        "slug": "rancho-cerro-colorado"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 680,
+    "fields": {
+        "name": "Puerto Aventuras",
+        "slug": "puerto-aventuras"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 681,
+    "fields": {
+        "name": "Tourist Corridor, Palmilla, B.C.S",
+        "slug": "tourist-corridor-palmilla-bcs"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 682,
+    "fields": {
+        "name": "Bahia de Banderas",
+        "slug": "bahia-de-banderas"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 688,
+    "fields": {
+        "name": "Baja California Sur",
+        "slug": "baja-california-sur"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 692,
+    "fields": {
+        "name": "San Jose",
+        "slug": "san-jose"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 693,
+    "fields": {
+        "name": "Alenquer",
+        "slug": "alenquer"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 694,
+    "fields": {
+        "name": "Mesão Frio",
+        "slug": "mesao-frio"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 695,
+    "fields": {
+        "name": "Azeitão",
+        "slug": "azeitao"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 696,
+    "fields": {
+        "name": "Santiago do Cacém",
+        "slug": "santiago-do-cacem"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 697,
+    "fields": {
+        "name": "Olhos de Agua",
+        "slug": "olhos-de-agua"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 698,
+    "fields": {
+        "name": "Sao Tome de Covelas",
+        "slug": "sao-tome-de-covelas"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 699,
+    "fields": {
+        "name": "Sabrosa",
+        "slug": "sabrosa"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 700,
+    "fields": {
+        "name": "Comporta",
+        "slug": "comporta"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 701,
+    "fields": {
+        "name": "Alcácer do Sal",
+        "slug": "alcacer-do-sal"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 702,
+    "fields": {
+        "name": "Albufeira",
+        "slug": "albufeira"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 703,
+    "fields": {
+        "name": "Alporchinhos",
+        "slug": "alporchinhos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 704,
+    "fields": {
+        "name": "Praia da Galé",
+        "slug": "praia-da-gale"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 705,
+    "fields": {
+        "name": "Praia Salema",
+        "slug": "praia-salema"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 706,
+    "fields": {
+        "name": "Porches",
+        "slug": "porches"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 707,
+    "fields": {
+        "name": "Castedo",
+        "slug": "castedo"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 708,
+    "fields": {
+        "name": "Boliqueime",
+        "slug": "boliqueime"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 709,
+    "fields": {
+        "name": "Lisbon",
+        "slug": "lisbon"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 711,
+    "fields": {
+        "name": "Torres Vedras",
+        "slug": "torres-vedras"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 712,
+    "fields": {
+        "name": "Melides",
+        "slug": "melides"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 713,
+    "fields": {
+        "name": "Obidos",
+        "slug": "obidos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 714,
+    "fields": {
+        "name": "Vau Obidos",
+        "slug": "vau-obidos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 715,
+    "fields": {
+        "name": "Boliqueieme",
+        "slug": "boliqueieme"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 716,
+    "fields": {
+        "name": "Tondela",
+        "slug": "tondela"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 717,
+    "fields": {
+        "name": "Portimao",
+        "slug": "portimao"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 718,
+    "fields": {
+        "name": "Setubal",
+        "slug": "setubal"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 719,
+    "fields": {
+        "name": "Ervedosa do Douro",
+        "slug": "ervedosa-do-douro"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 720,
+    "fields": {
+        "name": "Gouvaes do Douro",
+        "slug": "gouvaes-do-douro"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 721,
+    "fields": {
+        "name": "Castelo Melhor",
+        "slug": "castelo-melhor"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 722,
+    "fields": {
+        "name": "Peso da Regua",
+        "slug": "peso-da-regua"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 723,
+    "fields": {
+        "name": "Quarteira",
+        "slug": "quarteira"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 724,
+    "fields": {
+        "name": "Muda",
+        "slug": "muda"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 725,
+    "fields": {
+        "name": "Guincho",
+        "slug": "guincho"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 726,
+    "fields": {
+        "name": "Alcabideche",
+        "slug": "alcabideche"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 727,
+    "fields": {
+        "name": "Praia da Balbina",
+        "slug": "praia-da-balbina"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 729,
+    "fields": {
+        "name": "Beja",
+        "slug": "beja"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 730,
+    "fields": {
+        "name": "Carvoeiro",
+        "slug": "carvoeiro"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 731,
+    "fields": {
+        "name": "Vila Nova de Cacela",
+        "slug": "vila-nova-de-cacela"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 732,
+    "fields": {
+        "name": "Quinta do Lago",
+        "slug": "quinta-do-lago"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 733,
+    "fields": {
+        "name": "Albernoa Beja",
+        "slug": "albernoa-beja"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 734,
+    "fields": {
+        "name": "Benagil",
+        "slug": "benagil"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 735,
+    "fields": {
+        "name": "Vilamoura",
+        "slug": "vilamoura"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 736,
+    "fields": {
+        "name": "Quatro Estradas",
+        "slug": "quatro-estradas"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 737,
+    "fields": {
+        "name": "Vale do Lobo",
+        "slug": "vale-do-lobo"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 738,
+    "fields": {
+        "name": "Paderne",
+        "slug": "paderne"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 740,
+    "fields": {
+        "name": "Porto de Mos",
+        "slug": "porto-de-mos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 741,
+    "fields": {
+        "name": "Faro",
+        "slug": "faro"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 742,
+    "fields": {
+        "name": "Lagoa",
+        "slug": "lagoa"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 743,
+    "fields": {
+        "name": "Sintra",
+        "slug": "sintra"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 744,
+    "fields": {
+        "name": "Almancil",
+        "slug": "almancil"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 745,
+    "fields": {
+        "name": "Carvalhal",
+        "slug": "carvalhal"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 746,
+    "fields": {
+        "name": "Sao Francisco da Serra",
+        "slug": "sao-francisco-da-serra"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 747,
+    "fields": {
+        "name": "Luz de Tavira",
+        "slug": "luz-de-tavira"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 748,
+    "fields": {
+        "name": "Alijo",
+        "slug": "alijo"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 749,
+    "fields": {
+        "name": "Estoi",
+        "slug": "estoi"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 750,
+    "fields": {
+        "name": "Riobom",
+        "slug": "riobom"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 751,
+    "fields": {
+        "name": "Loulé",
+        "slug": "loule"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 752,
+    "fields": {
+        "name": "Provesende",
+        "slug": "provesende"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 753,
+    "fields": {
+        "name": "Armação de Pêra",
+        "slug": "armacao-de-pera"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 754,
+    "fields": {
+        "name": "Moncarapacho",
+        "slug": "moncarapacho"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 755,
+    "fields": {
+        "name": "Colares",
+        "slug": "colares"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 756,
+    "fields": {
+        "name": "Grandola",
+        "slug": "grandola"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 757,
+    "fields": {
+        "name": "Lamego",
+        "slug": "lamego"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 758,
+    "fields": {
+        "name": "Evora",
+        "slug": "evora"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 759,
+    "fields": {
+        "name": "Porto",
+        "slug": "porto"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 760,
+    "fields": {
+        "name": "Fafe",
+        "slug": "fafe"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 761,
+    "fields": {
+        "name": "Amoreira",
+        "slug": "amoreira"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 762,
+    "fields": {
+        "name": "Campinho Alentejo",
+        "slug": "campinho-alentejo"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 763,
+    "fields": {
+        "name": "Salzedas",
+        "slug": "salzedas"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 764,
+    "fields": {
+        "name": "Charneca da Caparica",
+        "slug": "charneca-da-caparica"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 765,
+    "fields": {
+        "name": "Mondroes",
+        "slug": "mondroes"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 766,
+    "fields": {
+        "name": "Lagos",
+        "slug": "lagos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 767,
+    "fields": {
+        "name": "Janes Cascais",
+        "slug": "janes-cascais"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 769,
+    "fields": {
+        "name": "Paynes Bay",
+        "slug": "paynes-bay"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 770,
+    "fields": {
+        "name": "Little Battaleys",
+        "slug": "little-battaleys"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 771,
+    "fields": {
+        "name": "St James",
+        "slug": "st-james"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 772,
+    "fields": {
+        "name": "Speightstown",
+        "slug": "speightstown"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 773,
+    "fields": {
+        "name": "The Garden",
+        "slug": "the-garden"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 774,
+    "fields": {
+        "name": "Clinketts",
+        "slug": "clinketts"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 775,
+    "fields": {
+        "name": "Silver Sands",
+        "slug": "silver-sands"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 776,
+    "fields": {
+        "name": "Mullins",
+        "slug": "mullins"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 777,
+    "fields": {
+        "name": "Holders Hill",
+        "slug": "holders-hill"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 779,
+    "fields": {
+        "name": "Lancaster",
+        "slug": "lancaster"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 780,
+    "fields": {
+        "name": "Weston",
+        "slug": "weston"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 781,
+    "fields": {
+        "name": "Porters",
+        "slug": "porters"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 782,
+    "fields": {
+        "name": "Sandy Lane",
+        "slug": "sandy-lane"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 783,
+    "fields": {
+        "name": "Sugar Hill",
+        "slug": "sugar-hill"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 784,
+    "fields": {
+        "name": "Forest Hills",
+        "slug": "forest-hills"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 785,
+    "fields": {
+        "name": "Gibbes",
+        "slug": "gibbes"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 786,
+    "fields": {
+        "name": "Holetown",
+        "slug": "holetown"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 787,
+    "fields": {
+        "name": "Saint James",
+        "slug": "saint-james"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 788,
+    "fields": {
+        "name": "Christ Church",
+        "slug": "christ-church"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 789,
+    "fields": {
+        "name": "St. Peter Speightstown",
+        "slug": "st-peter-speightstown"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 790,
+    "fields": {
+        "name": "Fitts Village",
+        "slug": "fitts-village"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 791,
+    "fields": {
+        "name": "Friendship Bay Bequia",
+        "slug": "friendship-bay-bequia"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 792,
+    "fields": {
+        "name": "Prospect",
+        "slug": "prospect"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 793,
+    "fields": {
+        "name": "Deanes",
+        "slug": "deanes"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 794,
+    "fields": {
+        "name": "Port Elizabeth",
+        "slug": "port-elizabeth"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 795,
+    "fields": {
+        "name": "Bequia",
+        "slug": "bequia"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 796,
+    "fields": {
+        "name": "Bridgetown",
+        "slug": "bridgetown"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 799,
+    "fields": {
+        "name": "Lower Carlton",
+        "slug": "lower-carlton"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 800,
+    "fields": {
+        "name": "Las Cabezas de San Juan",
+        "slug": "las-cabezas-de-san-juan"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 801,
+    "fields": {
+        "name": "Seville",
+        "slug": "seville"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 802,
+    "fields": {
+        "name": "Vejer de la Frontera",
+        "slug": "vejer-de-la-frontera"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 803,
+    "fields": {
+        "name": "Marbella",
+        "slug": "marbella"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 804,
+    "fields": {
+        "name": "El Rosario",
+        "slug": "el-rosario"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 805,
+    "fields": {
+        "name": "Puerto Banus",
+        "slug": "puerto-banus"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 806,
+    "fields": {
+        "name": "Zagaleta",
+        "slug": "zagaleta"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 807,
+    "fields": {
+        "name": "Ronda",
+        "slug": "ronda"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 808,
+    "fields": {
+        "name": "Malaga",
+        "slug": "malaga"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 809,
+    "fields": {
+        "name": "Ciudad Real",
+        "slug": "ciudad-real"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 811,
+    "fields": {
+        "name": "Tavarnelle",
+        "slug": "tavarnelle"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 812,
+    "fields": {
+        "name": "San Giovanni del Pantano",
+        "slug": "san-giovanni-del-pantano"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 813,
+    "fields": {
+        "name": "Castelfiorentino FI",
+        "slug": "castelfiorentino-fi"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 814,
+    "fields": {
+        "name": "Trequanda SI",
+        "slug": "trequanda-si"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 815,
+    "fields": {
+        "name": "Perugia",
+        "slug": "perugia"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 816,
+    "fields": {
+        "name": "Lake Como",
+        "slug": "lake-como"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 817,
+    "fields": {
+        "name": "Collazzone",
+        "slug": "collazzone"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 818,
+    "fields": {
+        "name": "Favignana",
+        "slug": "favignana"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 819,
+    "fields": {
+        "name": "Castellammare del Golfo",
+        "slug": "castellammare-del-golfo"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 820,
+    "fields": {
+        "name": "Sorrento",
+        "slug": "sorrento"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 821,
+    "fields": {
+        "name": "Bellagio",
+        "slug": "bellagio"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 822,
+    "fields": {
+        "name": "Florence",
+        "slug": "florence"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 823,
+    "fields": {
+        "name": "Positano",
+        "slug": "positano"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 825,
+    "fields": {
+        "name": "Priora",
+        "slug": "priora"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 826,
+    "fields": {
+        "name": "Praiano",
+        "slug": "praiano"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 828,
+    "fields": {
+        "name": "Impruneta Firenze",
+        "slug": "impruneta-firenze"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 830,
+    "fields": {
+        "name": "Massa Lubrense",
+        "slug": "massa-lubrense"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 831,
+    "fields": {
+        "name": "Amalfi",
+        "slug": "amalfi"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 832,
+    "fields": {
+        "name": "Naples",
+        "slug": "naples"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 833,
+    "fields": {
+        "name": "Vico Equense ",
+        "slug": "vico-equense"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 835,
+    "fields": {
+        "name": "Maiori",
+        "slug": "maiori"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 836,
+    "fields": {
+        "name": "Buonconvento, SI",
+        "slug": "buonconvento-si"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 837,
+    "fields": {
+        "name": "Nerano",
+        "slug": "nerano"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 838,
+    "fields": {
+        "name": "Monte Castello di Vibio",
+        "slug": "monte-castello-di-vibio"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 839,
+    "fields": {
+        "name": "Vietri sul mare",
+        "slug": "vietri-sul-mare"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 840,
+    "fields": {
+        "name": "Siracusa",
+        "slug": "siracusa"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 841,
+    "fields": {
+        "name": "Sardinia",
+        "slug": "sardinia"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 842,
+    "fields": {
+        "name": "San Teodoro SS",
+        "slug": "san-teodoro-ss"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 844,
+    "fields": {
+        "name": "Venice",
+        "slug": "venice"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 845,
+    "fields": {
+        "name": "Macciano",
+        "slug": "macciano"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 846,
+    "fields": {
+        "name": "Colli di Fontanelle",
+        "slug": "colli-di-fontanelle"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 847,
+    "fields": {
+        "name": "Furore",
+        "slug": "furore"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 848,
+    "fields": {
+        "name": "Pienza",
+        "slug": "pienza"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 849,
+    "fields": {
+        "name": "Salerno",
+        "slug": "salerno"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 850,
+    "fields": {
+        "name": "Chiesanuova",
+        "slug": "chiesanuova"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 851,
+    "fields": {
+        "name": "Todi",
+        "slug": "todi"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 852,
+    "fields": {
+        "name": "Elia",
+        "slug": "elia"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 853,
+    "fields": {
+        "name": "Mykonos",
+        "slug": "mykonos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 854,
+    "fields": {
+        "name": "Paros",
+        "slug": "paros"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 855,
+    "fields": {
+        "name": "Mikonos",
+        "slug": "mikonos"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 856,
+    "fields": {
+        "name": "Nisaki, Corfu TK",
+        "slug": "nisaki-corfu-tk"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 973,
+    "fields": {
+        "name": "Cancun",
+        "slug": "cancun"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 974,
+    "fields": {
+        "name": "Quinta do Lago",
+        "slug": "qdl"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 975,
+    "fields": {
+        "name": "uruguay",
+        "slug": "uruguay"
+    }
+},
+{
+    "model": "locations.city",
+    "pk": 976,
+    "fields": {
+        "name": "coimbra",
+        "slug": "coimbra"
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 643,
+    "fields": {
+        "name": "Punta de Mita Area, Mexico",
+        "slug": "punta-de-mita-area-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 644,
+    "fields": {
+        "name": "Sayulita Area, Mexico",
+        "slug": "sayulita-area-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 645,
+    "fields": {
+        "name": "Careyes Area, Mexico",
+        "slug": "careyes-area-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 646,
+    "fields": {
+        "name": "Puerto Vallarta, Mexico",
+        "slug": "puerto-vallarta-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 647,
+    "fields": {
+        "name": "Riviera Maya, Mexico",
+        "slug": "riviera-maya-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 648,
+    "fields": {
+        "name": "Riviera Nayarit, Mexico",
+        "slug": "riviera-nayarit-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 649,
+    "fields": {
+        "name": "Los Cabos, Mexico",
+        "slug": "los-cabos-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 650,
+    "fields": {
+        "name": "Colima, Mexico",
+        "slug": "colima-mexico",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "MX",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 651,
+    "fields": {
+        "name": "Lisbon Area, Portugal",
+        "slug": "lisbon-area-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 652,
+    "fields": {
+        "name": "Douro Valley, Portugal",
+        "slug": "douro-valley-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 653,
+    "fields": {
+        "name": "Alentejo, Portugal",
+        "slug": "alentejo-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 654,
+    "fields": {
+        "name": "Algarve, Portugal",
+        "slug": "algarve-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 655,
+    "fields": {
+        "name": "Comporta Area, Portugal",
+        "slug": "comporta-area-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 656,
+    "fields": {
+        "name": "Nazare Area, Portugal",
+        "slug": "nazare-area-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 657,
+    "fields": {
+        "name": "Northern Portugal, Portugal",
+        "slug": "northern-portugal-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 658,
+    "fields": {
+        "name": "Cascais Sintra Estoril, Portugal",
+        "slug": "cascais-sintra-estoril-portugal",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 659,
+    "fields": {
+        "name": "Barbados, Barbados",
+        "slug": "barbados-barbados",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "BB",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 660,
+    "fields": {
+        "name": "Seville Area, Spain",
+        "slug": "seville-area-spain",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "ES",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 661,
+    "fields": {
+        "name": "Ronda Area, Spain",
+        "slug": "ronda-area-spain",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "ES",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 662,
+    "fields": {
+        "name": "Marbella Area, Spain",
+        "slug": "marbella-area-spain",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "ES",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 663,
+    "fields": {
+        "name": "Tuscany and Umbria, Italy",
+        "slug": "tuscany-and-umbria-italy",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "IT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 664,
+    "fields": {
+        "name": "Lake Como, Italy",
+        "slug": "lake-como-italy",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "IT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 666,
+    "fields": {
+        "name": "Positano Area, Italy",
+        "slug": "positano-area-italy",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "IT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 667,
+    "fields": {
+        "name": "Florence Area, Italy",
+        "slug": "florence-area-italy",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "IT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 668,
+    "fields": {
+        "name": "Italy, Italy",
+        "slug": "italy-italy",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "IT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 669,
+    "fields": {
+        "name": "Sicily and Sardinia, Italy",
+        "slug": "sicily-and-sardinia-italy",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "IT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 670,
+    "fields": {
+        "name": "Mykonos, Greece",
+        "slug": "mykonos-greece",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "GR",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 671,
+    "fields": {
+        "name": "Greek Islands, Greece",
+        "slug": "greek-islands-greece",
+        "city": null,
+        "district": null,
+        "region": null,
+        "country": "GR",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.location",
+    "pk": 672,
+    "fields": {
+        "name": "coimbra",
+        "slug": "coimbra",
+        "city": 976,
+        "district": 1,
+        "region": 1,
+        "country": "PT",
+        "is_active": true,
+        "active_sublocations": true,
+        "sort_order": 0
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 2,
+    "fields": {
+        "location": 643,
+        "name": "KUPURI ESTATES",
+        "slug": "kupuri-estates-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 3,
+    "fields": {
+        "location": 644,
+        "name": "PUNTA SAYULITA",
+        "slug": "punta-sayulita-sayulita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 4,
+    "fields": {
+        "location": 643,
+        "name": "FOUR SEASONS PUNTA MITA",
+        "slug": "four-seasons-punta-mita-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 5,
+    "fields": {
+        "location": 643,
+        "name": "RANCHOS ESTATES PUNTA MITA",
+        "slug": "ranchos-estates-punta-mita-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 6,
+    "fields": {
+        "location": 643,
+        "name": "MEXICO - PUNTA DE MITA AREA - LA PUNTA ESTATES",
+        "slug": "la-punta-estates-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 7,
+    "fields": {
+        "location": 645,
+        "name": "CAREYES AREA",
+        "slug": "careyes-area-careyes-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 8,
+    "fields": {
+        "location": 646,
+        "name": "MISMALOYA AREA",
+        "slug": "mismaloya-area-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 9,
+    "fields": {
+        "location": 643,
+        "name": "EL BANCO PUNTA DE MITA",
+        "slug": "el-banco-punta-de-mita-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 10,
+    "fields": {
+        "location": 643,
+        "name": "PACIFICO ESTATES",
+        "slug": "pacifico-estates-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 11,
+    "fields": {
+        "location": 644,
+        "name": "SAN PANCHO",
+        "slug": "san-pancho-sayulita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 12,
+    "fields": {
+        "location": 647,
+        "name": "TULUM",
+        "slug": "tulum-riviera-maya-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 13,
+    "fields": {
+        "location": 648,
+        "name": "REAL DEL MAR",
+        "slug": "real-del-mar-riviera-nayarit-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 14,
+    "fields": {
+        "location": 646,
+        "name": "SIERRA DEL MAR LOS ARCOS (OCEANSIDE)",
+        "slug": "sierra-del-mar-los-arcos-oceanside-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 15,
+    "fields": {
+        "location": 647,
+        "name": "PLAYA DEL CARMEN",
+        "slug": "playa-del-carmen-riviera-maya-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 16,
+    "fields": {
+        "location": 646,
+        "name": "MEXICO - PUERTO VALLARTA - CONCHAS CHINAS AREA",
+        "slug": "conchas-chinas-area-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 17,
+    "fields": {
+        "location": 643,
+        "name": "LAS PALMAS PUNTA MITA",
+        "slug": "las-palmas-punta-mita-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 18,
+    "fields": {
+        "location": 643,
+        "name": "LOS VENEROS",
+        "slug": "los-veneros-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 19,
+    "fields": {
+        "location": 643,
+        "name": "LAGOS DEL MAR",
+        "slug": "lagos-del-mar-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 20,
+    "fields": {
+        "location": 646,
+        "name": "GRINGO GULCH CENTRO",
+        "slug": "gringo-gulch-centro-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 21,
+    "fields": {
+        "location": 646,
+        "name": "SOUTH SHORE – HIGHWAY",
+        "slug": "south-shore-highway-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 22,
+    "fields": {
+        "location": 646,
+        "name": "AMAPAS AREA",
+        "slug": "amapas-area-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 23,
+    "fields": {
+        "location": 643,
+        "name": "PONTOQUITO",
+        "slug": "pontoquito-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 24,
+    "fields": {
+        "location": 643,
+        "name": "LAS MARIETAS CONDOMINIUMS",
+        "slug": "las-marietas-condominiums-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 25,
+    "fields": {
+        "location": 643,
+        "name": "HACIENDA DE MITA",
+        "slug": "hacienda-de-mita-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 26,
+    "fields": {
+        "location": 643,
+        "name": "PORTA FORTUNA",
+        "slug": "porta-fortuna-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 27,
+    "fields": {
+        "location": 643,
+        "name": "BOLONGO",
+        "slug": "bolongo-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 28,
+    "fields": {
+        "location": 645,
+        "name": "CUIXMALA",
+        "slug": "cuixmala-careyes-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 29,
+    "fields": {
+        "location": 649,
+        "name": "PALMILLA - SAN JOSE",
+        "slug": "palmilla-san-jose-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 30,
+    "fields": {
+        "location": 648,
+        "name": "PENINSULA",
+        "slug": "peninsula-riviera-nayarit-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 31,
+    "fields": {
+        "location": 650,
+        "name": "SAN JUAN DE ALIMA",
+        "slug": "san-juan-de-alima-colima-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 32,
+    "fields": {
+        "location": 646,
+        "name": "SOUTH SHORE – SAN XOAQUIN",
+        "slug": "south-shore-san-xoaquin-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 33,
+    "fields": {
+        "location": 649,
+        "name": "PUERTO LOS CABOS - SAN JOSE",
+        "slug": "puerto-los-cabos-san-jose-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 34,
+    "fields": {
+        "location": 649,
+        "name": "EAST CAPE",
+        "slug": "east-cape-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 35,
+    "fields": {
+        "location": 649,
+        "name": "PEDREGAL - CABO SAN LUCAS",
+        "slug": "pedregal-cabo-san-lucas-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 36,
+    "fields": {
+        "location": 643,
+        "name": "IMANTA",
+        "slug": "imanta-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 37,
+    "fields": {
+        "location": 649,
+        "name": "CABO DEL SOL - CORRIDOR",
+        "slug": "cabo-del-sol-corridor-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 38,
+    "fields": {
+        "location": 649,
+        "name": "CORRIDOR",
+        "slug": "corridor-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 39,
+    "fields": {
+        "location": 649,
+        "name": "PUNTA BALLENA - CORRIDOR",
+        "slug": "punta-ballena-corridor-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 40,
+    "fields": {
+        "location": 649,
+        "name": "HACIENDA - CABO SAN LUCAS",
+        "slug": "hacienda-cabo-san-lucas-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 41,
+    "fields": {
+        "location": 643,
+        "name": "MEXICO - PUNTA DE MITA AREA - EL ENCANTO",
+        "slug": "el-encanto-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 42,
+    "fields": {
+        "location": 643,
+        "name": "TAU RESIDENCES",
+        "slug": "tau-residences-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 43,
+    "fields": {
+        "location": 649,
+        "name": "MEXICO - LOS CABOS - EL ENCANTO EAST CAPE",
+        "slug": "el-encanto-east-cape-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 44,
+    "fields": {
+        "location": 649,
+        "name": "RANCHO PARAÍSO - CABO SAN LUCAS",
+        "slug": "rancho-paraiso-cabo-san-lucas-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 45,
+    "fields": {
+        "location": 649,
+        "name": "FLORA FARMS - SAN JOSE",
+        "slug": "flora-farms-san-jose-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 46,
+    "fields": {
+        "location": 646,
+        "name": "EL TIGRE",
+        "slug": "el-tigre-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 47,
+    "fields": {
+        "location": 646,
+        "name": "SIERRA DEL MAR RESIDENCIAL (MOUNTAIN)",
+        "slug": "sierra-del-mar-residencial-mountain-puerto-vallarta-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 48,
+    "fields": {
+        "location": 643,
+        "name": "IYARI ESTATES",
+        "slug": "iyari-estates-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 49,
+    "fields": {
+        "location": 647,
+        "name": "Puerto Aventuras",
+        "slug": "puerto-aventuras-riviera-maya-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 50,
+    "fields": {
+        "location": 649,
+        "name": "Pedregal",
+        "slug": "pedregal-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 51,
+    "fields": {
+        "location": 643,
+        "name": "Pontoquito / Paradise Coves",
+        "slug": "pontoquito-paradise-coves-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 52,
+    "fields": {
+        "location": 649,
+        "name": "Palmilla - San JoseMake",
+        "slug": "palmilla-san-josemake-los-cabos-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 53,
+    "fields": {
+        "location": 643,
+        "name": "Four Seasons",
+        "slug": "four-seasons-punta-de-mita-area-mexico"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 54,
+    "fields": {
+        "location": 654,
+        "name": "PORTUGAL - ALGARVE - ALBUFEIRA, BOLIQUEIME AND OLHOS DE AGUA",
+        "slug": "albufeira-boliqueime-and-olhos-de-agua-algarve-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 55,
+    "fields": {
+        "location": 654,
+        "name": "CENTRAL ALGARVE - PORCHES, BENAGIL, CARVOEIRO, FERRAGUDO",
+        "slug": "central-algarve-porches-benagil-carvoeiro-ferragudo-algarve-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 56,
+    "fields": {
+        "location": 654,
+        "name": "WEST ALGARVE - PRAIA SALEMA",
+        "slug": "west-algarve-praia-salema-algarve-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 57,
+    "fields": {
+        "location": 654,
+        "name": "LAGOS, PORTIMAO AND WEST ALGARVE",
+        "slug": "lagos-portimao-and-west-algarve-algarve-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 58,
+    "fields": {
+        "location": 654,
+        "name": "QUINTA DO LAGO, VALE DO LOBO, VILAMOURA",
+        "slug": "quinta-do-lago-vale-do-lobo-vilamoura-algarve-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 59,
+    "fields": {
+        "location": 658,
+        "name": "GUINCHO",
+        "slug": "guincho-cascais-sintra-estoril-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 60,
+    "fields": {
+        "location": 654,
+        "name": "EAST ALGARVE",
+        "slug": "east-algarve-algarve-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 61,
+    "fields": {
+        "location": 658,
+        "name": "PORTUGAL - CASCAIS SINTRA ESTORIL - SINTRA",
+        "slug": "sintra-cascais-sintra-estoril-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 62,
+    "fields": {
+        "location": 658,
+        "name": "COLARES",
+        "slug": "colares-cascais-sintra-estoril-portugal"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 66,
+    "fields": {
+        "location": 659,
+        "name": "PAYNES BAY",
+        "slug": "paynes-bay-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 67,
+    "fields": {
+        "location": 659,
+        "name": "GODINGS BAY",
+        "slug": "godings-bay-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 68,
+    "fields": {
+        "location": 659,
+        "name": "THE GARDEN AND LOWER CARLTON",
+        "slug": "the-garden-and-lower-carlton-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 69,
+    "fields": {
+        "location": 659,
+        "name": "MULLINS AND GIBBES BEACH",
+        "slug": "mullins-and-gibbes-beach-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 70,
+    "fields": {
+        "location": 659,
+        "name": "NORTH COAST BARBADOS",
+        "slug": "north-coast-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 71,
+    "fields": {
+        "location": 659,
+        "name": "SOUTH COAST",
+        "slug": "south-coast-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 72,
+    "fields": {
+        "location": 659,
+        "name": "BARBADOS",
+        "slug": "barbados-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 73,
+    "fields": {
+        "location": 659,
+        "name": "SANDY LANE",
+        "slug": "sandy-lane-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 74,
+    "fields": {
+        "location": 659,
+        "name": "SUGAR HILL",
+        "slug": "sugar-hill-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 76,
+    "fields": {
+        "location": 659,
+        "name": "ROYAL WESTMORELAND ESTATES",
+        "slug": "royal-westmoreland-estates-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 77,
+    "fields": {
+        "location": 659,
+        "name": "HOLETOWN",
+        "slug": "holetown-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 78,
+    "fields": {
+        "location": 659,
+        "name": "PORTERS",
+        "slug": "porters-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 79,
+    "fields": {
+        "location": 659,
+        "name": "FITTS VILLAGE",
+        "slug": "fitts-village-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 80,
+    "fields": {
+        "location": 659,
+        "name": "BEQUIA",
+        "slug": "bequia-barbados-barbados"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 81,
+    "fields": {
+        "location": 661,
+        "name": "RondaArea",
+        "slug": "rondaarea-ronda-area-spain"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 82,
+    "fields": {
+        "location": 662,
+        "name": "MARBELLA",
+        "slug": "marbella-marbella-area-spain"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 83,
+    "fields": {
+        "location": 662,
+        "name": "EL ROSARIO",
+        "slug": "el-rosario-marbella-area-spain"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 84,
+    "fields": {
+        "location": 662,
+        "name": "ZAGALETA",
+        "slug": "zagaleta-marbella-area-spain"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 85,
+    "fields": {
+        "location": 662,
+        "name": "LOS MONTEROS",
+        "slug": "los-monteros-marbella-area-spain"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 86,
+    "fields": {
+        "location": 663,
+        "name": "PERUGIA",
+        "slug": "perugia-tuscany-and-umbria-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 87,
+    "fields": {
+        "location": 663,
+        "name": "CHIANTI",
+        "slug": "chianti-tuscany-and-umbria-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 88,
+    "fields": {
+        "location": 663,
+        "name": "TENUTA DI MERLO",
+        "slug": "tenuta-di-merlo-tuscany-and-umbria-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 89,
+    "fields": {
+        "location": 663,
+        "name": "PIENZA AND MONTEPULCIANO AREA",
+        "slug": "pienza-and-montepulciano-area-tuscany-and-umbria-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 90,
+    "fields": {
+        "location": 666,
+        "name": "SORRENTO",
+        "slug": "sorrento-positano-area-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 91,
+    "fields": {
+        "location": 666,
+        "name": "POSITANO",
+        "slug": "positano-positano-area-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 92,
+    "fields": {
+        "location": 666,
+        "name": "AMALFI",
+        "slug": "amalfi-positano-area-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 93,
+    "fields": {
+        "location": 666,
+        "name": "PRAIANO",
+        "slug": "praiano-positano-area-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 94,
+    "fields": {
+        "location": 663,
+        "name": "SIENA",
+        "slug": "siena-tuscany-and-umbria-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 95,
+    "fields": {
+        "location": 666,
+        "name": "POSITANO AREA",
+        "slug": "positano-area-positano-area-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 96,
+    "fields": {
+        "location": 668,
+        "name": "Sicily and Sardinia",
+        "slug": "sicily-and-sardinia-italy-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 97,
+    "fields": {
+        "location": 669,
+        "name": "ITALY - EAST SICILY",
+        "slug": "east-sicily-sicily-and-sardinia-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 98,
+    "fields": {
+        "location": 669,
+        "name": "Sardinia",
+        "slug": "sardinia-sicily-and-sardinia-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 99,
+    "fields": {
+        "location": 663,
+        "name": "Tuscany",
+        "slug": "tuscany-tuscany-and-umbria-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 100,
+    "fields": {
+        "location": 666,
+        "name": "FURORE",
+        "slug": "furore-positano-area-italy"
+    }
+},
+{
+    "model": "locations.sublocation",
+    "pk": 148,
+    "fields": {
+        "location": 645,
+        "name": "CAREYES ",
+        "slug": "careyes-careyes-area-mexico"
+    }
+}
+]

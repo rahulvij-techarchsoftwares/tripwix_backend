@@ -1,0 +1,374 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls static utils_tags %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    
+    <style type="text/css">
+        #content{
+            padding-top: 0px !important;
+        }
+        
+        .table.horizontal tbody tr td:first-child{
+            width: 200px;
+        }
+        .table.vertical tbody tr td:first-child{
+            width: 200px;
+        }
+
+    </style>
+    <style type="text/css">
+        #content{
+            padding-top: 0px !important;
+        }
+        #sortable1, 
+        #sortable2{ 
+            list-style-type: none; 
+            margin: 0; 
+            float: left; 
+            /*margin-right: 10px; */
+            background: #eee; 
+            padding: 10px; 
+            width: 100%;
+            height: 100%
+        }
+        #sortable1 li, 
+        #sortable2 li{ 
+            /*margin: 5px; */
+            margin-bottom: 5px;
+            padding: 5px; 
+            font-size: 1em; 
+            width: 100%; 
+        }
+    .nav>li {
+       float: left;
+    }
+  </style>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+{% endblock %}
+
+{% block breadcrumbs %}
+{% spaceless %}
+    
+{% endspaceless %}
+{% endblock %}
+
+
+
+{% block object-tools %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<form action="" method="post">
+
+{% block object-toolbar %}
+<div class="btn-toolbar" role="toolbar">
+    <div class="btn-group">
+        <a href="./" class="btn btn-inverse">{% trans 'Cancel/Back' %}</a>
+        <button type="submit" class="btn btn-primary" name="submit" value="compare">
+            <i class="fa fa-clone"></i> {% trans "Compare" %}
+        </button>
+    </div>
+</div>
+{% endblock object-toolbar %}
+
+    {% csrf_token %}
+    <input type="hidden" name="action" value="{{ action_label }}">
+    <input type="hidden" name="do_action" value="yes">
+
+    {% if objects|length == 1 %}
+        <h2>{% trans "Compare Property" %}</h2>
+    {% else %}
+        <h2>{% trans "Compare Properties" %}</h2>
+    {% endif %}
+
+    {% comment %}
+    <div class="col-sm-12">
+        <table class="table horizontal">
+            <caption>Horizontal</caption> 
+            <thead> 
+                <tr>
+                <th>Detail</th> 
+                {% for object in objects %}
+                    <th>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="{{ object.pk }}/">
+                                    {{ object.get_thumbnail|safe }}
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ object.title }}</h4>
+                                <small>{{ object.name }}</small>
+                            </div>
+                        </div>
+                        <input type="hidden" name="_selected_action" value="{{ object.pk }}">
+                    </th> 
+                {% endfor %}
+                </tr> 
+            </thead> 
+            <tbody>
+                {% for key, value in select_fields.iteritems %}
+                    {% if key in default_select_fields %}
+
+                        <tr> 
+                            <td scope="row">{{ value.name }}</td>
+                            {% for object in objects %}
+                                <td>{{ object.location }}</td>
+                            {% endfor %}
+                        </tr>
+
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endcomment %}
+
+<div>
+    Layout
+  <!-- Nav tabs -->
+  <ul class="nav" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#vertical" role="tab" class="" data-toggle="tab">
+            <i class="fa fa-list-ul" aria-hidden="true"></i>
+        </a>
+    </li>
+    <li role="presentation">
+        <a href="#horizontal" class="" role="tab" data-toggle="tab">
+            <i class="fa fa-list-ul fa-rotate-90" aria-hidden="true"></i>
+        </a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="vertical">
+
+            <table class="table vertical">
+                <caption>Vertical</caption>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        {% for key, value in default_select_fields.iteritems %}
+                            <th>{{ value.name }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                     {% for object in objects_data %}
+
+                         {% with object=object.object values=object.values %}
+                         <tr>
+                            <td scope="row">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="{{ object.pk }}/">
+                                            {{ object.get_thumbnail|safe }}
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">{{ object.title }}</h4>
+                                        <small>{{ object.name }}</small>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_selected_action" value="{{ object.pk }}">
+
+
+                            </td>
+
+                             {% for key, value in values.iteritems  %}
+
+
+                                  {% if MEDIA_URL in value %}
+                                        <td><img src="{{ value }}"/></td>
+                                  {% else %}
+                                        <td>{{ value }}</td>
+                                  {% endif %}
+                            {% endfor %}
+
+                         </tr>
+                         {% endwith %}
+
+                     {% endfor %}
+                </tbody>
+            </table>
+
+
+    </div>
+
+
+
+    <div role="tabpanel" class="tab-pane" id="horizontal">
+        <table class="table horizontal">
+            <caption>Horizontal</caption>
+            <thead>
+                <tr>
+                <th>Detail</th>
+
+                     {% for object in objects_data %}
+                        {% with object=object.object values=object.values %}
+
+                            <th>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="{{ object.pk }}/">
+                                            {{ object.get_thumbnail|safe }}
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">{{ object.title }}</h4>
+                                        <small>{{ object.name }}</small>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_selected_action" value="{{ object.pk }}">
+                            </th>
+                        {% endwith %}
+                     {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+
+            {% for key, value in default_select_fields.iteritems %}
+                {% with row_key=key row_value=value %}
+                <tr>
+                    <td scope="row">{{ row_value.name }}</td>
+
+                    {% for object in objects_data %}
+
+                        {% with object=object.object values=object.values %}
+                            <td> {{values|keyvalue:row_key}}</td>
+                        {% endwith %}
+
+                    {% endfor %}
+                </tr>
+                {% endwith %}
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="col-sm-12">
+        <h4>{% trans "Select fields to compare" %}</h4>
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <h5>{% trans "All Fields" %}</h5>
+                <ul id="sortable2" class="dropfalse">
+                    {% for key, value in select_fields.iteritems %}
+                        {% if key not in default_select_fields %}
+                            <li class="ui-state-highlight">
+                            <div class="hide">
+                                <input type="checkbox" name="selected_fields" value="{{key}}" >
+                            </div>
+                                {{ value.name }}
+                                <p class="small">{{ value.help_text }}</p>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-sm-6">
+                <h5>{% trans "Selected fields" %}</h5>
+                <ul id="sortable1" class="droptrue">
+
+                    {% for key, value in default_select_fields.iteritems %}
+
+                            <li class="ui-state-default">
+                            <div class="hide">
+                                <input type="checkbox" name="selected_fields" value="{{key}}"  checked>
+                            </div>
+                                {{ value.name }}
+                                <p class="small">{{ value.help_text }}</p>
+                            </li>
+
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+    </div>
+
+
+    <div class="col-sm-6">
+        <h5>{% trans "Export Options" %}</h5>
+
+        {% block field_sets %}
+            {% for fieldset in form %}
+                {% include "admin/includes/fieldset.html" %}
+            {% endfor %}
+        {% endblock %}
+
+        <div class="col-sm-12 text-right">
+            <button type="submit" class="btn btn-primary" name="submit" value="export">
+                <i class="fa fa-clone"></i> {% trans "Export" %}
+            </button>
+         </div>
+
+    </div>
+
+</form>
+{% endblock %}
+
+{% block js_footer %}
+{{block.super}}
+
+
+ <script src="{% static "js/jquery.min.js" %}"></script>
+ <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ <script src="{% static "js/force_jquery.js" %}"></script>
+ 
+
+
+  <!--script src="//code.jquery.com/jquery-1.10.2.js"></script-->
+  <!--script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script-->
+<script>
+
+
+    $(document).ready(function(){
+
+        $( "ul.droptrue" ).sortable({
+          connectWith: "ul",
+          receive: function( event, ui ) {
+            ui.item.find('input[type="checkbox"]').prop('checked', true);
+          }
+        });
+
+        $( "ul.dropfalse" ).sortable({
+          connectWith: "ul",
+          dropOnEmpty: false,
+          receive: function( event, ui ) {
+            ui.item.find('input[type="checkbox"]').prop('checked', false);
+          }
+
+        });
+
+        $( "#sortable1, #sortable2" ).disableSelection();
+
+        $( "#id_export_format" ).change(function(option) {
+            if ($(this).val()=="pdf") {
+                $(".pdf_options").show();
+            }
+            else {
+                $(".pdf_options").hide();
+            }
+        }).change();
+
+    });
+
+
+</script>
+{% endblock js_footer %}

@@ -1,0 +1,765 @@
+{% load i18n admin_urls admin_static admin_modify static admin_list bootstrap_admin %}
+{% load bootstrap_template_tags %}
+
+{% block wrapper_inline_formset %}
+<fieldset class="module aligned row inline-m2m-widget">
+
+    <div class="inline-group" id="{{ inline_admin_formset.formset.prefix }}-group">
+        
+        {% block inline_add_button %}
+        <div class="col-xs-12 col-sm-4 col-lg-3 add-button-container">
+            <h3>
+                {% block inline_add_button_title %}
+                    {{ inline_admin_formset.opts.verbose_name_plural|capfirst }}
+                {% endblock inline_add_button_title %}
+            </h3>   
+            <div class="fieldset-tools">
+                <div class="btn-group" id="add_{{ inline_admin_formset.formset.prefix }}_btn">
+                    <button type="button" class="btn btn-success">
+                        <i class="fa fa-plus-circle"></i> 
+                        {% block inline_add_button_text %}
+                            {% trans "Add" %} {{inline_admin_formset.opts.verbose_name }} 
+                        {% endblock inline_add_button_text %}
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-search-menu">
+                        <li class="search">
+                            <input type="search" class="form-control" placeholder="{% block inline_search_placeholder_text %}{% trans "Search" %} {{ inline_admin_formset.opts.verbose_name_plural }} {% endblock inline_search_placeholder_text %}">
+                        </li>
+                        <li class="loader hide">
+                            <i class="fa fa-circle-o-notch fa-spin"></i>
+                            {% trans 'Loading' %}
+                        </li>
+                        <li class="empty hide">
+                            {% trans 'No results found.' %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endblock inline_add_button %}
+
+        
+        <div class="tabular inline-related {% if forloop.last %}last-related{% endif %} col-xs-12 col-sm-8 col-lg-9">
+            {{ inline_admin_formset.formset.management_form }}
+
+            {% block inline_formset %}
+            <div class="table-responsive">
+                {{ inline_admin_formset.formset.non_form_errors }}
+
+                <table class="table table-condensed m2m-widget-container" id="{{ inline_admin_formset.formset.prefix }}_container">
+                    <thead>
+                        <tr> 
+                            <th colspan="3">
+                                {{ inline_admin_formset.formset.form.fields.fk_object_field.label }}
+                            </th> 
+                               
+                            {% for field in inline_admin_formset.fields %}
+                                {% if not field.widget.is_hidden %} 
+                                    {% if forloop.first %}
+                                        <th class="original hide"></th>
+                                    {% endif %}
+                                    <th class="first{% if field.required %} required{% endif %}" data-label="{{ field.label|capfirst }}">
+                                        {{ field.label|capfirst }}
+                                        {% if field.help_text %}
+                                            &nbsp;<img src="{% static "admin/img/icon-unknown.gif" %}" class="help help-tooltip" width="10" height="10" alt="({{ field.help_text|striptags }})" title="{{ field.help_text|striptags }}" data-toggle="tooltip" />
+                                        {% endif %}
+                                 </th>
+                                {% endif %}
+                            {% endfor %}
+                        
+                            {% if inline_admin_formset.opts.show_change_link and change %}
+                                <th class="delete">{% trans "Change?" %}</th>
+                            {% endif %}
+
+                            {% if inline_admin_formset.formset.can_delete %}
+                                <th class="delete">{% trans "Delete?" %}</th>
+                            {% endif %}
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        {% for inline_admin_form in inline_admin_formset %}
+
+                            {% if inline_admin_form.form.non_field_errors %}
+                            <tr>
+                                <td colspan="{{ inline_admin_form|cell_count }}">
+                                    {{ inline_admin_form.form.non_field_errors }}
+                                </td>
+                            </tr>
+                            {% endif %}
+
+                            <tr class="form-row {% cycle "row1" "row2" %} {% if inline_admin_form.original or inline_admin_form.show_url %}has_original{% endif %}{% if forloop.last %} empty-form{% endif %}" id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
+
+                                <td class="original hide">
+
+                                    {% if inline_admin_form.original %}
+
+                                        {% if inline_admin_form.original|length > 0 %}
+                                            <span class="input-group-addon">
+                                                {{ inline_admin_form.original }}
+                                            </span>
+                                        {% endif %}
+
+                                    {% endif %}
+
+                                    {% if inline_admin_form.needs_explicit_pk_field %}
+                                        {{ inline_admin_form.pk_field.field }}
+                                    {% endif %}
+
+                                    {{ inline_admin_form.fk_field.field }}
+
+                                    {% spaceless %}
+                                    {% for fieldset in inline_admin_form %}
+                                        {% for line in fieldset %}
+                                            {% for field in line %}
+                                                {% if field.field.is_hidden %} 
+                                                    {{ field.field|add_class:"form-control" }} 
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endfor %}
+                                    {% endfor %}
+                                    {% endspaceless %}
+                                </td>
+                            
+                                <td scope="row" colspan="2" >
+                                   {{ inline_admin_form.form.fk_object }}
+                                </td>
+
+                    
+                                {% for fieldset in inline_admin_form %}
+                                    {% for line in fieldset %}
+                                        {% for field in line %}
+
+                                            {% if not field.field.is_hidden %} 
+                                            <td{% if field.field.name %} class="field-{{ field.field.name }}"{% endif %}>
+                                                {% include 'admin/includes/fields.html' %}
+                                            </td>
+                                            {% endif %}
+
+                                        {% endfor %}
+                                    {% endfor %}
+                                {% endfor %}
+                           
+
+                            {% if inline_admin_formset.formset.can_delete %}
+                                <td class="delete">
+                                    {% if inline_admin_form.original %}
+                                    <span class="inline-deletelink inline-remove-trigger">
+                                        <span class="cb">
+                                            {{ inline_admin_form.deletion_field.field }}
+                                        </span>
+                                        <i class="fa fa-trash-o"></i>
+                                        <span class="sr-only">{% trans 'Remove' %}</span>
+                                    </span>
+                                    {% endif %}
+                                    
+                                    {% if inline_admin_formset.formset.change_form_url %}
+                                        {% url inline_admin_formset.formset.change_form_url inline_admin_form.fk_field.field.value %}
+                                    {% endif %}
+
+                                </td>
+                            {% endif %}
+
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div> <!-- end table -->
+            {% endblock inline_formset %}
+        
+            
+            {% block inline_empty_formset %}
+            <div class="well m2m-widget-well" id="{{ inline_admin_formset.formset.prefix }}_info">
+                <h4>
+                    <i class="fa fa-arrow-circle-left"></i>
+                    {% trans "add" %} {{ inline_admin_formset.opts.verbose_name_plural }}
+                </h4>
+            </div>
+            {% endblock inline_empty_formset %}
+
+        </div> <!-- inline-related -->
+
+    </div>
+</fieldset>
+{% endblock wrapper_inline_formset %}
+
+<script type="text/html" id="empty_{{ inline_admin_formset.formset.prefix }}_search_item">
+    {% block template_search_item %}
+    <a href="#">
+        <i class="fa"></i>
+        <%= name %>
+    </a>
+    {% endblock template_search_item %}
+</script>
+
+
+{% with inline_admin_formset.formset.empty_form as empty_form %}
+<script type="text/html" id="empty_{{ inline_admin_formset.formset.prefix }}_item">
+    {% block template_empty_form %}
+
+    <td class="hide">
+        {% for hidden in empty_form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+    </td> 
+    
+    <td colspan="3">
+        <%= name %>
+    </td>
+
+    {% for inline_admin_form in inline_admin_formset %}
+        {% if forloop.last %}
+            {% for fieldset in inline_admin_form %}
+                {% for line in fieldset %}
+                    {% for field in line %}
+
+                        {% if not field.field.is_hidden %} 
+                        <td {% if field.field.name %} class="field-{{ field.field.name }}"{% endif %}>
+                            {% include 'admin/includes/fields.html' %}
+                        </td>
+                        {% endif %}
+
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+    <td class="delete">
+        <span class="inline-deletelink inline-remove-trigger">
+            <i class="fa fa-trash-o"></i><span class="sr-only">{% trans 'Remove' %}</span>
+        </span>
+    </td>
+    {% endblock template_empty_form %}
+</script>
+{% endwith %}
+
+
+<script type="text/html" id="edit_{{ inline_admin_formset.formset.prefix }}_modal">
+    {% block template_modal_changeform %}
+        <div class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Notes</h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            {% trans "Cancel" %}
+                        </button>
+                        <button type="submit" class="btn btn-info">
+                            {% trans "Save" %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock template_modal_changeform %}
+</script>
+
+{% block template_script %}
+<script>
+(function($,jQuery,Backbone){
+
+    var URL = '{{ inline_admin_formset.formset.ajax_url }}';
+    if(!URL || URL == ""){
+        alert('set ajax url please');
+        return;
+    }
+
+    // var CHANGE_FORM_URL = '{{ inline_admin_formset.formset.change_form_url }}';
+    // if(!CHANGE_FORM_URL || CHANGE_FORM_URL == ""){
+    //     CHANGE_FORM_URL = null;
+    // }
+
+    var childElementSelector = 'input,select,textarea,label,div';
+    
+    
+    // alert('{{ inline_admin_formset.formset.change_form }}');
+    // alert('{{ inline_admin_formset.formset.change_form_url }}');
+
+
+    var FORM_PREFIX = '{{ inline_admin_formset.formset.prefix }}';
+    var FORM_FK_FIELD = '{{ inline_admin_formset.formset.form.fk_object_field_name }}';
+
+    Backbone.$ = jQuery;
+    var _sync = Backbone.sync;
+        Backbone.sync = function(method, model, options){
+        options.beforeSend = function(xhr){
+            var token = $(':input[name="csrfmiddlewaretoken"]').val();
+            xhr.setRequestHeader('X-CSRFToken', token);
+        };
+        return _sync(method, model, options);
+    };
+
+
+    var ObjectModel = Backbone.Model.extend();
+    var SearchObjectModel = Backbone.Model.extend();
+    var ObjectCollection = Backbone.Collection.extend({
+        model: ObjectModel,
+        initialize: function(){
+            // this.listenTo(this, 'add', this.update_formset);
+            // this.listenTo(this, 'remove', this.update_formset);
+        },
+        add_or_remove: function(model){
+            var obj = this.get(model.id);
+
+            if(obj!==undefined){
+                this.remove(obj);
+                console.log('removed');
+            } else {
+                console.log('addded');
+                this.add(model.attributes);
+            }
+
+        },
+        update_formset: function(){
+            var num_formsets = this.length;
+
+            var totalForms = $('#id_' + FORM_PREFIX + '-TOTAL_FORMS');
+            var min_num_Forms = $('#id_' + FORM_PREFIX + '-MIN_NUM_FORMS');
+            var max_num_Forms = $('#id_' + FORM_PREFIX + '-MAX_NUM_FORMS');
+
+            // Update Formset TOTAL FORMS
+            totalForms.val(num_formsets);
+
+            // Check Formset MIN NUM FORM
+            if(min_num_Forms <= totalForms){
+
+            }
+
+            // Check Formset MAX NUM FORMS
+            if(max_num_Forms >= totalForms){
+
+            }
+        }
+    });
+
+    var object_collection = new ObjectCollection();
+
+
+    var SearchObjectCollection = Backbone.Collection.extend({
+        url: URL,
+        model: SearchObjectModel,
+        initialize: function(){
+            this.listenTo(object_collection, 'add', this.update);
+            this.listenTo(object_collection, 'remove', this.update);
+        },
+        update: function(){
+            if(this.length==0 || this.length===undefined){return;}
+
+            this.each(function(obj){
+                // console.log(obj);
+                var prod = object_collection.get(obj);
+
+                // 
+                // console.log(prod);
+
+                if(prod!==undefined){
+                    console.log('is selected');
+                    obj.set("is_selected", true);
+                } else {
+                    console.log('not selected');
+                    obj.set("is_selected", false);
+                }
+            });
+
+        }
+    });
+
+    var search_collection = new SearchObjectCollection();
+
+
+    var ObjectItemView = Backbone.View.extend({
+        tagName: 'tr',
+        className:'form-row',
+        template: _.template($("#empty_{{ inline_admin_formset.formset.prefix }}_item").html()),
+        events: {
+            'click .inline-remove-trigger': 'destroy'
+        },
+        initialize: function(){
+            this.listenTo(this.model, "change", this.render);
+            this.listenTo(this.model, "remove", this.eliminate);
+            this.render();
+
+            this.$el.data("id", this.model.id);
+        },
+        render: function(){
+            var data = this.model.attributes;
+            this.$el.html(this.template(data));
+            return this;
+        },
+        destroy: function(){
+            object_collection.remove(this.model);
+        },
+        eliminate: function(){
+            this.remove();
+        },
+    });
+
+
+    var ExitingObjectItemView = Backbone.View.extend({
+        events: {
+           // 'click .close': 'destroy'
+           'click .inline-remove-trigger': 'destroy',
+           // 'change [type="checkbox"]': 'clicked',
+           // 'click .inline-remove-trigger': 'add_or_remove'
+        },
+        initialize: function(){
+            this.listenTo(this.model, "add", this.eliminate);
+            this.listenTo(this.model, "remove", this.eliminate);
+            this.$el.data("id", this.model.id);
+        },
+        destroy: function(){
+
+            var obj = object_collection.get(this.model);
+            console.log('destroy');
+            console.log(obj);
+            console.log(this.model);
+
+            if(obj!==undefined){
+                console.log('remove object');
+                object_collection.remove(obj);
+            } else {
+                console.log('add object');
+                object_collection.add(this.model);
+                // object_collection.trigger('add');
+                //object_collection.add_or_remove(this.model);
+            }
+
+            // object_collection.add_or_remove(this.model)
+            // if (obj){
+            //     object_collection.remove(this.model);
+            // }else{
+            //     console.log(this.model);
+            //     object_collection.add(this.model);
+            // }
+        },
+        eliminate: function(){
+            var row = this.$el;
+            var cb = row.find('.delete').find(":input");
+
+            if(cb.prop("checked")){
+                cb.prop("checked", "");
+                row.removeClass("danger");
+            } else {
+                cb.prop("checked", "checked");
+                row.addClass('danger');
+            }
+        }
+    });
+
+
+    var SearchItemView = Backbone.View.extend({
+        tagName: 'li',
+        className: 'search-item',
+        template: _.template($("#empty_{{ inline_admin_formset.formset.prefix }}_search_item").html()),
+        events: {
+            "click a": "click"
+        },
+        initialize: function(){
+            this.listenTo(this.model, "change", this.render);
+            // this.listenTo(object_collection, "change", this.render);
+
+            //this.listenTo(this.model, 'Notification:submitButtonClicked', this.click);
+
+            this.render();
+            // alert(this.model.id);
+
+            this.$el.prop("id", "object_"+this.model.id);
+        },
+        render: function(){
+            console.log('render search item');
+            var data = this.model.attributes;
+            this.$el.html(this.template(data));
+            this.handle_icon();
+        },
+        handle_icon: function(){
+            console.log('handle_icon');
+            var icon = this.$el.find(".fa");
+            icon.removeClass("fa-check-square");
+            if(this.model.get("is_selected")){
+                icon.addClass("fa-check-square");
+            }
+        },
+        click: function(){
+            var icon = this.$el.find(".fa");
+            console.log('click SearchItem');
+            // icon.removeClass("fa-check-square");
+            object_collection.add_or_remove(this.model);
+            // $(document).trigger('Notification:submitButtonClicked');
+            return false;
+        }
+    });
+
+    var AddBtnView = Backbone.View.extend({
+        fetched: false,
+        el: '#add_{{ inline_admin_formset.formset.prefix }}_btn',
+        events: {
+            "click button.btn": "open",
+            "keyup .search :input": "fetch",
+        },
+        initialize: function(){
+            var _self = this;
+            this.fetched = false;
+            $("body").on("click", function(event){
+                if($(event.target).parents(_self.__proto__.el).length==0){
+                    _self.$el.find(".dropdown-menu").removeClass("show");
+                }
+            });
+            this.listenTo(search_collection, 'sync', this.add_search_items);
+        },
+        open: function(){
+            var _self = this;
+            this.$el.find(".dropdown-menu").addClass("show");
+            if(this.fetched){return;}
+            this.fetch();
+        },
+        fetch: function(){
+            var _self = this;
+            _self.$el.find(".loader").removeClass("hide");
+            _self.$el.find(".empty").addClass("hide");
+            search_collection.fetch({
+                data: {term:_self.$el.find(".search input").val()},
+                success: function(collection){
+                    _self.fetched = true;
+                    _self.$el.find(".loader").addClass("hide");
+                    if(collection.length<1){
+                        _self.$el.find(".empty").removeClass("hide");
+                    }
+                }
+            });
+        },
+        add_search_items: function(collection){
+            var _self = this;
+            this.$el.find(".search-item").remove();
+            collection.each(function(obj){
+                var item = new SearchItemView({model: obj});
+                _self.$el.find(".dropdown-menu").append(item.$el);
+            });
+            search_collection.update();
+        }
+    });
+
+    var ObjectContainerView = Backbone.View.extend({
+        el: '#{{ inline_admin_formset.formset.prefix }}_container',
+        initialize: function(){
+            this.listenTo(object_collection, 'add', this.add_model);
+            this.listenTo(object_collection, 'remove', this.handle_object_event);
+        },
+
+        updateElementIndex: function(elem, prefix, ndx) {
+            var idRegex = new RegExp(prefix + '-(\\d+|__prefix__)-'),
+                replacement = prefix + '-' + ndx + '-';
+
+            if (elem.attr("for")) elem.attr("for", elem.attr("for").replace(idRegex, replacement));
+            if (elem.attr('id')) elem.attr('id', elem.attr('id').replace(idRegex, replacement));
+            if (elem.attr('name')) elem.attr('name', elem.attr('name').replace(idRegex, replacement));
+        },
+
+        add_model: function(obj){
+            var self = this;
+            // console.log(obj);
+
+            // var cena = self.$el.find('.has_original .original').find(':input:first-child[value="'+obj.id+'"]');
+            
+            
+
+            //var cena = self.$el.find('id_leadinterestedpropertiesitem_set-1-property_object').find(':input:first-child[value=""]');
+
+            console.log('add_model');
+            console.log(obj.id);
+            console.log(obj);
+
+            var obj1 = object_collection.get(obj);
+
+            console.log(obj1);
+
+            var cena = self.$el.find('.has_original').find('[id^="id_'+FORM_PREFIX+'"][id$="'+FORM_FK_FIELD+'"][value="'+obj.id+'"]');
+
+
+            if (cena.length > 0){
+
+                console.log(cena);
+                var parent_el = cena.parent().closest('tr');
+
+                console.log(parent_el);
+                var item = new ExitingObjectItemView({model:obj, el:parent_el.get(0)});
+
+               
+
+            }else{
+
+                var item = new ObjectItemView({model:obj});
+
+                var totalForms = $('#id_' + FORM_PREFIX + '-TOTAL_FORMS');
+                var formCount = parseInt(totalForms.val());
+
+                // update fields prefix name
+                item.$el.find(childElementSelector).each(function() {
+                    self.updateElementIndex($(this), FORM_PREFIX, formCount);
+                });
+
+                item.$el.find('#id_'+FORM_PREFIX+'-'+formCount+'-'+FORM_FK_FIELD+'').val(obj.id);
+                this.$el.find("tbody").append(item.$el);
+
+                var forms = $("#{{ inline_admin_formset.formset.prefix }}_container").find('.form-row').not('.empty-form');
+
+                // var forms = $('.form-row').not('.empty-form');
+                
+                totalForms.val(forms.length);
+
+            }
+           
+            this.handle_object_event();
+        },
+        handle_object_event: function(){
+
+            
+
+            //var forms = $('.form-row.has_original');
+
+            var forms = $("#{{ inline_admin_formset.formset.prefix }}_container").find('.form-row.has_original');
+              
+            if (forms.length <= 0){
+
+                
+
+                if(object_collection.length > 0){
+
+                    
+
+                    $("#{{ inline_admin_formset.formset.prefix }}_container").removeClass("hide");
+                    $("#{{ inline_admin_formset.formset.prefix }}_info").addClass("hide");
+
+                } else {
+
+
+                    $("#{{ inline_admin_formset.formset.prefix }}_container").addClass("hide");
+                    $("#{{ inline_admin_formset.formset.prefix }}_info").removeClass("hide");
+
+                }
+
+            }else{
+
+
+                $("#{{ inline_admin_formset.formset.prefix }}_info").addClass("hide");
+            }
+
+        }
+    });
+
+    var object_container = new ObjectContainerView();
+    var add_object = new AddBtnView();
+
+
+    function truncateString(str, length) {
+        return str.length > length ? str.substring(0, length - 3) + '...' : str
+    }
+
+
+    $(document).ready(function(){
+        // CLEAN
+        $("#{{ inline_admin_formset.formset.prefix }}_container").addClass("hide");
+
+        // var forms = $('.form-row').not('.empty-form');
+        var forms = $("#{{ inline_admin_formset.formset.prefix }}_container").find('.form-row').not('.empty-form');
+
+        // inital - fetch
+        var new_val = new Array();
+        for (var i = 0; i < forms.length; i++) {
+            var val = $('#id_'+FORM_PREFIX+'-'+i+'-'+FORM_FK_FIELD+'').val();
+            new_val.push(val);
+        };
+
+        // alert("#{{ inline_admin_formset.formset.prefix }}_container");
+        // alert('#id_'+FORM_PREFIX+'-'+i+'-'+FORM_FK_FIELD+'');
+        // alert(new_val.length);
+
+        if(new_val.length > 0){
+
+            $.ajax({
+                url: URL,
+                data: {fetch: new_val.join(",")}
+            })
+            .done(function( data ) {
+                for (var i = 0; i < data.length; i++) {
+                    object_collection.add(data[i]);
+                };
+            });
+
+            $("#{{ inline_admin_formset.formset.prefix }}_container").removeClass("hide")
+        }
+
+
+        // Edit Label Styles
+        // $(".label-editable-input").each(function () {
+        //     //Reference the Label.
+        //     var input = $(this);
+        //     var label = $(this).parent().find(".editable-label");
+
+        //     var truncatechars = label.data('truncatechars');
+        //     // hide Input
+        //     input.hide();
+        
+        //     //When Label is clicked, hide Label and show TextBox.
+        //     label.click(function () {
+        //         $(this).hide();
+        //         input.show();
+        //         input.focus();
+        //     });
+
+        //     // //When focus is lost from TextBox, hide TextBox and show Label.
+        //     input.focusout(function () {
+        //         $(this).hide();
+        //         var text = truncateString($(this).val(), truncatechars);
+        //         label.html(text);
+        //         label.show();
+        //     });
+        // });
+
+    });
+
+
+var EGSearchItemView = SearchItemView.extend({
+        // tagName: 'li',
+        // className: 'search-item',
+        // template: _.template($("#empty_{{ inline_admin_formset.formset.prefix }}_search_item").html()),
+        // events: {
+        //     "click a": "click"
+        // },
+        initialize: function(){
+           _.extend(this.events, SearchItemView.prototype.events);
+        },
+        click: function(){
+            alert();
+            // icon.removeClass("fa-check-square");
+            // object_collection.add_or_remove(this.model);
+            // $(document).trigger('Notification:submitButtonClicked');
+            return false;
+        }
+    });
+
+var add_object = new EGSearchItemView();
+
+})(django.jQuery,$,Backbone);
+
+
+(function($,jQuery,Backbone){
+
+    $(document).on('Notification:submitButtonClicked', function (e) { 
+        // do stuff here
+        alert();
+    });
+
+    
+
+})(django.jQuery,$,Backbone);
+
+</script>
+{% endblock template_script %}

@@ -1,0 +1,54 @@
+{% extends "admin/property_change_form.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "admin/full_bootstrap_calendar/css/calendar.css" %}">
+    <link rel="stylesheet" href="{% static "admin/css/availability_calendar.css" %}">
+    <link rel="stylesheet" href="{% static "admin/css/availability_reasons_legend.css" %}">
+
+    <style type="text/css">
+    ul.related_availability{
+        padding-left: 0 !important;
+    }
+    ul.related_availability li{
+      padding-right: 0 !important; 
+      padding-left: 0 !important;  
+    }
+    </style>
+{% endblock %}
+
+
+{% block object-tools-items %}
+    {{block.super}}
+{#    <li>#}
+{#        <a href="#" class="btn btn-inverse viewsitelink availability-map-trigger" data-title="{{ original.title }}"#}
+{#        data-source="{% url opts_nav|admin_urlname:"availability_map" original.pk|admin_urlquote %}">#}
+{#          <i class="fa fa-calendar-check-o"></i> {% trans "Availability Map" %}#}
+{#        </a>#}
+{#    </li>#}
+
+    {% if original.related_availability.all %}
+    <li>
+        <br>
+        <h5><i class="fa fa-arrows-h"></i> {% trans "Related Availability" %}</h5>
+        <ul class="related_availability">
+            {% for related in original.related_availability.all %}
+                <li><a href="{% url opts_nav|admin_urlname:"change" related.pk|admin_urlquote %}" data-toggle="tooltip" title="{{ related.title }}">{{ related.reference }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endif %}
+
+{% endblock %}
+
+{% block content %}
+{{block.super}}
+{% endblock %}
+
+
+{% block js_footer %}
+{{block.super}}
+<script type="text/javascript" src="{% static "admin/full_bootstrap_calendar/js/calendar.js" %}"></script>
+{#<script type="text/javascript" src="{% static "admin/js/availability_map_calendar.js" %}"></script>#}
+{% endblock js_footer %}

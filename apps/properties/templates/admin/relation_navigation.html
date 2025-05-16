@@ -1,0 +1,15 @@
+{% load i18n static l10n admin_urls %}
+
+<ul class="nav nav-tabs main-content-nav">
+    {% url opts_nav|admin_urlname:'add' as add_url %}
+    {% url opts_nav|admin_urlname:'change' original.pk|admin_urlquote as change_url %}
+    <li class="nav-item">
+        <a class="nav-link {% if request.path == add_url or request.path == change_url %} active{% endif %}" {% if change_url %}href="{{change_url}}"{% elif add_url %}href="{{add_url}}"{% else %}href="#"{% endif %}><i class="fa fa-cog"></i> {% trans 'Configuration' %}</a>
+    </li>
+
+{% for nav in nav_bar %}
+
+    {% include 'admin/relation_navigation_item.html' %}
+
+{% endfor %}
+</ul>

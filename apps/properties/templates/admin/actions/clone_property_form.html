@@ -1,0 +1,119 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    
+    <style type="text/css">
+        #content{
+            padding-top: 0px !important;
+        }
+
+        .read-more-state {
+          display: none;
+        }
+
+        .read-more-target {
+          opacity: 0;
+          max-height: 0;
+          font-size: 0;
+          transition: .25s ease;
+            display: none;
+        }
+
+        .read-more-state:checked ~ .read-more-wrap .read-more-target {
+          opacity: 1;
+          font-size: inherit;
+          max-height: 999em;
+          display: inherit;
+        }
+
+        .read-more-state ~ .read-more-trigger:before {
+          content: 'Show more';
+        }
+
+        .read-more-state:checked ~ .read-more-trigger:before {
+          content: 'Show less';
+        }
+
+        .read-more-trigger {
+          cursor: pointer;
+          display: inline-block;
+          padding: 0 .5em;
+          color: #666;
+          font-size: .9em;
+          line-height: 2;
+          border: 1px solid #ddd;
+          border-radius: .25em;
+        }
+
+    </style>
+{% endblock %}
+
+{% block breadcrumbs %}
+{% spaceless %}
+    
+{% endspaceless %}
+{% endblock %}
+
+{% block object-tools %}
+    
+{% endblock %}
+
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {% if objects|length == 1 %}
+        <h2>{% trans "Clone Property" %}</h2>
+    {% else %}
+        <h2>{% trans "Clone Properties" %}</h2>
+    {% endif %}
+
+    <div>
+        <input type="checkbox" class="read-more-state" id="post-2" />
+        <ul class="list-group read-more-wrap">
+            {% for object in objects %}
+                <li class="list-group-item {% if forloop.counter > 5 %} read-more-target {% endif %}">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="{{ object.pk }}/">
+                                {{ object.get_thumbnail|safe }}
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{ object.title }}</h4>
+                            <small>{{ object.name }}</small>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_selected_action" value="{{ object.pk }}">
+
+                </li>
+            {% endfor %}
+        </ul>
+        <label for="post-2" class="read-more-trigger"></label>
+    </div>
+
+    {% if objects|length == 1 %}
+        <p><span class="badge">{{ objects|length }}</span> {% trans "Property to Clone" %}</p>
+    {% else %}
+        <p><span class="badge">{{ objects|length }}</span> {% trans "Properties to Clone" %}</p>
+    {% endif %}
+
+    <input type="hidden" name="action" value="clone_property">
+    <input type="hidden" name="do_action" value="yes">
+    
+    <hr>   
+    {% block field_sets %}
+        {% for fieldset in form %}
+            {% include "admin/includes/fieldset.html" %}
+        {% endfor %}
+    {% endblock %}
+    
+    <button type="submit" class="btn btn-primary" name="submit" value="submit">
+        <i class="fa fa-clone"></i> {% trans "Clone" %}
+    </button> 
+
+</form>
+{% endblock %}

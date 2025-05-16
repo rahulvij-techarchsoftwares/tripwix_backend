@@ -1,0 +1,68 @@
+{% load i18n %}
+
+{% include 'admin/svgs/common.svg' %}
+
+<div class="media_photo_widget"
+     {% if change_url %} data-change-url="{{ change_url }}"{% endif %}
+     {% if upload_url %} data-upload-url="{{ upload_url }}"{% endif %}
+     {% if photos_url %} data-photos-url="{{ photos_url }}"{% endif %}
+     {% if photo_url %} data-photo-url="{{ photo_url }}"{% endif %}
+     {% if max_thumb_width %} data-thumbnail-width="{{ max_thumb_width }}"{% endif %}
+     {% if max_thumb_height %} data-thumbnail-height="{{ max_thumb_height }}"{% endif %}
+     {% if maxFilesize %} data-max-filesize="{{ maxFilesize }}"{% endif %}
+     {% if max_files %} data-max-files="{{ max_files }}"{% endif %}
+     {% if acceptedFiles %} data-accepted-files="{{ acceptedFiles }}"{% endif %}
+     {% if autoQueue %} data-auto-queue="{{ autoQueue }}"{% endif %}
+     {% if resizeWidth %} data-resize-width="{{ resizeWidth }}"{% endif %}
+     data-no-photos-copy="{% trans 'Currenty there are no images available.' %}">
+
+  {% if not readonly %}
+    <div class="fileupload-buttonbar">
+      <div class="buttons-holder">
+        <button type="button" class="btn btn-success fileinput-button">
+          <svg class="sicon"><use xlink:href="#svg-file-upload"></svg>
+          <span>{% trans 'Upload Images' %}</span>
+        </button>
+        <div class="new-files-actions js-has-new-files d-none">
+          <button type="button" class="btn btn-primary js-start">
+            <svg class="sicon"><use xlink:href="#svg-play"></svg>
+            <span>{% trans 'Start All' %}</span>
+          </button>
+          <button type="button" class="btn btn-warning js-cancel">
+            <svg class="sicon"><use xlink:href="#svg-clear"></svg>
+            <span>{% trans 'Clear' %}</span>
+          </button>
+        </div>
+        {% if can_select %}
+          <button type="button" class="btn btn-secondary js-open-photo-gallery" tabindex="-1" data-target="#media-{{ widget.name }}-photo-modal">
+            <svg class="sicon"><use xlink:href="#svg-gallery"></svg>
+            <span>{% trans 'Choose Images' %}</span>
+          </button>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="fileupload-content {% if max_files == 1 %}fileupload-single{% endif %}">
+    <div class="media-wrapper form-control mt-2">
+      <ul class="media-items-container">
+        {% for item in photos %}
+          {% include 'admin/media_photo_widget_item.html' with readonly=readonly photo=item only %}
+        {% endfor %}
+      </ul>
+      <div class="media-tooltip"><i class="icon-info-sign"></i> {% trans 'You can drop files here' %}</div>
+    </div>
+  </div>
+
+  {% if can_select %}
+    {% include 'admin/media_photo_widget_gallery.html' with readonly=readonly %}
+  {% endif %}
+
+  <ul class="js-preview-template">
+    {% include 'admin/media_photo_widget_item.html' with readonly=readonly %}
+  </ul>
+</div>
+
+<div class="d-none">
+  {% include "django/forms/widgets/input.html" %}
+</div>

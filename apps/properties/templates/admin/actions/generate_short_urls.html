@@ -1,0 +1,233 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block extrastyle %}
+    {{ block.super }}
+
+   <style>
+    html{
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    p,a,h1,h2,h3,h4,h5,h6,div,br,li,td,article{
+        -o-user-select: text;
+        -moz-user-select: text;
+        -webkit-user-select: text;
+        user-select: text;
+    }
+
+    </style>
+
+    <style type="text/css">
+        #content{
+            padding-top: 0px !important;
+        }
+
+        .read-more-state {
+          display: none;
+        }
+
+        .read-more-target {
+          opacity: 0;
+          max-height: 0;
+          font-size: 0;
+          transition: .25s ease;
+            display: none;
+        }
+
+        .read-more-state:checked ~ .read-more-wrap .read-more-target {
+          opacity: 1;
+          font-size: inherit;
+          max-height: 999em;
+          display: inherit;
+        }
+
+        .read-more-state ~ .read-more-trigger:before {
+          content: 'Show more';
+        }
+
+        .read-more-state:checked ~ .read-more-trigger:before {
+          content: 'Show less';
+        }
+
+        .read-more-trigger {
+          cursor: pointer;
+          display: inline-block;
+          padding: 0 .5em;
+          color: #666;
+          font-size: .9em;
+          line-height: 2;
+          border: 1px solid #ddd;
+          border-radius: .25em;
+        }
+
+    </style>
+
+{% endblock %}
+
+{% block breadcrumbs %}
+{% spaceless %}
+    
+{% endspaceless %}
+{% endblock %}
+
+{% block object-tools %}
+    
+{% endblock %}
+
+
+{% block content %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as available_languages %}
+
+  <form action="" method="post">
+    {% csrf_token %}
+    {% if objects|length == 1 %}
+        <h2>{% trans "Generate Short Link" %}</h2>
+    {% else %}
+        <h2>{% trans "Generate Short Links" %}</h2>
+    {% endif %}
+
+
+    {% block field_sets %}
+        {% for fieldset in form %}
+            {% include "admin/includes/fieldset.html" %}
+        {% endfor %}
+    {% endblock %}
+
+    <input type="hidden" name="action" value="{{ action_name }}">
+    <input type="hidden" name="do_action" value="yes">
+
+     <ul class="">
+        {% for object in objects %}
+          <li class="">
+            <span class="property-title">
+              {{ object.name }}
+              <br>
+            </span>
+            <span class="property-reference">
+              {{ object.reference }}
+              <br>
+            </span>
+            {% if available_languages %}
+
+               {% comment %} MULTITPLE LANGUAGES {% endcomment %}
+
+               {% for lang_code, lang in available_languages %}
+                {% language lang_code %}
+                  {% include "admin/actions/includes/object_short_urls.html" %}
+                {% endlanguage %}
+              {% endfor %}
+
+            {% else %}
+
+                {% comment %} SINGLE LANGUAGE {% endcomment %}
+
+                {% include "admin/actions/includes/object_short_urls.html" %}
+
+            {% endif %}
+          </li>
+        {% endfor %}
+     </ul>
+    <hr>
+</form>
+{% endblock %}
+
+
+{% block js_footer %}
+{{block.super}}
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    var lang_code = $('#id_languages').val();
+
+
+     $('#id_show_properties_titles').change(function() {
+          if(this.checked) {
+            $(".property-title").show();
+          }else{
+            $(".property-title").hide();
+          }
+      });
+
+          $('#id_show_properties_references').change(function() {
+          if(this.checked) {
+            $(".property-reference").show();
+          }else{
+            $(".property-reference").hide();
+          }
+      });
+
+      $('#id_show_properties_links').change(function() {
+          if(this.checked) {
+            $('.property-short-link[data-lang="'+lang_code+'"]').show();
+          }else{
+            $('.property-short-link[data-lang="'+lang_code+'"]').hide();
+          }
+      });
+
+      $('#id_show_brochures_links').change(function() {
+          if(this.checked) {
+            $(".brochure-short-link[data-lang='"+lang_code+"']").show();
+          }else{
+            $(".brochure-short-link[data-lang='"+lang_code+"']").hide();
+          }
+      });
+
+      function change_brochure_type(values){
+          if (!values){
+            values = $('#id_show_brochures_types').val() || [];
+          }
+          $("[class^='brochure-type-']" ).hide();
+          $.each(values, function( index, value ) {
+            $(".brochure-type-"+value+"").show();
+          });
+      }
+
+      $('#id_show_brochures_types').change(function() {
+          var values = $(this).val() || [];
+          change_brochure_type(values);
+      });
+
+      function change_language(lang) {
+
+        if (!lang){
+          lang = "{{ LANGUAGE_CODE }}";
+        }
+        if($('#id_show_properties_links').is(':checked')){
+          $(".property-short-link[data-lang='"+lang+"']").show();
+          $(".property-short-link[data-lang]:not([data-lang='"+lang+"'])").hide();
+        }else{
+          $(".property-short-link[data-lang='"+lang+"']").hide();
+          $(".property-short-link[data-lang]:not([data-lang='"+lang+"'])").hide();
+        }
+
+        if($('#id_show_brochures_links').is(':checked')){
+          $(".brochure-short-link[data-lang='"+lang+"']").show();
+          $(".brochure-short-link[data-lang]:not([data-lang='"+lang+"'])").hide();
+        }else{
+          $(".brochure-short-link[data-lang='"+lang+"']").hide();
+          $(".brochure-short-link[data-lang]:not([data-lang='"+lang+"'])").hide();
+        }     
+      }
+
+
+      $('#id_languages').change(function() {
+        var value = $(this).val();
+        lang_code = value;
+        change_language(value);
+      });
+
+      change_language('en'); // Force default language EN
+      change_brochure_type();
+      $('.property-short-link[data-lang="'+lang_code+'"]').hide();
+
+
+});
+</script>
+
+{% endblock js_footer %}

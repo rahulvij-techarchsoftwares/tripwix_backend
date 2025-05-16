@@ -1,0 +1,23 @@
+<select name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+{% if not widget.has_load_url %}
+  {% for group_name, group_choices, group_index in widget.optgroups %}{% if group_name %}
+  <optgroup label="{{ group_name }}">{% endif %}{% for option in group_choices %}
+  {% include option.template_name with widget=option %}{% endfor %}{% if group_name %}
+  </optgroup>{% endif %}
+  {% endfor %}
+{% else %}
+  {% for group_name, group_choices, group_index in widget.optgroups %}
+    {% for option in group_choices %}
+      {% if option.selected %}
+        {% include option.template_name with widget=option %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+</select>
+
+{% if selectize_render %}
+    <script type="text/html" id="{{ widget.attrs.id }}_selectize_render">
+        {{ selectize_render|safe }}
+    </script>
+{% endif %}

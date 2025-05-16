@@ -1,0 +1,181 @@
+{% load i18n cms_tags static %}
+
+<form action="#{{form.prefix}}" id="{{form.prefix}}" method="POST" role="form">
+		{% csrf_token %}
+
+{% if not form.is_done %}
+<div class="container-fluid">
+<div class="row">
+        <div class="col-md-6">
+            <div class="form-group{% if form.name.errors %} has-error{% endif %}">
+                {{ form.name|label_tag }}
+                {{ form.name|add_class:'form-control' }}
+                {% if form.name.errors %}
+                <p class="help-block">{{ form.name.errors.0 }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group{% if form.surname.errors %} has-error{% endif %}">
+                {{ form.surname|label_tag }}
+                {{ form.surname|add_class:'form-control' }}
+                {% if form.surname.errors %}
+                <p class="help-block">{{ form.surname.errors.0 }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+
+        <div class="col-md-12">
+            <div class="form-group{% if form.address.errors %} has-error{% endif %}">
+                {{ form.address|label_tag }}
+                {{ form.address|add_class:'form-control' }}
+                {% if form.address.errors %}
+                <p class="help-block">{{ form.address.errors.0 }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+
+
+        <div class="col-md-12">
+            <div class="form-group{% if form.nationality.errors %} has-error{% endif %}">
+                {{ form.nationality|label_tag }}
+                {{ form.nationality|add_class:'form-control' }}
+                {% if form.nationality.errors %}
+                <p class="help-block">{{ form.nationality.errors.0 }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+            <div class="form-group{% if form.email.errors %} has-error{% endif %}">
+                {{ form.email|label_tag }}
+                {{ form.email|add_class:'form-control' }}
+                {% if form.email.errors %}
+                <p class="help-block">{{ form.email.errors.0 }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group{% if form.phone.errors %} has-error{% endif %}">
+                {{ form.phone|label_tag }}
+                {{ form.phone|add_class:'form-control' }}
+                {% if form.phone.errors %}
+                <p class="help-block">{{ form.phone.errors.0 }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+
+		<div class="col-md-12">
+			<div class="form-group{% if form.contact_preference.errors %} has-error{% endif %}">
+				{{ form.contact_preference|label_tag }}
+				{{ form.contact_preference|add_class:'form-control' }}
+				{% if form.contact_preference.errors %}
+				<p class="help-block">{{ form.contact_preference.errors.0 }}</p>
+				{% endif %}
+			</div>
+		</div>
+
+	</div>
+	<div class="hp-failsafe" style="position:absolute; right:9000px;" ><input type="text" name="address" tabindex="-1" value="" autocomplete="off" ></div>
+	<div class="row">
+
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group{% if form.message.errors %} has-error{% endif %}">
+				{{ form.message|label_tag }}
+				{{ form.message|add_class:'form-control' }}
+				{% if form.message.errors %}
+				<p class="help-block">{{ form.message.errors.0 }}</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+
+    <div class="row">
+		<div class="col-md-6">
+			<div class="form-group{% if form.property_type.errors %} has-error{% endif %}">
+				{{ form.property_type|label_tag }}
+				{{ form.property_type|add_class:'form-control' }}
+				{% if form.property_type.errors %}
+				<p class="help-block">{{ form.property_type.errors.0 }}</p>
+				{% endif %}
+			</div>
+		</div>
+
+        <div class="col-md-6">
+			<div class="form-group{% if form.location.errors %} has-error{% endif %}">
+				{{ form.location|label_tag }}
+				{{ form.location|add_class:'form-control' }}
+				{% if form.location.errors %}
+				<p class="help-block">{{ form.location.errors.0 }}</p>
+				{% endif %}
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="form-group{% if form.bedrooms.errors %} has-error{% endif %}">
+				{{ form.bedrooms|label_tag }}
+				{{ form.bedrooms|add_class:'form-control' }}
+				{% if form.bedrooms.errors %}
+				<p class="help-block">{{ form.bedrooms.errors.0 }}</p>
+				{% endif %}
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="form-group{% if form.plot_area.errors %} has-error{% endif %}">
+				{{ form.plot_area|label_tag }}
+				{{ form.plot_area|add_class:'form-control' }}
+				{% if form.plot_area.errors %}
+				<p class="help-block">{{ form.plot_area.errors.0 }}</p>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+
+<input type="submit" value="{{options.submit_text}}" name="{{submit_handle}}" class="btn btn-primary" />
+</div>
+{% else %}
+<div class="alert alert-info" role="alert">
+	{% blocktrans %}
+	<strong>Request Sent!</strong>
+	<p>Thank you for contacting us.</p>
+	{% endblocktrans %}
+</div>
+{% endif %}
+
+
+
+</form>
+
+
+<script type="text/javascript">
+(function($, window){
+
+    $(document).ready(function(){
+       $("form#{{form.prefix}} #{{ form.phone.auto_id }}").intlTelInput({
+            defaultCountry: "auto",
+            geoIpLookup: function(callback) {
+                $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            nationalMode: false,
+            utilsScript: "{% static 'lib/libphonenumber/build/utils.js' %}"
+       });
+    });
+
+
+})(jQuery, window)
+</script>

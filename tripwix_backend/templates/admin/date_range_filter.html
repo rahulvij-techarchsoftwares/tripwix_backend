@@ -1,0 +1,113 @@
+{% load i18n static %}
+<style>
+    .date-range-filter .dropdown-menu {
+        padding: 15px;
+        min-width: 300px;
+        display: none;
+        /* Hidden by default */
+    }
+
+    .date-range-filter .dropdown-menu.show {
+        display: block;
+        /* Show when active */
+    }
+
+    .datetimeshortcuts {
+        position: relative;
+        z-index: 1051;
+        /* Ensure it's above other elements */
+    }
+
+    .calendarbox {
+        z-index: 1060 !important;
+        /* Bootstrap dropdowns use 1050, so set higher for calendars */
+    }
+
+    .vDateField {
+        border-radius: 0.25rem;
+    }
+</style>
+<div class="date-range-filter dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="title">{% trans "Date Range" %}</span>
+        <span class="badge rounded-pill text-bg-secondary">
+            {% if not spec.request.GET.start_date and not spec.request.GET.end_date %}
+            {% trans "All" %}
+            {% else %}
+            {% if spec.request.GET.start_date %}
+            {{ spec.request.GET.start_date }}
+            {% if spec.request.GET.end_date %}
+            -
+            {% endif %}
+            {% endif %}
+            {% if spec.request.GET.end_date %}
+            {{ spec.request.GET.end_date }}
+            {% endif %}
+            {% endif %}
+        </span>
+    </a>
+    <div class="dropdown-menu">
+        <form method="GET" action="">
+            <script src="{% static 'admin/js/calendar.js' %}"></script>
+            <script src="{% static 'admin/js/admin/DateTimeShortcuts.js' %}"></script>
+            <p>
+                <label for="id_start_date">Start date:</label>
+            </p>
+            <p class="date">
+                <input type="text" name="start_date" class="vDateField" size="10" placeholder="2024-07-28" required
+                    id="id_start_date">
+            </p>
+            <p>
+                <label for="id_end_date">End date:</label>
+            </p>
+            <p class="date">
+                <input type="text" name="end_date" class="vDateField" size="10" placeholder="2024-07-10"
+                    id="id_end_date">
+            </p>
+            {% for name, value in spec.request.GET.items %}
+            {% if name != 'start_date' and name != 'end_date' and name != 'date_range' %}
+            <input type="hidden" name="{{ name }}" value="{{ value }}">
+            {% endif %}
+            {% endfor %}
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Apply</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var dateRangeFilter = document.querySelector('.date-range-filter');
+        var dropdownToggle = dateRangeFilter.querySelector('.dropdown-toggle');
+        var dropdownMenu = dateRangeFilter.querySelector('.dropdown-menu');
+        dropdownToggle.addEventListener('click', function (event) {
+            event.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+        // Close the dropdown when clicking outside
+        window.addEventListener('click', function (event) {
+            if (!dateRangeFilter.contains(event.target) && dropdownMenu.classList.contains('show')) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+        var startDateCalendarLink = document.getElementById('calendarlink0');
+        var endDateCalendarLink = document.getElementById('calendarlink1');
+        // Toggle the start date calendar
+        startDateCalendarLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            DateTimeShortcuts.openCalendar(0); // Open the calendar using Django's calendar widget
+        });
+        // Toggle the end date calendar
+        endDateCalendarLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            DateTimeShortcuts.openCalendar(1); // Open the calendar using Django's calendar widget
+        });
+    });
+    // Fix for calendar being hidden behind other elements
+    window.addEventListener('click', function (event) {
+        var calendarBoxes = document.querySelectorAll('.calendarbox');
+        calendarBoxes.forEach(function (calendarBox) {
+            calendarBox.style.zIndex = '1060'; // Ensure z-index is above other elements
+        });
+    });
+</script>

@@ -1,0 +1,115 @@
+{
+    "propertyId": "MX0002", //[configuration] property number or code
+    "propertyName": "Casa Roka", //[configuration] Title
+    "instantBooking": "YES", // [Distribution Settings] Instant Booking
+    "b2bSharing": "fast-track", // [Distribution Settings] B2B Sharing
+    "inspectionStatus": "Choose ...", // [Inspection] Inspection Status
+    "dateOfInspection": "2023-01-01T08:00:00.000Z", // [Inspection] Date Of Inspection
+    "inspector": "John", // [Inspection] Inspector -> It can be an object if more detail is needed
+    "inspComment": "bla", // [Inspection] Inspector Comments
+    "twCollection": true, // [Collection] TRipwix collection
+    "vipProgram": "yes", // [Collection] VIP program
+    "propertyType": "Villa", //[configuration] Property type
+    "designType": "Choose...", // [Detail] Design Type
+    "owner": "Juan-Carlos Rodriguez-Acevex", // [configuration] Ownership
+    "ownerfname": "Juan-Carlos", // [configuration] Ownership
+    "ownerid": 164, // [configuration] ownership id
+    "propertyManager": "Mariana Perez", // [?] what details the manager has? It will be an object
+    "propmanfname": "Mariana", // [?] It will be the property manager name
+    "propmanid": 46, // [?] the property manager id
+    "maxGuests": 14, // [Details] Max Guests
+    "noOfBeds": 8, // [Details] Number of Beds
+    "noOfBathrooms": 8, // [Details] Number of bathrooms
+    "noOfBedrooms": 6, // [Details] Number of bedrooms
+    "noHalfBaths": 3, // [Details] Number of Half Baths
+    "propertySizeSqm": 1000, // [Details] Size
+    "propertySizeComments": "comment", // [Details] Size Comments
+    "hotelComplex": "NO", // [Details] Hotel Complex
+    "gatedCommunity": "NO", // [Details] Gated community
+    "ecoFriendly": "NO", // [Details] Eco Friendly 
+    "viewTypes": "Ocean", // [Details] View Types -> Give more options
+    "placementTypes": "Gated Community", // [Details] Placement Type
+    "curator": "Deborah Buley", // [Details] Curator
+    "designersComment": "A brand new Punta Mita home! One of my personal favorites.", // [Details] Designer Comment
+    "partiesEvents": "parties & events on request", // [Policies] can be a choise field
+    "smokingOnlyOutside": "Smoking only outside", // [Policies] Smoking
+    "petsOnRequest": "No pets allowed", // [Policies] Pets On Request
+    "petFee": "Choose...", // [Policies] Pet Fee
+    "petRestrictions": "Choose ...", // [Policies] Pet restrictions
+    "adultsOnlyHouse": "Families allowed", // [Policies] Adults only house
+    "ageRestrictions": "Choose ...", // [Policies] Age Restricitions
+    "gpsCoordinates": "20.78243 , -105.5126395", // [Location] coordinates
+    "streetNameAndNumber": "Kupuri 5", // [Location] Address
+    "zipCode": "8100-100", // [Location] Address
+    "city": "Punta de Mita", // [Location -> City] Name
+    "country": "Mexico", // [Location -> Country] Name
+    "destinationgpis": "Punta de Mita Area", // [Location] Name
+    "communitygpis": "KUPURI ESTATES", // [Extra] Community GPIS
+    "locationDescription": "A home within the Kupuri estates inside the gates of the...", // [Extra] Location Description
+    "location": "Within the exclusive Punta Mita gated development", // [Extra] Location
+    "propApproxAirport": "Puerto Vallarta Airport", // [Extra] Prop Approx Airport
+    "timeInMin": 10, // [Extra] Time in Minuts
+    "transportMethod": "Foot", // [Extra] Transport Method
+    "propApproxAttraction": "Beach", // [Extra] Prop Approx Attraction
+    "propApproxNearestCity": "Punta de Mita Village", // [Extra] Prop Approx Nearest City
+    "descriptiveText": "If you are looking for a chic yet home-felt experience...", // [configuration] description
+    "tagLine": "Earthy, luxurious Kupuri Villa in Punta Mita", // [Details] Tag Line
+    "hostifyTagline": "Choose...", // [?] What is it?
+    "specialFeatures": "Heated swimming pool and Jacuzzi \nPrivate cook to prepare breakfast....", // [Web] Special Features
+    "livingAreas": "This home boasts plenty of different areas for lounging and socializing. Besides the spacious...", // [Web] Living Areas
+    "bedbath": "Each bedroom is luxuriously appointed creating a private sanctum with its own balcony or terrace access...", // [Web] Bed&Bath
+    "kidsServices": "Children of all ages welcome", // [Web] Kids Services
+    "petPolicy": "Sorry, no pets allowed.", // [Policy] Pet Policy
+    "activities": "Beach, golf, surfing, snorkelling, paddle boarding, surfing, kayaking, restaurants...", // [details] Activities
+    "additionalServices": "In-villa chef service \nRound-trip airport transportation \nIn-villa spa service \nGrocery...", // [Web] Additional Services
+    "rentalPriceIncludes": "Daily housekeeping and linen changes\nChef to prepare breakfast, lunch and dinner (groceries $)\nButle...", // [Fee] Rental Price Includes
+    "knowBeforeYouGo": "Amazing location with direct access to the beach\nIn addition to Punta Mita’s...", // [Web] Know Before You Go
+    "staffServices": "Housekeeper\nChef \nButler", // [Web] Staff Services
+    "propertyCategory": "Ultra-Deluxe", // [configuration] Property Type
+    "seoTitle": "Earthy, luxurious Kupuri Villa in Punta Mita", // [Configuration] SEO title
+    "metaDescription": "Ocean-view villa with private access to a sandy beach within the Kupuri Estates at Punta Mita, Mexico.", // [configuration] SEO Description
+    "standardPhotos": "https://drive.google.com/drive/folders/1TPTL914JsVFi68YiLRZiXxrfLhFt6VE2?usp=sharing",
+    "youtubeLink": "Choose...", // [Media] Youtube
+    "ownerVideoLink": "Choose...", // [Media] Owner Video Link
+    "twVideoLink": "Choose...", // [Media] TripWix video Link
+    "floorPlanLink": "Choose...", // [Media] Floor plan link
+    "otherMediaLongText": "360 Tour:", // [Media] Other Media
+    "calAvailabilityMethod": "Offline", // [Calendar] Availability Method
+    "publicGoogleCalendar": "https://calendar.google.com/calendar/embed?src=sbj0h7h07h8vf6crgcbu0pshvc%40group.calendar.google.com&ctz=Europe%2FLisbon", // [Calendar] Public google calendar 
+    "twIcalLink": "https://calendar.google.com/calendar/ical/sbj0h7h07h8vf6crgcbu0pshvc%40group.calendar.google.com/private-c1d9666bfe8671b74c6b152d7677486d/basic.ics", // [Calendar] TW ical link
+    "ownerIcalLink": "Choose...", // [Calendar] Owner Ical Link
+    "availabilityFallback": "https://www.vrbo.com/9042303ha", // [calendar] Availability Fallback Link
+    "otherCalendarLinksLongText": "Choose...", // [Calendar] Other Calendar Links
+    "ownerEmailForCalendar": "Choose...", // [Calendar] Owner email for Calendar
+    "calendarCommentsLongText": "Choose...", // [Calendar] Calendar Comments
+    "checkinTime": "1899-12-30T23:00:00.000Z", // [Details] Checkin Time
+    "checkoutTime": "1899-12-30T19:00:00.000Z", // [Details] Checkout Time
+    "checkinoutFee": "Choose...", // [Fee] Checkin out fee
+    "currency": "USD", // [Fees] Currency
+    "ownerPayoutStructure": "0% - Favorable Payout at 30 days", // [Fees] Owner Payout Strucuture
+    "payoutStructureComments": "Choose...", // [Fees] Payout Structure Comments
+    "securityDeposit": 8000, // [Fee] Security Deposit
+    "foodBevDeposit": 0, // [Fee] Food & Bev Deposit
+    "occupancyFeePp": 0, // [Fee] Occupancy Fee (pp)
+    "extraTaxIsh": 0, // [Fee] Extra Tax (ISH)
+    "homeServiceCharge": 0.05, // [Fee] Home Service Charge
+    "serviceCharge": 0.05, // [Fee] Service Charge
+    "commission": 0.2, // [Configuration] Commission
+    "vatRate": 0.16, // [Fee] VAT Rate
+    "cleaningFee": 0, // [Fee] Cleaning Fee
+    "cancellationPolicy": "Standard", // [Fee] Cancellation Policy
+    "cancellationPolicyComments": "Choose...", // [Fee] Cancellation Policy Comments
+    "poolHeatingFee": 0, // [Fee] Pool Heating Fee
+    "extraGuestFee": 0, // [Fee] Extra Guest Fee
+    "extraGuestFeePpnHostify": 0, // [Fee] Extra Guest Fee ppn Hostify
+    "otherFees": 0, // [Fee] Other Fees
+    "specialsPromotions": 0, // [Details] Special Promotions
+    "promotionDetails": 0, // [Details] Promotion Details
+    "offersDiscounts": 0, // [Details] Offers Discount
+    "offerStartDate": "2023-01-01T08:00:00.000Z", // [Details] Offer start Date
+    "offerEndDate": "2023-12-31T08:00:00.000Z", // [Details] Offer End Date
+    "contractClauseForSales": "Choose...", // [Web] Contract Clauses For sales
+    "notesForSales": "Choose...", // [Web] Notes for sales
+    "ambassadorName": "Ali Marquez", // [Details] Ambassador Name
+    "rateNotes": "Plus local taxes.\n\nRates are subject to change without notice." // [Web] Rate Notes
+}

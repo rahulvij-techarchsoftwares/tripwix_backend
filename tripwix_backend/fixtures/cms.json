@@ -1,0 +1,5285 @@
+[
+{
+    "model": "components.componentfield",
+    "pk": 1,
+    "fields": {
+        "name": "article_tag",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 2,
+    "fields": {
+        "name": "title",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 3,
+    "fields": {
+        "name": "publish_date",
+        "field_type": "date",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 4,
+    "fields": {
+        "name": "summary",
+        "field_type": "description",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 5,
+    "fields": {
+        "name": "author_name",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 6,
+    "fields": {
+        "name": "author_description",
+        "field_type": "description",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 7,
+    "fields": {
+        "name": "first_name",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 8,
+    "fields": {
+        "name": "last_name",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 9,
+    "fields": {
+        "name": "email",
+        "field_type": "email",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 10,
+    "fields": {
+        "name": "phone",
+        "field_type": "phone",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 11,
+    "fields": {
+        "name": "user_email",
+        "field_type": "email",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 12,
+    "fields": {
+        "name": "company_name",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 13,
+    "fields": {
+        "name": "Event Type",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 14,
+    "fields": {
+        "name": "Form",
+        "field_type": "app",
+        "unit": "",
+        "app_model": 67,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 15,
+    "fields": {
+        "name": "number of people",
+        "field_type": "number",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 16,
+    "fields": {
+        "name": "budget",
+        "field_type": "number",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 17,
+    "fields": {
+        "name": "currency",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 18,
+    "fields": {
+        "name": "comment",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 19,
+    "fields": {
+        "name": "user_email",
+        "field_type": "email",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 20,
+    "fields": {
+        "name": "subtitle",
+        "field_type": "text",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 21,
+    "fields": {
+        "name": "description",
+        "field_type": "description",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 22,
+    "fields": {
+        "name": "Images",
+        "field_type": "image",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 23,
+    "fields": {
+        "name": "Disabled",
+        "field_type": "boolean",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "Disable",
+            "name_pt": "Disable"
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 24,
+    "fields": {
+        "name": "CTA",
+        "field_type": "cta",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 25,
+    "fields": {
+        "name": "Form",
+        "field_type": "app",
+        "unit": "",
+        "app_model": 67,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "Form",
+            "name_pt": "Formulário"
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 26,
+    "fields": {
+        "name": "Variants",
+        "field_type": "option",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 27,
+    "fields": {
+        "name": "Title Variants",
+        "field_type": "option",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "Title Variants",
+            "name_pt": "Title Variantes"
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 28,
+    "fields": {
+        "name": "Intro Block Variants",
+        "field_type": "option",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 29,
+    "fields": {
+        "name": "Slideshow Navigation Variants",
+        "field_type": "option",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 30,
+    "fields": {
+        "name": "Slideshow Variant",
+        "field_type": "option",
+        "unit": "",
+        "app_model": null,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 31,
+    "fields": {
+        "name": "Slideshow App",
+        "field_type": "app",
+        "unit": "",
+        "app_model": 71,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 32,
+    "fields": {
+        "name": "Testimonials",
+        "field_type": "app",
+        "unit": "",
+        "app_model": 71,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfield",
+    "pk": 33,
+    "fields": {
+        "name": "FAQs App",
+        "field_type": "app",
+        "unit": "",
+        "app_model": 57,
+        "app_selectable": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 1,
+    "fields": {
+        "name": "Intro - Centered",
+        "slug": "text_center",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 2,
+    "fields": {
+        "name": "Intro - Left",
+        "slug": "text_left",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 3,
+    "fields": {
+        "name": "Intro - Gray Background Centered",
+        "slug": "text_center_gray_bg",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 4,
+    "fields": {
+        "name": "default",
+        "slug": "default",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 5,
+    "fields": {
+        "name": "primary",
+        "slug": "primary",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 6,
+    "fields": {
+        "name": "Card - Show Link",
+        "slug": "show_link",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 7,
+    "fields": {
+        "name": "Card - Reveal Link",
+        "slug": "reveal_link",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 8,
+    "fields": {
+        "name": "Card - Reveal Description",
+        "slug": "reveal_description",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 9,
+    "fields": {
+        "name": "Card - Know More",
+        "slug": "know_more",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 10,
+    "fields": {
+        "name": "Card - Property",
+        "slug": "property",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 11,
+    "fields": {
+        "name": "Card - Property List Item",
+        "slug": "property_list_item",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 12,
+    "fields": {
+        "name": "Card - Article",
+        "slug": "article",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 13,
+    "fields": {
+        "name": "Card - Guide",
+        "slug": "guide",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 14,
+    "fields": {
+        "name": "Card - Property List Item",
+        "slug": "community",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 15,
+    "fields": {
+        "name": "Card - Services",
+        "slug": "services",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 16,
+    "fields": {
+        "name": "Card - Team",
+        "slug": "team",
+        "field": 26,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 17,
+    "fields": {
+        "name": "H1",
+        "slug": "h1",
+        "field": 27,
+        "i18n": {
+            "name_en": "H1",
+            "name_pt": "H1"
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 18,
+    "fields": {
+        "name": "H2",
+        "slug": "h2",
+        "field": 27,
+        "i18n": {
+            "name_en": "H2",
+            "name_pt": "H2"
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 19,
+    "fields": {
+        "name": "H3",
+        "slug": "h3",
+        "field": 27,
+        "i18n": {
+            "name_en": "H3",
+            "name_pt": "H3"
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 20,
+    "fields": {
+        "name": "Text Center",
+        "slug": "intro_block_text_center",
+        "field": 28,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 21,
+    "fields": {
+        "name": "Text Left",
+        "slug": "intro_block_text_left",
+        "field": 28,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 22,
+    "fields": {
+        "name": "Text Center w/ Gray Background",
+        "slug": "intro_block_text_center_gray_bg",
+        "field": 28,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 23,
+    "fields": {
+        "name": "Guide",
+        "slug": "intro_block_guide",
+        "field": 28,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 24,
+    "fields": {
+        "name": "Contact",
+        "slug": "intro_block_contact",
+        "field": 28,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 25,
+    "fields": {
+        "name": "Navigation Dots",
+        "slug": "navigation_dots",
+        "field": 29,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 26,
+    "fields": {
+        "name": "Navigation Arrows",
+        "slug": "navigation_arrows",
+        "field": 29,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 27,
+    "fields": {
+        "name": "Navigation Arrows + Dots",
+        "slug": "navigation_arrows_dots",
+        "field": 29,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 28,
+    "fields": {
+        "name": "Destinations Slider",
+        "slug": "destinations_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 29,
+    "fields": {
+        "name": "Articles Slider",
+        "slug": "articles_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 30,
+    "fields": {
+        "name": "Experiences Slider",
+        "slug": "experiences_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 31,
+    "fields": {
+        "name": "Services Slider",
+        "slug": "services_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 32,
+    "fields": {
+        "name": "Special Offers Slider",
+        "slug": "special_offers_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 33,
+    "fields": {
+        "name": "Full Width",
+        "slug": "full_width_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 34,
+    "fields": {
+        "name": "Flex Content",
+        "slug": "intro_block_flex_content",
+        "field": 28,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 35,
+    "fields": {
+        "name": "Wide Slider",
+        "slug": "wide_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 36,
+    "fields": {
+        "name": "Ambassadors",
+        "slug": "ambassadors_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 37,
+    "fields": {
+        "name": "Services Block",
+        "slug": "services_block_slider",
+        "field": 30,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfieldoption",
+    "pk": 38,
+    "fields": {
+        "name": "Default",
+        "slug": "navigation_default",
+        "field": 29,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 1,
+    "fields": {
+        "name": "Blog List",
+        "slug": "blog-list",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 2,
+    "fields": {
+        "name": "Blog Article",
+        "slug": "blog-article",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 3,
+    "fields": {
+        "name": "newsletter",
+        "slug": "newsletter",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 4,
+    "fields": {
+        "name": "Banner",
+        "slug": "banner",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 5,
+    "fields": {
+        "name": "Intro Block",
+        "slug": "intro-block",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 6,
+    "fields": {
+        "name": "Destination Slider",
+        "slug": "destination_slider",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 7,
+    "fields": {
+        "name": "Selling Points",
+        "slug": "selling_points",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 8,
+    "fields": {
+        "name": "Text Block + Slideshow",
+        "slug": "text-block-slideshow",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 9,
+    "fields": {
+        "name": "Pic Left",
+        "slug": "pic-left",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 10,
+    "fields": {
+        "name": "Slideshow",
+        "slug": "slideshow",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 11,
+    "fields": {
+        "name": "Our Journey",
+        "slug": "our-journey",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 12,
+    "fields": {
+        "name": "Contact-form",
+        "slug": "contact-form",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 13,
+    "fields": {
+        "name": "Text Block + Selling Points",
+        "slug": "text_block_and_selling_points",
+        "description": "",
+        "i18n": {
+            "name_en": "Text Block + Selling Points",
+            "name_pt": "Text Block + Selling Points",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 14,
+    "fields": {
+        "name": "Advantages",
+        "slug": "advantages",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 15,
+    "fields": {
+        "name": "Banner Qualities",
+        "slug": "banner-qualities",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 16,
+    "fields": {
+        "name": "Experiences List",
+        "slug": "experiences-list",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 17,
+    "fields": {
+        "name": "Extra Services",
+        "slug": "extra-services",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 18,
+    "fields": {
+        "name": "Testimonials",
+        "slug": "testimonials",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.component",
+    "pk": 19,
+    "fields": {
+        "name": "FAQs",
+        "slug": "faqs",
+        "description": "",
+        "i18n": {
+            "name_en": "",
+            "name_pt": "",
+            "description_en": "",
+            "description_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 1,
+    "fields": {
+        "component": 1,
+        "field": 1,
+        "name": "Article Tag",
+        "slug": "article-tag",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 2,
+    "fields": {
+        "component": 1,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 3,
+    "fields": {
+        "component": 1,
+        "field": 3,
+        "name": "Publication Date",
+        "slug": "publication-date",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 4,
+    "fields": {
+        "component": 1,
+        "field": 4,
+        "name": "Sumary",
+        "slug": "sumary",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 5,
+    "fields": {
+        "component": 2,
+        "field": 3,
+        "name": "Publish Date",
+        "slug": "publish-date",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 6,
+    "fields": {
+        "component": 2,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 7,
+    "fields": {
+        "component": 2,
+        "field": 5,
+        "name": "Author Name",
+        "slug": "author-name",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 8,
+    "fields": {
+        "component": 2,
+        "field": 4,
+        "name": "Sumary",
+        "slug": "sumary",
+        "item_o": 3,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 9,
+    "fields": {
+        "component": 2,
+        "field": 6,
+        "name": "Author Description",
+        "slug": "author-description",
+        "item_o": 4,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 10,
+    "fields": {
+        "component": 3,
+        "field": 19,
+        "name": "user Email",
+        "slug": "user-email",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 11,
+    "fields": {
+        "component": 4,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 12,
+    "fields": {
+        "component": 4,
+        "field": 20,
+        "name": "Subtitle",
+        "slug": "subtitle",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 14,
+    "fields": {
+        "component": 4,
+        "field": 22,
+        "name": "Images",
+        "slug": "images",
+        "item_o": 3,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 16,
+    "fields": {
+        "component": 5,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 19,
+    "fields": {
+        "component": 5,
+        "field": 20,
+        "name": "Subtitle",
+        "slug": "subtitle",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 20,
+    "fields": {
+        "component": 5,
+        "field": 21,
+        "name": "Description",
+        "slug": "description",
+        "item_o": 3,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 21,
+    "fields": {
+        "component": 5,
+        "field": 24,
+        "name": "Call To Action",
+        "slug": "cta",
+        "item_o": 4,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 23,
+    "fields": {
+        "component": 5,
+        "field": 23,
+        "name": "Disabled",
+        "slug": "is_disabled",
+        "item_o": 6,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 31,
+    "fields": {
+        "component": 6,
+        "field": 14,
+        "name": "Destinations",
+        "slug": "destinations",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 32,
+    "fields": {
+        "component": 6,
+        "field": 22,
+        "name": "Images",
+        "slug": "images",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": true,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 34,
+    "fields": {
+        "component": 4,
+        "field": 24,
+        "name": "Cta",
+        "slug": "cta",
+        "item_o": 4,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 35,
+    "fields": {
+        "component": 5,
+        "field": 27,
+        "name": "Title Variant",
+        "slug": "title_variant",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 36,
+    "fields": {
+        "component": 5,
+        "field": 28,
+        "name": "Intro Block Variant",
+        "slug": "component_variant",
+        "item_o": 5,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 37,
+    "fields": {
+        "component": 7,
+        "field": 31,
+        "name": "Slideshow",
+        "slug": "slideshow",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 39,
+    "fields": {
+        "component": 4,
+        "field": 21,
+        "name": "Description",
+        "slug": "description",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 41,
+    "fields": {
+        "component": 8,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 42,
+    "fields": {
+        "component": 8,
+        "field": 27,
+        "name": "Title Variant",
+        "slug": "title_variant",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 43,
+    "fields": {
+        "component": 8,
+        "field": 20,
+        "name": "Subtitle",
+        "slug": "subtitle",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 44,
+    "fields": {
+        "component": 8,
+        "field": 21,
+        "name": "Description",
+        "slug": "description",
+        "item_o": 3,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 45,
+    "fields": {
+        "component": 8,
+        "field": 24,
+        "name": "Call To Action",
+        "slug": "cta",
+        "item_o": 4,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 46,
+    "fields": {
+        "component": 8,
+        "field": 28,
+        "name": "Text Block Variant",
+        "slug": "component_variant",
+        "item_o": 5,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 48,
+    "fields": {
+        "component": 8,
+        "field": 29,
+        "name": "Slideshow Navigation",
+        "slug": "slideshow_navigation_variant",
+        "item_o": 7,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 49,
+    "fields": {
+        "component": 8,
+        "field": 30,
+        "name": "Slideshow Variant",
+        "slug": "slideshow_variant",
+        "item_o": 8,
+        "is_required": true,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 50,
+    "fields": {
+        "component": 8,
+        "field": 31,
+        "name": "Slideshow",
+        "slug": "slideshow",
+        "item_o": 6,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 51,
+    "fields": {
+        "component": 9,
+        "field": 22,
+        "name": "Image",
+        "slug": "image",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 52,
+    "fields": {
+        "component": 9,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 53,
+    "fields": {
+        "component": 9,
+        "field": 20,
+        "name": "Subtitle",
+        "slug": "subtitle",
+        "item_o": 3,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 54,
+    "fields": {
+        "component": 9,
+        "field": 21,
+        "name": "Description",
+        "slug": "description",
+        "item_o": 4,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 55,
+    "fields": {
+        "component": 9,
+        "field": 24,
+        "name": "CTA",
+        "slug": "cta",
+        "item_o": 5,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 56,
+    "fields": {
+        "component": 10,
+        "field": 31,
+        "name": "Slideshow",
+        "slug": "slideshow",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 57,
+    "fields": {
+        "component": 10,
+        "field": 29,
+        "name": "Slideshow Navigation",
+        "slug": "slideshow_navigation_variant",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 58,
+    "fields": {
+        "component": 9,
+        "field": 27,
+        "name": "Title Variant",
+        "slug": "title_variant",
+        "item_o": 3,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 59,
+    "fields": {
+        "component": 11,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 60,
+    "fields": {
+        "component": 11,
+        "field": 21,
+        "name": "Description",
+        "slug": "description",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 61,
+    "fields": {
+        "component": 10,
+        "field": 30,
+        "name": "Slideshow Variant",
+        "slug": "slideshow_variant",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 62,
+    "fields": {
+        "component": 13,
+        "field": 31,
+        "name": "Cards",
+        "slug": "slideshow",
+        "item_o": 6,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "Cards",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 63,
+    "fields": {
+        "component": 13,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 64,
+    "fields": {
+        "component": 13,
+        "field": 27,
+        "name": "Title Variant",
+        "slug": "title_variant",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 65,
+    "fields": {
+        "component": 13,
+        "field": 20,
+        "name": "Subtitle",
+        "slug": "subtitle",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 66,
+    "fields": {
+        "component": 13,
+        "field": 21,
+        "name": "Description",
+        "slug": "description",
+        "item_o": 3,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 67,
+    "fields": {
+        "component": 13,
+        "field": 24,
+        "name": "Call To Action",
+        "slug": "cta",
+        "item_o": 4,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 68,
+    "fields": {
+        "component": 13,
+        "field": 28,
+        "name": "Intro Block Variant",
+        "slug": "component_variant",
+        "item_o": 5,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 69,
+    "fields": {
+        "component": 14,
+        "field": 31,
+        "name": "Slideshow",
+        "slug": "slideshow",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 70,
+    "fields": {
+        "component": 15,
+        "field": 31,
+        "name": "Qualities",
+        "slug": "qualities",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 71,
+    "fields": {
+        "component": 16,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 72,
+    "fields": {
+        "component": 12,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 73,
+    "fields": {
+        "component": 17,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 74,
+    "fields": {
+        "component": 18,
+        "field": 32,
+        "name": "Testimonials",
+        "slug": "testimonials",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 75,
+    "fields": {
+        "component": 19,
+        "field": 33,
+        "name": "FAQs",
+        "slug": "faqs",
+        "item_o": 2,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 76,
+    "fields": {
+        "component": 18,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 77,
+    "fields": {
+        "component": 18,
+        "field": 27,
+        "name": "Title Variant",
+        "slug": "title_variant",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 78,
+    "fields": {
+        "component": 19,
+        "field": 2,
+        "name": "Title",
+        "slug": "title",
+        "item_o": 0,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.componentfields",
+    "pk": 79,
+    "fields": {
+        "component": 19,
+        "field": 27,
+        "name": "Title Variant",
+        "slug": "title_variant",
+        "item_o": 1,
+        "is_required": false,
+        "is_translatable": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 1,
+    "fields": {
+        "name": "Blog List",
+        "slug": "blog-list",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 2,
+    "fields": {
+        "name": "Blog Article",
+        "slug": "blog-article",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 3,
+    "fields": {
+        "name": "Home Page",
+        "slug": "home-page",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 4,
+    "fields": {
+        "name": "Services",
+        "slug": "services",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 5,
+    "fields": {
+        "name": "About",
+        "slug": "about-us",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 6,
+    "fields": {
+        "name": "Experiences",
+        "slug": "experiences",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 7,
+    "fields": {
+        "name": "FAQs",
+        "slug": "faqs",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 8,
+    "fields": {
+        "name": "Homeowners",
+        "slug": "homeowners",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 9,
+    "fields": {
+        "name": "CMS Block Kitchen",
+        "slug": "cms-block-kitchen",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontype",
+    "pk": 10,
+    "fields": {
+        "name": "teste",
+        "slug": "teste",
+        "is_internal": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 1,
+    "fields": {
+        "component": 1,
+        "collection_type": 1,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 2,
+    "fields": {
+        "component": 2,
+        "collection_type": 2,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 3,
+    "fields": {
+        "component": 8,
+        "collection_type": 3,
+        "item_o": 2
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 7,
+    "fields": {
+        "component": 4,
+        "collection_type": 3,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 8,
+    "fields": {
+        "component": 4,
+        "collection_type": 4,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 9,
+    "fields": {
+        "component": 8,
+        "collection_type": 4,
+        "item_o": 1
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 13,
+    "fields": {
+        "component": 8,
+        "collection_type": 3,
+        "item_o": 1
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 14,
+    "fields": {
+        "component": 8,
+        "collection_type": 3,
+        "item_o": 3
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 15,
+    "fields": {
+        "component": 10,
+        "collection_type": 3,
+        "item_o": 5
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 16,
+    "fields": {
+        "component": 8,
+        "collection_type": 3,
+        "item_o": 4
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 17,
+    "fields": {
+        "component": 8,
+        "collection_type": 3,
+        "item_o": 6
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 18,
+    "fields": {
+        "component": 9,
+        "collection_type": 3,
+        "item_o": 7
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 19,
+    "fields": {
+        "component": 4,
+        "collection_type": 5,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 20,
+    "fields": {
+        "component": 13,
+        "collection_type": 5,
+        "item_o": 1
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 21,
+    "fields": {
+        "component": 14,
+        "collection_type": 5,
+        "item_o": 2
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 22,
+    "fields": {
+        "component": 11,
+        "collection_type": 5,
+        "item_o": 3
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 23,
+    "fields": {
+        "component": 9,
+        "collection_type": 5,
+        "item_o": 4
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 24,
+    "fields": {
+        "component": 10,
+        "collection_type": 5,
+        "item_o": 5
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 25,
+    "fields": {
+        "component": 8,
+        "collection_type": 5,
+        "item_o": 6
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 26,
+    "fields": {
+        "component": 8,
+        "collection_type": 5,
+        "item_o": 7
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 27,
+    "fields": {
+        "component": 8,
+        "collection_type": 5,
+        "item_o": 8
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 28,
+    "fields": {
+        "component": 8,
+        "collection_type": 5,
+        "item_o": 9
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 29,
+    "fields": {
+        "component": 9,
+        "collection_type": 5,
+        "item_o": 10
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 30,
+    "fields": {
+        "component": 12,
+        "collection_type": 5,
+        "item_o": 11
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 31,
+    "fields": {
+        "component": 8,
+        "collection_type": 4,
+        "item_o": 2
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 32,
+    "fields": {
+        "component": 4,
+        "collection_type": 6,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 33,
+    "fields": {
+        "component": 15,
+        "collection_type": 6,
+        "item_o": 1
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 34,
+    "fields": {
+        "component": 5,
+        "collection_type": 6,
+        "item_o": 2
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 35,
+    "fields": {
+        "component": 12,
+        "collection_type": 6,
+        "item_o": 4
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 36,
+    "fields": {
+        "component": 16,
+        "collection_type": 6,
+        "item_o": 3
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 37,
+    "fields": {
+        "component": 17,
+        "collection_type": 4,
+        "item_o": 4
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 38,
+    "fields": {
+        "component": 18,
+        "collection_type": 4,
+        "item_o": 5
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 39,
+    "fields": {
+        "component": 19,
+        "collection_type": 4,
+        "item_o": 6
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 40,
+    "fields": {
+        "component": 12,
+        "collection_type": 4,
+        "item_o": 7
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 41,
+    "fields": {
+        "component": 8,
+        "collection_type": 4,
+        "item_o": 3
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 42,
+    "fields": {
+        "component": 19,
+        "collection_type": 7,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 43,
+    "fields": {
+        "component": 4,
+        "collection_type": 8,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 44,
+    "fields": {
+        "component": 14,
+        "collection_type": 8,
+        "item_o": 1
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 45,
+    "fields": {
+        "component": 8,
+        "collection_type": 8,
+        "item_o": 2
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 46,
+    "fields": {
+        "component": 8,
+        "collection_type": 8,
+        "item_o": 3
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 47,
+    "fields": {
+        "component": 18,
+        "collection_type": 8,
+        "item_o": 4
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 48,
+    "fields": {
+        "component": 12,
+        "collection_type": 8,
+        "item_o": 5
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 49,
+    "fields": {
+        "component": 19,
+        "collection_type": 8,
+        "item_o": 6
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 50,
+    "fields": {
+        "component": 9,
+        "collection_type": 9,
+        "item_o": 3
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 51,
+    "fields": {
+        "component": 11,
+        "collection_type": 9,
+        "item_o": 1
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 53,
+    "fields": {
+        "component": 5,
+        "collection_type": 9,
+        "item_o": 2
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 54,
+    "fields": {
+        "component": 4,
+        "collection_type": 9,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 55,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 30
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 57,
+    "fields": {
+        "component": 7,
+        "collection_type": 9,
+        "item_o": 6
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 58,
+    "fields": {
+        "component": 13,
+        "collection_type": 9,
+        "item_o": 7
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 59,
+    "fields": {
+        "component": 14,
+        "collection_type": 9,
+        "item_o": 8
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 60,
+    "fields": {
+        "component": 15,
+        "collection_type": 9,
+        "item_o": 9
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 61,
+    "fields": {
+        "component": 16,
+        "collection_type": 9,
+        "item_o": 10
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 62,
+    "fields": {
+        "component": 12,
+        "collection_type": 9,
+        "item_o": 11
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 63,
+    "fields": {
+        "component": 17,
+        "collection_type": 9,
+        "item_o": 12
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 64,
+    "fields": {
+        "component": 18,
+        "collection_type": 9,
+        "item_o": 13
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 65,
+    "fields": {
+        "component": 19,
+        "collection_type": 9,
+        "item_o": 14
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 66,
+    "fields": {
+        "component": 17,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 67,
+    "fields": {
+        "component": 18,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 68,
+    "fields": {
+        "component": 19,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 69,
+    "fields": {
+        "component": 12,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 70,
+    "fields": {
+        "component": 16,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 71,
+    "fields": {
+        "component": 15,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 72,
+    "fields": {
+        "component": 14,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 73,
+    "fields": {
+        "component": 6,
+        "collection_type": 10,
+        "item_o": 0
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 74,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 31
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 75,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 39
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 76,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 38
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 77,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 37
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 78,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 36
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 79,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 35
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 80,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 34
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 81,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 33
+    }
+},
+{
+    "model": "components.collectiontypecomponents",
+    "pk": 82,
+    "fields": {
+        "component": 8,
+        "collection_type": 9,
+        "item_o": 32
+    }
+},
+{
+    "model": "component_forms.componentform",
+    "pk": 1,
+    "fields": {
+        "created_at": "2024-09-02T13:49:24.386Z",
+        "updated_at": "2024-10-02T09:14:31.933Z",
+        "slug": "contact-form",
+        "title": "Contact Form",
+        "is_active": true
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 1,
+    "fields": {
+        "form": 1,
+        "field": 7,
+        "name": "first name",
+        "slug": "first-name",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 2,
+    "fields": {
+        "form": 1,
+        "field": 8,
+        "name": "last name",
+        "slug": "last-name",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 3,
+    "fields": {
+        "form": 1,
+        "field": 9,
+        "name": "email",
+        "slug": "email",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 4,
+    "fields": {
+        "form": 1,
+        "field": 10,
+        "name": "phone",
+        "slug": "phone",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 5,
+    "fields": {
+        "form": 1,
+        "field": 12,
+        "name": "company name",
+        "slug": "company-name",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 6,
+    "fields": {
+        "form": 1,
+        "field": 13,
+        "name": "event type",
+        "slug": "event-type",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 8,
+    "fields": {
+        "form": 1,
+        "field": 15,
+        "name": "people number",
+        "slug": "people-number",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 9,
+    "fields": {
+        "form": 1,
+        "field": 16,
+        "name": "budged",
+        "slug": "budget",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 10,
+    "fields": {
+        "form": 1,
+        "field": 17,
+        "name": "currency",
+        "slug": "currency",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "component_forms.componentformfields",
+    "pk": 11,
+    "fields": {
+        "form": 1,
+        "field": 18,
+        "name": "coment",
+        "slug": "coment",
+        "item_o": 0,
+        "is_required": false,
+        "is_multiple": false,
+        "i18n": {
+            "name_en": "",
+            "name_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 2,
+    "fields": {
+        "created_at": "2024-09-02T13:13:01.684Z",
+        "updated_at": "2024-09-02T13:13:01.695Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "blog-list",
+        "is_active": false,
+        "publication_date": "2024-09-02T13:13:01.680Z",
+        "collection_type": 1,
+        "fields_data_json": {},
+        "title": "Blog List",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 3,
+    "fields": {
+        "created_at": "2024-09-02T13:13:24.383Z",
+        "updated_at": "2024-09-10T15:02:19.014Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "blog-article",
+        "is_active": true,
+        "publication_date": "2024-09-10T12:02:14Z",
+        "collection_type": 2,
+        "fields_data_json": {
+            "b2_title": "test",
+            "b2_sumary": "",
+            "b2_author_name": "",
+            "b2_publish_date": "2024-09-10",
+            "b2_author_description": ""
+        },
+        "title": "Blog Article",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 4,
+    "fields": {
+        "created_at": "2024-09-02T14:54:25.690Z",
+        "updated_at": "2024-09-30T15:41:59.859Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "homepage",
+        "is_active": true,
+        "publication_date": "2024-09-15T09:17:16Z",
+        "collection_type": 3,
+        "fields_data_json": {
+            "b3_cta": {
+                "url": "https://example.com",
+                "label": "Explore Our Services",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": "32"
+            },
+            "b7_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b13_cta": {
+                "url": "https://localhost:3000",
+                "label": "View Our Destinations",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b14_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b15_cta": {
+                "url": "https://example.com",
+                "label": "Explore Activities",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b16_cta": {
+                "url": "https://example.com",
+                "label": "Explore Activities",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b17_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b18_cta": {
+                "url": "https://example.com",
+                "label": "Know More",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b3_title": "Designed to Exceed Expectations",
+            "b7_title": "Luxury Villa Rentals",
+            "b13_title": "Explore Our Elite Collection of Luxury Villas",
+            "b14_title": "Enjoy peace of mind with meticulously crafted details, exquisite villas, and impeccable service for unforgettable moments",
+            "b15_title": "Enhance your holiday and see more of your destination",
+            "b16_title": "Enhance your holiday and see more of your destination",
+            "b17_title": "Take advantage of exclusive offers available for a limited time.",
+            "b18_image": 16,
+            "b18_title": "Become a Tripwix owner",
+            "b7_images": [
+                14,
+                4
+            ],
+            "b13_images": 15,
+            "b3_subtitle": "Premium Services",
+            "b3_title_h1": "",
+            "b3_title_h2": "",
+            "b3_title_h3": "",
+            "b7_subtitle": "You dream it, We create it!",
+            "b13_subtitle": "Choose Your Dream Destination",
+            "b14_subtitle": "Experience Effortless Luxury",
+            "b15_subtitle": "Tailor-Made Experiences",
+            "b16_subtitle": "Tailor-Made Experiences",
+            "b17_subtitle": "Special Offers",
+            "b18_subtitle": "Homeowners",
+            "b3_is_active": false,
+            "b3_slideshow": {
+                "object_pk": "2",
+                "content_type_id": "71"
+            },
+            "b7_is_active": true,
+            "b13_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b14_slideshow": {
+                "object_pk": "3",
+                "content_type_id": "71"
+            },
+            "b15_slideshow": {
+                "object_pk": "5",
+                "content_type_id": "71"
+            },
+            "b16_slideshow": {
+                "object_pk": "4",
+                "content_type_id": "71"
+            },
+            "b17_slideshow": {
+                "object_pk": "9",
+                "content_type_id": "71"
+            },
+            "b7_title_bold": "Luxury Villa Rentals",
+            "b3_description": "<p>A friendly face on the ground to tailor-make encounters with local secrets and authentic experiences as well as offer 24/7 emergency support.</p>",
+            "b3_is_disabled": false,
+            "b7_description": "<p>Unparalleled elegance and exclusivity, where every detail ensures an unforgettable escape.</p>",
+            "b13_description": "",
+            "b14_description": "",
+            "b15_description": "",
+            "b16_description": "",
+            "b17_description": "",
+            "b18_description": "<p>Become part of our exclusive selection and let your property be discovered.</p>",
+            "b3_title_variant": 18,
+            "b13_title_variant": 18,
+            "b14_title_variant": 19,
+            "b15_title_variant": 18,
+            "b16_title_variant": 18,
+            "b17_title_variant": 18,
+            "b18_title_variant": 18,
+            "b3_component_variant": 20,
+            "b3_slideshow_variant": 37,
+            "b13_component_variant": 21,
+            "b13_slideshow_variant": 28,
+            "b14_component_variant": 22,
+            "b14_slideshow_variant": 33,
+            "b15_component_variant": 21,
+            "b15_slideshow_variant": 33,
+            "b16_component_variant": 21,
+            "b16_slideshow_variant": 30,
+            "b17_component_variant": 21,
+            "b17_slideshow_variant": 32,
+            "b13_slidershow_variant": 28,
+            "b3_slideshow_navigation_variant": null,
+            "b13_slideshow_navigation_variant": 25,
+            "b14_slideshow_navigation_variant": 38,
+            "b15_slideshow_navigation_variant": null,
+            "b16_slideshow_navigation_variant": null,
+            "b17_slideshow_navigation_variant": null
+        },
+        "title": "Home Page",
+        "i18n": {
+            "slug_en": "homepage",
+            "slug_pt": "homepage",
+            "title_en": "",
+            "title_pt": "Home Page"
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 5,
+    "fields": {
+        "created_at": "2024-09-02T15:03:06.155Z",
+        "updated_at": "2024-09-02T15:03:06.174Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "home-page2",
+        "is_active": false,
+        "publication_date": "2024-09-02T15:03:06.151Z",
+        "collection_type": 3,
+        "fields_data_json": {},
+        "title": "Home Page2",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 6,
+    "fields": {
+        "created_at": "2024-09-19T16:02:58.974Z",
+        "updated_at": "2024-09-30T20:31:30.793Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "services",
+        "is_active": true,
+        "publication_date": "2024-09-19T17:03:01Z",
+        "collection_type": 4,
+        "fields_data_json": {
+            "b8_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b9_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b11_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b31_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b41_cta": {
+                "url": "https://google.pt",
+                "label": "All Experiences",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b39_faqs": null,
+            "b8_title": "Exceptional Services",
+            "b9_title": "Premium Services to elevate your Travel Experience",
+            "b11_title": "Why put your vacation dreams in our hands?",
+            "b31_title": "Why put your vacation dreams in our hands?",
+            "b37_title": "Extra Services",
+            "b40_title": "",
+            "b41_title": "Experiences & Unforgatable Momments",
+            "b8_images": [
+                8,
+                7
+            ],
+            "b10_images": [
+                10,
+                9
+            ],
+            "b12_images": [
+                13,
+                12,
+                11
+            ],
+            "b31_images": [
+                13,
+                12,
+                11
+            ],
+            "b8_subtitle": "",
+            "b9_subtitle": "",
+            "b11_subtitle": "",
+            "b31_subtitle": "",
+            "b41_subtitle": "",
+            "b8_is_active": false,
+            "b9_slideshow": {
+                "object_pk": "6",
+                "content_type_id": "71"
+            },
+            "b31_slideshow": {
+                "object_pk": "7",
+                "content_type_id": "71"
+            },
+            "b41_slideshow": {
+                "object_pk": "4",
+                "content_type_id": "71"
+            },
+            "b8_title_bold": "",
+            "b8_description": "<p>So you don't have to worry about a thing</p>",
+            "b9_description": "<p>Our carefully selected villas in the world's most renowned destinations offer more than just a stay; they promise a unique experience, tailored precisely to your preferences.</p>",
+            "b9_is_disabled": false,
+            "b11_description": "",
+            "b11_is_disabled": false,
+            "b31_description": "",
+            "b41_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;</p>",
+            "b38_testimonials": null,
+            "b9_title_variant": 18,
+            "b11_title_variant": 18,
+            "b31_title_variant": 18,
+            "b41_title_variant": 18,
+            "b9_component_variant": 34,
+            "b9_slideshow_variant": 35,
+            "b10_slideshow_variant": null,
+            "b11_component_variant": 20,
+            "b12_slideshow_variant": null,
+            "b31_component_variant": 20,
+            "b31_slideshow_variant": 36,
+            "b41_component_variant": 21,
+            "b41_slideshow_variant": 30,
+            "b10_slidershow_variant": 31,
+            "b12_slidershow_variant": 33,
+            "b9_slideshow_navigation_variant": 25,
+            "b10_slideshow_navigation_variant": 25,
+            "b12_slideshow_navigation_variant": null,
+            "b31_slideshow_navigation_variant": null,
+            "b41_slideshow_navigation_variant": null
+        },
+        "title": "Services",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 7,
+    "fields": {
+        "created_at": "2024-09-27T09:47:49.638Z",
+        "updated_at": "2024-10-01T06:30:25.863Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "about-us",
+        "is_active": true,
+        "publication_date": "2024-09-26T10:47:52Z",
+        "collection_type": 5,
+        "fields_data_json": {
+            "b19_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b20_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b23_cta": {
+                "url": "https://example.com",
+                "label": "Know More",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b25_cta": {
+                "url": "https://examples.com",
+                "label": "All Services",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b26_cta": {
+                "url": "https://examples.com",
+                "label": "Become a Tripwix Owner",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b27_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b28_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b29_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b19_title": "Unparalleled Luxury Services by Tripwix",
+            "b20_title": "Why Us?",
+            "b22_title": "Our Journey",
+            "b23_image": 25,
+            "b23_title": "Loyalty Program",
+            "b25_title": "Property Management Services",
+            "b26_title": "For Homeowners",
+            "b27_title": "The Founders",
+            "b28_title": "Our Team",
+            "b29_image": 22,
+            "b29_title": "Join Our Team",
+            "b30_title": "",
+            "b19_images": [
+                21
+            ],
+            "b21_images": [
+                20,
+                19,
+                18,
+                17
+            ],
+            "b19_subtitle": "",
+            "b20_subtitle": "",
+            "b23_subtitle": "Tripwix Programs",
+            "b25_subtitle": "",
+            "b26_subtitle": "",
+            "b27_subtitle": "",
+            "b28_subtitle": "",
+            "b29_subtitle": "",
+            "b20_slideshow": {
+                "object_pk": "8",
+                "content_type_id": "71"
+            },
+            "b21_slideshow": {
+                "object_pk": "11",
+                "content_type_id": "71"
+            },
+            "b24_slideshow": {
+                "object_pk": "5",
+                "content_type_id": "71"
+            },
+            "b25_slideshow": {
+                "object_pk": "4",
+                "content_type_id": "71"
+            },
+            "b26_slideshow": {
+                "object_pk": "3",
+                "content_type_id": "71"
+            },
+            "b27_slideshow": {
+                "object_pk": "4",
+                "content_type_id": "71"
+            },
+            "b28_slideshow": {
+                "object_pk": "2",
+                "content_type_id": "71"
+            },
+            "b19_description": "<p>Rooted in passion and expertise, we specialize in offering access to the world's most exquisite villas and unique accommodations. With Tripwix, luxury is not just a service, it's a promise.</p>",
+            "b20_description": "<p><strong>Choosing Tripwix means opting for a travel experience that goes beyond the conventional.</strong></p>\r\n<p>Our unique approach combines local knowledge with unparalleled luxury. From the moment you book to your return home, we are dedicated to making your travel seamless, safe, and beyond expectations.&nbsp;</p>",
+            "b22_description": "<p>Tripwix began as a dream shared by travel aficionados and industry veterans who believed in redefining luxury travel.&nbsp;&nbsp;<br>What started with a handful of exclusive properties has grown into a global portfolio, each selected with meticulous attention to detail and a commitment to excellence.</p>",
+            "b23_description": "<p>Our Loyalty Program is designed to thank our guests for choosing Tripwix. Members enjoy exclusive benefits, early access to special offers, and enhanced experiences.&nbsp;</p>",
+            "b25_description": "<p>For homeowners, Tripwix represents more than just a rental service; it's a partnership. We offer comprehensive property management solutions, focusing on maximizing returns while maintaining the highest standards of luxury and care for your home.&nbsp;</p>",
+            "b26_description": "<p>Joining the Tripwix portfolio opens your property to a world of opportunity. We not only showcase your home to a discerning clientele but also provide expert advice on how to enhance its appeal and generate significant income, all while preserving its condition and value.&nbsp;</p>",
+            "b27_description": "",
+            "b28_description": "",
+            "b29_description": "<p>Are you passionate about luxury travel? Do you share our commitment to excellence and innovation? Tripwix is always looking for talented individuals to join our team.&nbsp;</p>\r\n<p>Explore career opportunities with us and be part of a dynamic, growing company that's redefining luxury travel around the globe.&nbsp;</p>",
+            "b20_title_variant": null,
+            "b23_title_variant": 18,
+            "b25_title_variant": 18,
+            "b26_title_variant": 18,
+            "b27_title_variant": null,
+            "b28_title_variant": null,
+            "b29_title_variant": 19,
+            "b20_component_variant": null,
+            "b20_slideshow_variant": 28,
+            "b24_slideshow_variant": null,
+            "b25_component_variant": 21,
+            "b25_slideshow_variant": 30,
+            "b26_component_variant": null,
+            "b26_slideshow_variant": 33,
+            "b27_component_variant": null,
+            "b27_slideshow_variant": 32,
+            "b28_component_variant": null,
+            "b28_slideshow_variant": 37,
+            "b20_slideshow_navigation_variant": null,
+            "b24_slideshow_navigation_variant": null,
+            "b25_slideshow_navigation_variant": null,
+            "b26_slideshow_navigation_variant": null,
+            "b27_slideshow_navigation_variant": null,
+            "b28_slideshow_navigation_variant": null
+        },
+        "title": "About Us",
+        "i18n": {
+            "slug_en": "about-us",
+            "slug_pt": "about-us",
+            "title_en": "About Us",
+            "title_pt": "About Us"
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 8,
+    "fields": {
+        "created_at": "2024-09-30T17:59:41.776Z",
+        "updated_at": "2024-09-30T18:47:15.300Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "experiences",
+        "is_active": true,
+        "publication_date": "2024-09-29T18:59:52Z",
+        "collection_type": 6,
+        "fields_data_json": {
+            "b32_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b34_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b32_title": "Unique experience, tailored precisely to your preferences.",
+            "b34_title": "Title",
+            "b35_title": "Let’s get in touch",
+            "b36_title": "Experiences",
+            "b32_images": [
+                24
+            ],
+            "b32_subtitle": "",
+            "b34_subtitle": "",
+            "b33_qualities": {
+                "object_pk": "12",
+                "content_type_id": "71"
+            },
+            "b32_description": "",
+            "b34_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;</p>",
+            "b34_is_disabled": false,
+            "b34_title_variant": null,
+            "b34_component_variant": null
+        },
+        "title": "Experiences",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 9,
+    "fields": {
+        "created_at": "2024-10-01T11:39:42.974Z",
+        "updated_at": "2024-10-01T11:40:18.153Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "faqs",
+        "is_active": true,
+        "publication_date": "2024-09-30T12:39:45Z",
+        "collection_type": 7,
+        "fields_data_json": {
+            "b42_faqs": null,
+            "b42_title": "Frequently Asked Questions",
+            "b42_title_variant": 18
+        },
+        "title": "FAQs",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 10,
+    "fields": {
+        "created_at": "2024-10-01T11:47:56.845Z",
+        "updated_at": "2024-10-01T13:19:20.067Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "homeowners",
+        "is_active": true,
+        "publication_date": "2024-09-30T14:10:55Z",
+        "collection_type": 8,
+        "fields_data_json": {
+            "b43_cta": {
+                "url": "https://example.com",
+                "label": "Get Started",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b45_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b46_cta": {
+                "url": "https://example.com",
+                "label": "All Services",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b49_faqs": null,
+            "b43_title": "Maximize Your Vacation Rental Income",
+            "b45_title": "The Tripwix Advantage",
+            "b46_title": "Comprehensive Property Management",
+            "b47_title": "Reviews From Homeowners",
+            "b48_title": "Let's Get in Touch",
+            "b49_title": "Steps to list your home",
+            "b43_images": [
+                26
+            ],
+            "b43_subtitle": "",
+            "b45_subtitle": "",
+            "b46_subtitle": "",
+            "b44_slideshow": {
+                "object_pk": "11",
+                "content_type_id": "71"
+            },
+            "b45_slideshow": {
+                "object_pk": "7",
+                "content_type_id": "71"
+            },
+            "b46_slideshow": null,
+            "b43_description": "<p>Exclusive Property Management &amp; Marketing</p>",
+            "b45_description": "<p>Lorem Ipsum dolor sit amet, consectetur adipicing elit.</p>",
+            "b46_description": "<p>For homeowners, Tripwix represents more than just a rental service; it's a partnership. We offer comprehensive property management solutions, focusing on maximizing returns while maintaining the highest standards of luxury and care for your home.</p>",
+            "b47_testimonials": null,
+            "b45_title_variant": null,
+            "b46_title_variant": null,
+            "b47_title_variant": null,
+            "b49_title_variant": null,
+            "b45_component_variant": null,
+            "b45_slideshow_variant": 36,
+            "b46_component_variant": 21,
+            "b46_slideshow_variant": 37,
+            "b45_slideshow_navigation_variant": null,
+            "b46_slideshow_navigation_variant": null
+        },
+        "title": "Homeowners",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 11,
+    "fields": {
+        "created_at": "2024-10-02T06:49:45.626Z",
+        "updated_at": "2024-10-02T10:13:17.280Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "cms-block-kitchen",
+        "is_active": true,
+        "publication_date": "2024-10-01T07:51:20Z",
+        "collection_type": 9,
+        "fields_data_json": {
+            "b50_cta": {
+                "url": "https://example.com",
+                "label": "Pic Left CTA",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b53_cta": {
+                "url": "https://localhost:3000",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b54_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b55_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b58_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b74_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b75_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b76_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b77_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b78_cta": {
+                "url": "",
+                "label": "",
+                "target": "_self",
+                "internal": true,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b79_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b80_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b81_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b82_cta": {
+                "url": "https://example.com",
+                "label": "CTA Label",
+                "target": "_self",
+                "internal": false,
+                "object_pk": null,
+                "content_type_id": ""
+            },
+            "b65_faqs": null,
+            "b50_image": 27,
+            "b50_title": "Pic Left",
+            "b51_title": "Our Journey",
+            "b53_title": "Intro Block (Contact Variant)",
+            "b54_title": "Banner",
+            "b55_title": "Text Block (Contact) + Slideshow (Ambassadors Variant)",
+            "b58_title": "Text Block (Guide Variant) + Selling Points (Guide)",
+            "b61_title": "Experiences List",
+            "b62_title": "Contact Form",
+            "b63_title": "Extra Services",
+            "b64_title": "Testimonials Slideshow",
+            "b65_title": "FAQs // TODO",
+            "b74_title": "Text Block (Flex Content Variant) + Slideshow (Articles Variant)",
+            "b75_title": "Special Offers Slider",
+            "b76_title": "Text Block (Flex Content Variant) + Slideshow (Wide Slider Variant)",
+            "b77_title": "Text Block (Flex Content Variant) + Slideshow (Special Offers Variant)",
+            "b78_title": "Text Block (Flex Content Variant) + Slideshow (Services Slider Variant)",
+            "b79_title": "Text Block (Text Left) + Slideshow (Services Block Variant)",
+            "b80_title": "Text Block (Text Center w/Gray Background) + Slideshow (Full Width Variant)",
+            "b81_title": "Text Block (Text Center) + Slideshow (Experiences Variant)",
+            "b82_title": "Text Block (Guide Variant) + Slideshow (Destinations Variant)",
+            "b52_images": [
+                15,
+                14,
+                4
+            ],
+            "b54_images": [
+                4,
+                3
+            ],
+            "b50_subtitle": "Pic Left Subtitle",
+            "b53_subtitle": "Intro Block Subtitle",
+            "b54_subtitle": "Banner Subtitle",
+            "b55_subtitle": "Text Block + Slideshow Subtitle",
+            "b58_subtitle": "Text Block + Selling Points Subtitle",
+            "b74_subtitle": "Text Block + Slideshow Subtitle",
+            "b75_subtitle": "",
+            "b76_subtitle": "",
+            "b77_subtitle": "",
+            "b78_subtitle": "",
+            "b79_subtitle": "Text Block + Slideshow Subtitle",
+            "b80_subtitle": "Text Block + Slideshow Subtitle",
+            "b81_subtitle": "Text Block + Slideshow Subtitle",
+            "b82_subtitle": "Text Block + Slideshow Subtitle",
+            "b55_slideshow": {
+                "object_pk": "7",
+                "content_type_id": "71"
+            },
+            "b56_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b57_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b58_slideshow": {
+                "object_pk": "4",
+                "content_type_id": "71"
+            },
+            "b59_slideshow": {
+                "object_pk": "11",
+                "content_type_id": "71"
+            },
+            "b60_qualities": {
+                "object_pk": "4",
+                "content_type_id": "71"
+            },
+            "b74_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b75_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b76_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b77_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b78_slideshow": {
+                "object_pk": "7",
+                "content_type_id": "71"
+            },
+            "b79_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b80_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b81_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b82_slideshow": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b50_description": "<p>Pic Left Description</p>",
+            "b51_description": "<p>Our Journey Description</p>",
+            "b53_description": "<p>Intro Block Description</p>",
+            "b53_is_disabled": false,
+            "b54_description": "<p>Banner Description</p>",
+            "b55_description": "<p>Text Block + Slideshow Description</p>",
+            "b58_description": "<p>Text Block + Selling Points Description</p>",
+            "b74_description": "<p>Text Block + Slideshow Description</p>",
+            "b75_description": "",
+            "b76_description": "",
+            "b77_description": "",
+            "b78_description": "",
+            "b79_description": "<p>Text Block + Slideshow Description</p>",
+            "b80_description": "<p>Text Block + Slideshow Description</p>",
+            "b81_description": "<p>Text Block + Slideshow Description</p>",
+            "b82_description": "<p>Text Block + Slideshow Description</p>",
+            "b52_destinations": {
+                "object_pk": [
+                    "1"
+                ],
+                "content_type_id": "67"
+            },
+            "b64_testimonials": {
+                "object_pk": "1",
+                "content_type_id": "71"
+            },
+            "b50_title_variant": 18,
+            "b53_title_variant": 18,
+            "b55_title_variant": 18,
+            "b58_title_variant": null,
+            "b64_title_variant": 18,
+            "b65_title_variant": 18,
+            "b74_title_variant": 18,
+            "b75_title_variant": null,
+            "b76_title_variant": 18,
+            "b77_title_variant": 18,
+            "b78_title_variant": 18,
+            "b79_title_variant": 18,
+            "b80_title_variant": 18,
+            "b81_title_variant": 18,
+            "b82_title_variant": 18,
+            "b53_component_variant": 24,
+            "b55_component_variant": 24,
+            "b55_slideshow_variant": 36,
+            "b56_slideshow_variant": 29,
+            "b58_component_variant": 23,
+            "b74_component_variant": 34,
+            "b74_slideshow_variant": 29,
+            "b75_component_variant": null,
+            "b75_slideshow_variant": 32,
+            "b76_component_variant": 34,
+            "b76_slideshow_variant": 33,
+            "b77_component_variant": 34,
+            "b77_slideshow_variant": 32,
+            "b78_component_variant": 34,
+            "b78_slideshow_variant": 31,
+            "b79_component_variant": 21,
+            "b79_slideshow_variant": 37,
+            "b80_component_variant": 22,
+            "b80_slideshow_variant": 33,
+            "b81_component_variant": 20,
+            "b81_slideshow_variant": 30,
+            "b82_component_variant": 23,
+            "b82_slideshow_variant": 28,
+            "b55_slideshow_navigation_variant": null,
+            "b56_slideshow_navigation_variant": null,
+            "b74_slideshow_navigation_variant": null,
+            "b75_slideshow_navigation_variant": null,
+            "b76_slideshow_navigation_variant": null,
+            "b77_slideshow_navigation_variant": null,
+            "b78_slideshow_navigation_variant": null,
+            "b79_slideshow_navigation_variant": null,
+            "b80_slideshow_navigation_variant": null,
+            "b81_slideshow_navigation_variant": null,
+            "b82_slideshow_navigation_variant": null
+        },
+        "title": "CMS - Block Kitchen",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 12,
+    "fields": {
+        "created_at": "2024-10-02T09:07:30.077Z",
+        "updated_at": "2024-10-02T09:14:55.957Z",
+        "seo_title": null,
+        "seo_description": null,
+        "seo_image": "",
+        "slug": "teste",
+        "is_active": true,
+        "publication_date": "2024-10-01T10:07:32Z",
+        "collection_type": 10,
+        "fields_data_json": {
+            "b68_faqs": null,
+            "b66_title": "",
+            "b67_title": "",
+            "b68_title": "",
+            "b69_title": "",
+            "b70_title": "",
+            "b73_images": [
+                15,
+                14
+            ],
+            "b71_qualities": null,
+            "b72_slideshow": null,
+            "b67_testimonials": null,
+            "b73_destinations": {
+                "object_pk": [
+                    "1"
+                ],
+                "content_type_id": "67"
+            },
+            "b67_title_variant": null,
+            "b68_title_variant": null
+        },
+        "title": "teste",
+        "i18n": {
+            "slug_en": "",
+            "slug_pt": "",
+            "title_en": "",
+            "title_pt": ""
+        }
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 1,
+    "fields": {
+        "title": "Destinations"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 2,
+    "fields": {
+        "title": "Selling Points"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 3,
+    "fields": {
+        "title": "Effortless Luxury"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 4,
+    "fields": {
+        "title": "Experiences"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 5,
+    "fields": {
+        "title": "VIP Collection"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 6,
+    "fields": {
+        "title": "Premium Services"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 7,
+    "fields": {
+        "title": "Ambassadors"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 8,
+    "fields": {
+        "title": "Why Us"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 9,
+    "fields": {
+        "title": "Special Offers"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 11,
+    "fields": {
+        "title": "Why Us Advantages"
+    }
+},
+{
+    "model": "slides.slideshow",
+    "pk": 12,
+    "fields": {
+        "title": "Experiences - Qualities"
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 1,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/punta-mita-low-res.png",
+        "title": "Punt de Mita Aera",
+        "caption": "MEXICO",
+        "description": "",
+        "cta_text": "Mexico",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 1,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 2,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/los_cabos.png",
+        "title": "Los Cabos",
+        "caption": "MEXICO",
+        "description": "",
+        "cta_text": "Mexico",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 1,
+        "slideshow": 1,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 3,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/barbados.png",
+        "title": "Barbados",
+        "caption": "BARBADOS2",
+        "description": "",
+        "cta_text": "Barbados",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 2,
+        "slideshow": 1,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 4,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image1.png",
+        "title": "Personalized Experiences",
+        "caption": "",
+        "description": "",
+        "cta_text": "See More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 2,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 5,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image2.png",
+        "title": "Villa Specialists",
+        "caption": "See More",
+        "description": "",
+        "cta_text": "See More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 1,
+        "slideshow": 2,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 6,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image3.png",
+        "title": "Curated Properties",
+        "caption": "See More",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 2,
+        "slideshow": 2,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 7,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image4.png",
+        "title": "Local Ambassadors",
+        "caption": "See More",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 3,
+        "slideshow": 2,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 8,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/effortless_luxury.png",
+        "title": "",
+        "caption": "",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 3,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 9,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/effortless_luxury.png",
+        "title": "",
+        "caption": "",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 1,
+        "slideshow": 3,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 10,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image5.png",
+        "title": "Golf",
+        "caption": "",
+        "description": "",
+        "cta_text": "Know More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 4,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 11,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image6.png",
+        "title": "Beach Clubs",
+        "caption": "",
+        "description": "",
+        "cta_text": "Know More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 1,
+        "slideshow": 4,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 12,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image7.png",
+        "title": "Spa",
+        "caption": "",
+        "description": "",
+        "cta_text": "Know More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 2,
+        "slideshow": 4,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 13,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image8.png",
+        "title": "Tenis",
+        "caption": "",
+        "description": "",
+        "cta_text": "Know More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 3,
+        "slideshow": 4,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 14,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/VIP_Collection.png",
+        "title": "Villa Name Here",
+        "caption": "Tripwix VIP Collection",
+        "description": "One-of-a-kind vacation rentals in prime locations, selected by our professional curators for their.",
+        "cta_text": "Explore",
+        "cta_url": "https://example.com",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 5,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 15,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/VIP_Collection.png",
+        "title": "Villa Name Here Slide 2",
+        "caption": "Tripwix VIP Collection",
+        "description": "One-of-a-kind vacation rentals in prime locations, selected by our professional curators for their.",
+        "cta_text": "Explore",
+        "cta_url": "https://example.com",
+        "extra_data": null,
+        "order": 1,
+        "slideshow": 5,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 16,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/spa2_2.png",
+        "title": "",
+        "caption": "",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 6,
+        "mobile_image": "slide_image_mobile/1.jpeg",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 17,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/spa2_2.png",
+        "title": "",
+        "caption": "",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 6,
+        "mobile_image": "slide_image_mobile/1.png",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 18,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image2.png",
+        "title": "Expert Curators",
+        "caption": "Our Villa Curators go beyond the ordinary to handpick properties.  With an eye for exceptional quality, they ensure your accommodation is nothing short of spectacular.",
+        "description": "Our Villa Curators go beyond the ordinary to handpick properties.  With an eye for exceptional quality, they ensure your accommodation is nothing short of spectacular.",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 7,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 19,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image3.png",
+        "title": "Villa Specialists",
+        "caption": "Our Villa Curators go beyond the ordinary to handpick properties.  With an eye for exceptional quality, they ensure your accommodation is nothing short of spectacular.",
+        "description": "Our Villa Curators go beyond the ordinary to handpick properties.  With an eye for exceptional quality, they ensure your accommodation is nothing short of spectacular.",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 7,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 20,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image4.png",
+        "title": "Local Ambassadors",
+        "caption": "Our Villa Curators go beyond the ordinary to handpick properties.  With an eye for exceptional quality, they ensure your accommodation is nothing short of spectacular.",
+        "description": "Our Villa Curators go beyond the ordinary to handpick properties.  With an eye for exceptional quality, they ensure your accommodation is nothing short of spectacular.",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 7,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 21,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/When_To_Leave.png",
+        "title": "When to leave",
+        "caption": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "cta_text": "Read More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 8,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 22,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/who_to_get_there.png",
+        "title": "How to get there",
+        "caption": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "cta_text": "Read More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 8,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 23,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/good_to_know.png",
+        "title": "Good to Know",
+        "caption": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "cta_text": "Read More",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 8,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 24,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image9.png",
+        "title": "Four Seasons Villa: Best View, Georgeous Location",
+        "caption": "Algarve",
+        "description": "25% in May & June",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 9,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 25,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image10.png",
+        "title": "Four Seasons Villa: Best View, Georgeous Location",
+        "caption": "Algarve",
+        "description": "25% in May & June",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 9,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 26,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/image11.png",
+        "title": "Four Seasons Villa: Best View, Georgeous Location",
+        "caption": "Algarve",
+        "description": "25% in May & June",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 9,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 35,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/availability.png",
+        "title": "The art of hospitality",
+        "caption": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 11,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 36,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/availability.png",
+        "title": "Availability",
+        "caption": "",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 11,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 37,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/availability.png",
+        "title": "Confidentiality",
+        "caption": "",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 11,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 38,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/availability.png",
+        "title": "The best offer",
+        "caption": "",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 11,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 39,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/handpickerd.png",
+        "title": "Handpicked homes in the most desirable neighbourhoods",
+        "caption": "",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 12,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 40,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/handpickerd.png",
+        "title": "Unparalleled level of service and attention to detail",
+        "caption": "",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 12,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+},
+{
+    "model": "slides.slide",
+    "pk": 41,
+    "fields": {
+        "date_taken": null,
+        "view_count": 0,
+        "crop_from": "center",
+        "effect": null,
+        "image": "photologue/photos/unparalel.png",
+        "title": "Tailor-made stays with our exclusive concierge service",
+        "caption": "",
+        "description": "",
+        "cta_text": "",
+        "cta_url": "",
+        "extra_data": null,
+        "order": 0,
+        "slideshow": 12,
+        "mobile_image": "",
+        "alt_text_desktop": null,
+        "alt_text_mobile": null
+    }
+}
+]

@@ -1,0 +1,30 @@
+{% load i18n static %}
+<div id="visibility-widget" class="hide">
+	<div>
+	<label class="visibility-widget-visible">
+		<input type="radio" name="wgt-visibility" value="1">
+		{% trans 'Approved' %}
+		<span class="info badge">{% trans 'as of' %} <span></span></span>
+	</label>
+	</div>
+	<div>
+	<label class="visibility-widget-hidden">
+		<input type="radio" name="wgt-visibility" value="0">
+		{% trans 'Draft' %}
+		<span class="info badge">{% trans 'will become visible on' %} <span></span></span>
+	</label>
+	</div>
+	<br/>
+
+	<a class="visibility-widget-pub_date btn btn-success btn-small" href="#">
+	{% trans 'Set a specific publish date' %}
+	<span class="fa fa-calendar"></span>
+	</a>
+	<a class="visibility-widget-clear_pub_date" href="#">&nbsp;{% trans 'clear date' %}</a>
+
+	<a class="visibility-widget-pub_end_date btn btn-info btn-small" href="#">
+	{% trans 'Set a expiration date' %}
+	<span class="fa fa-calendar-o"></span>
+	</a>
+	<a class="visibility-widget-clear_pub_end_date" href="#">&nbsp;{% trans 'clear date' %}</a>
+</div>
