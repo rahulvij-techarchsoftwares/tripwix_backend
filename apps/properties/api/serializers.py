@@ -191,6 +191,7 @@ class PropertyDetailSerializer(BasePropertySerializer):
     ambassador = AmbassadorSerializer(read_only=True)
     know_before_you_go = serializers.CharField(source='know_before_you_go_detail')
     Living_Areas = serializers.CharField()
+    Location_para = serializers.CharField()
     location_Description = serializers.CharField()
     location_extra = serializers.CharField()
     Special_Features = serializers.CharField()
@@ -218,7 +219,7 @@ class PropertyDetailSerializer(BasePropertySerializer):
 
     @staticmethod
     def get_amenities(obj):
-        amenities = Amenity.objects.filter(id__in=obj.active_amenities)
+        amenities = obj.amenities.all()
         return AmenitySerializer(amenities, many=True).data
 
 

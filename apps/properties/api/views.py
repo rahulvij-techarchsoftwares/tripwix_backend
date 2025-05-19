@@ -319,6 +319,15 @@ class PropertyViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Ret
                         ),
                         Value(""),
                     ),
+                    Location_para=Coalesce(
+                        Subquery(
+                            detail_values.filter(property_group_detail__detail__slug='location').values(
+                                'description_value'
+                            )[:1],
+                            output_field=CharField(),
+                        ),
+                        Value(""),
+                    ),
                     Living_Areas=Coalesce(
                         Subquery(
                             detail_values.filter(property_group_detail__detail__slug='livingAreas').values(
@@ -410,7 +419,7 @@ class PropertyViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Ret
                         Value(0),
                     ),
                     active_amenities=ArrayAgg(
-                        'property_amenities__amenity',
+                        'property_amenities__amenity__name',
                         distinct=True,
                     ),
                 )

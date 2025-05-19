@@ -42,5 +42,8 @@ STORAGES = {
             "querystring_auth": False,
         },
     },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
 }
 

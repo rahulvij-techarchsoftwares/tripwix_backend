@@ -20,57 +20,57 @@ PREPEND_WWW = False
 DEBUG = True
 PROJECT_URL = "https://admin-staging.worldeluxevillas.com"
 # MEDIA_URL = PROJECT_URL + "/static/"
-MEDIA_URL = "https://d1xohhabe9xth2.cloudfront.net/uploads/"
-
-# STORAGES = {
-#     "default": {
-#         "BACKEND": "storages.backends.s3.S3Storage",
-#         "OPTIONS": {
-#             "bucket_name": "tripwix-platform",
-#             "location": "uploads",
-#             "region_name": "eu-west-1",
-#             "access_key": "AKIA3BS7ENXSJXZBNEP6",
-#             "secret_key": "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",
-#             "querystring_auth": False,
-#         },
-#     },
-#     "staticfiles": {
-#         "BACKEND": "storages.backends.s3.S3Storage",
-#         "OPTIONS": {
-#             "bucket_name": "tripwix-platform",
-#             "location": "static",
-#             "region_name": "eu-west-1",
-#             "access_key": "AKIA3BS7ENXSJXZBNEP6",
-#             "secret_key": "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",
-#         },
-#     },
-# }
+# MEDIA_URL = "https://d1xohhabe9xth2.cloudfront.net/uploads/"
 
 STORAGES = {
     "default": {
         "BACKEND": "storages.backends.s3.S3Storage",
         "OPTIONS": {
-            "bucket_name": "tripwix-platform-media",
+            "bucket_name": "tripwix-platform",
             "location": "uploads",
             "region_name": "eu-west-1",
             "access_key": "AKIA3BS7ENXSJXZBNEP6",
             "secret_key": "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",
             "querystring_auth": False,
-            "custom_domain": "d1xohhabe9xth2.cloudfront.net",
         },
     },
     "staticfiles": {
         "BACKEND": "storages.backends.s3.S3Storage",
         "OPTIONS": {
-            "bucket_name": "tripwix-platform-media",
+            "bucket_name": "tripwix-platform",
             "location": "static",
             "region_name": "eu-west-1",
             "access_key": "AKIA3BS7ENXSJXZBNEP6",
             "secret_key": "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",
-            "custom_domain": "d1xohhabe9xth2.cloudfront.net",
         },
     },
 }
+
+# STORAGES = {
+#     "default": {
+#         "BACKEND": "storages.backends.s3.S3Storage",
+#         "OPTIONS": {
+#             "bucket_name": "tripwix-platform-media",
+#             "location": "uploads",
+#             "region_name": "eu-west-1",
+#             "access_key": "AKIA3BS7ENXSJXZBNEP6",
+#             "secret_key": "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",
+#             "querystring_auth": False,
+#             "custom_domain": "d1xohhabe9xth2.cloudfront.net",
+#         },
+#     },
+#     "staticfiles": {
+#         "BACKEND": "storages.backends.s3.S3Storage",
+#         "OPTIONS": {
+#             "bucket_name": "tripwix-platform-media",
+#             "location": "static",
+#             "region_name": "eu-west-1",
+#             "access_key": "AKIA3BS7ENXSJXZBNEP6",
+#             "secret_key": "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",
+#             "custom_domain": "d1xohhabe9xth2.cloudfront.net",
+#         },
+#     },
+# }
 
 sentry_sdk.init(
     dsn="https://a9ab8d914850bca643c03a56afd41061@o148064.ingest.sentry.io/4506082991079424",
