@@ -419,7 +419,7 @@ class PropertyViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.Ret
                         Value(0),
                     ),
                     active_amenities=ArrayAgg(
-                        'property_amenities__amenity__name',
+                        'property_amenities__amenity',
                         distinct=True,
                     ),
                 )
